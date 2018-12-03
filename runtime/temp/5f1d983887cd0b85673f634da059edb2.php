@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:80:"F:\phpStudy\WWW\newproject\public/../application/admin\view\user\member\add.html";i:1543557895;s:69:"F:\phpStudy\WWW\newproject\application\admin\view\layout\default.html";i:1532420613;s:66:"F:\phpStudy\WWW\newproject\application\admin\view\common\meta.html";i:1529292885;s:68:"F:\phpStudy\WWW\newproject\application\admin\view\common\script.html";i:1529292885;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:80:"F:\phpStudy\WWW\newproject\public/../application/admin\view\user\member\add.html";i:1543827746;s:69:"F:\phpStudy\WWW\newproject\application\admin\view\layout\default.html";i:1532420613;s:66:"F:\phpStudy\WWW\newproject\application\admin\view\common\meta.html";i:1529292885;s:68:"F:\phpStudy\WWW\newproject\application\admin\view\common\script.html";i:1529292885;}*/ ?>
 <!DOCTYPE html>
 <html lang="<?php echo $config['language']; ?>">
     <head>
@@ -141,7 +141,7 @@
     <div class="form-group">
         <label class="control-label col-xs-12 col-sm-2"><?php echo __('User_type'); ?>:</label>
         <div class="col-xs-12 col-sm-8">
-                        
+
             <select  id="c-user_type" class="form-control selectpicker" name="row[user_type]">
                 <?php if(is_array($userTypeList) || $userTypeList instanceof \think\Collection || $userTypeList instanceof \think\Paginator): if( count($userTypeList)==0 ) : echo "" ;else: foreach($userTypeList as $key=>$vo): ?>
                     <option value="<?php echo $key; ?>" <?php if(in_array(($key), explode(',',"1"))): ?>selected<?php endif; ?>><?php echo $vo; ?></option>
@@ -171,7 +171,7 @@
     <div class="form-group">
         <label class="control-label col-xs-12 col-sm-2"><?php echo __('Driver_license_type'); ?>:</label>
         <div class="col-xs-12 col-sm-8">
-                        
+
             <select  id="c-driver_license_type" class="form-control selectpicker" name="row[driver_license_type]">
                 <?php if(is_array($driverLicenseTypeList) || $driverLicenseTypeList instanceof \think\Collection || $driverLicenseTypeList instanceof \think\Paginator): if( count($driverLicenseTypeList)==0 ) : echo "" ;else: foreach($driverLicenseTypeList as $key=>$vo): ?>
                     <option value="<?php echo $key; ?>" <?php if(in_array(($key), explode(',',"1"))): ?>selected<?php endif; ?>><?php echo $vo; ?></option>
@@ -209,25 +209,25 @@
     <div class="form-group">
         <label class="control-label col-xs-12 col-sm-2"><?php echo __('Total_consumption'); ?>:</label>
         <div class="col-xs-12 col-sm-8">
-            <input id="c-total_consumption" class="form-control" step="0.01" name="row[total_consumption]" type="number" value="0.00">
+            <input id="c-total_consumption" class="form-control" readonly="true" step="0.01" name="row[total_consumption]" type="number" value="0.00">
         </div>
     </div>
     <div class="form-group">
         <label class="control-label col-xs-12 col-sm-2"><?php echo __('Score'); ?>:</label>
         <div class="col-xs-12 col-sm-8">
-            <input id="c-score" class="form-control" name="row[score]" type="number" value="0">
+            <input id="c-score" class="form-control" name="row[score]" type="number"  readonly="true"  value="0">
         </div>
     </div>
     <div class="form-group">
         <label class="control-label col-xs-12 col-sm-2"><?php echo __('Use_score'); ?>:</label>
         <div class="col-xs-12 col-sm-8">
-            <input id="c-use_score" class="form-control" name="row[use_score]" type="number" value="0">
+            <input id="c-use_score" class="form-control"  readonly="true"  name="row[use_score]" type="number" value="0">
         </div>
     </div>
     <div class="form-group">
         <label class="control-label col-xs-12 col-sm-2"><?php echo __('Invite_code'); ?>:</label>
         <div class="col-xs-12 col-sm-8">
-            <input id="c-invite_code" class="form-control" name="row[invite_code]" type="text" value="">
+            <input id="c-invite_code" class="form-control"  readonly="true"  name="row[invite_code]" type="text" value="">
         </div>
     </div>
     <div class="form-group">
@@ -239,19 +239,14 @@
     <div class="form-group">
         <label class="control-label col-xs-12 col-sm-2"><?php echo __('Max_renting_cars'); ?>:</label>
         <div class="col-xs-12 col-sm-8">
-                        
-            <select  id="c-max_renting_cars" class="form-control selectpicker" name="row[max_renting_cars]">
-                <?php if(is_array($maxRentingCarsList) || $maxRentingCarsList instanceof \think\Collection || $maxRentingCarsList instanceof \think\Paginator): if( count($maxRentingCarsList)==0 ) : echo "" ;else: foreach($maxRentingCarsList as $key=>$vo): ?>
-                    <option value="<?php echo $key; ?>" <?php if(in_array(($key), explode(',',"1"))): ?>selected<?php endif; ?>><?php echo $vo; ?></option>
-                <?php endforeach; endif; else: echo "" ;endif; ?>
-            </select>
-
+            <input id="c-max_renting_cars" class="form-control" name="row[max_renting_cars]" type="text" value="">
         </div>
     </div>
+
     <div class="form-group">
         <label class="control-label col-xs-12 col-sm-2"><?php echo __('Isblack'); ?>:</label>
         <div class="col-xs-12 col-sm-8">
-                        
+
             <select  id="c-isblack" class="form-control selectpicker" name="row[isblack]">
                 <?php if(is_array($isblackList) || $isblackList instanceof \think\Collection || $isblackList instanceof \think\Paginator): if( count($isblackList)==0 ) : echo "" ;else: foreach($isblackList as $key=>$vo): ?>
                     <option value="<?php echo $key; ?>" <?php if(in_array(($key), explode(',',"0"))): ?>selected<?php endif; ?>><?php echo $vo; ?></option>
@@ -281,13 +276,7 @@
     <div class="form-group">
         <label class="control-label col-xs-12 col-sm-2"><?php echo __('Accident'); ?>:</label>
         <div class="col-xs-12 col-sm-8">
-                        
-            <select  id="c-accident" class="form-control selectpicker" name="row[accident]">
-                <?php if(is_array($accidentList) || $accidentList instanceof \think\Collection || $accidentList instanceof \think\Paginator): if( count($accidentList)==0 ) : echo "" ;else: foreach($accidentList as $key=>$vo): ?>
-                    <option value="<?php echo $key; ?>" <?php if(in_array(($key), explode(',',"0"))): ?>selected<?php endif; ?>><?php echo $vo; ?></option>
-                <?php endforeach; endif; else: echo "" ;endif; ?>
-            </select>
-
+            <input id="c-accident" class="form-control" name="row[accident]" type="number" value="0">
         </div>
     </div>
     <div class="form-group">
@@ -314,12 +303,12 @@
             <input id="c-unfreeze_time" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[unfreeze_time]" type="text" value="">
         </div>
     </div>
-    <!-- <div class="form-group">
+    <div class="form-group">
         <label class="control-label col-xs-12 col-sm-2"><?php echo __('Office_id'); ?>:</label>
         <div class="col-xs-12 col-sm-8">
-            <input id="c-office_id" data-rule="required" data-source="office/index" class="form-control selectpage" name="row[office_id]" type="text" value="">
+            <input id="c-office_id" data-rule="required" data-source="office/index" data-field="shortname" data-params='{"custom[parentid]":"1","custom[status]":"0"}' data-pagination="true" data-page-size="5" data-order-by="id asc,areaid"  class="form-control selectpage" name="row[office_id]" type="text" value="">
         </div>
-    </div> -->
+    </div>
     <div class="form-group layer-footer">
         <label class="control-label col-xs-12 col-sm-2"></label>
         <div class="col-xs-12 col-sm-8">

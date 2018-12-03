@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:81:"F:\phpStudy\WWW\newproject\public/../application/admin\view\user\member\edit.html";i:1543543722;s:69:"F:\phpStudy\WWW\newproject\application\admin\view\layout\default.html";i:1532420613;s:66:"F:\phpStudy\WWW\newproject\application\admin\view\common\meta.html";i:1529292885;s:68:"F:\phpStudy\WWW\newproject\application\admin\view\common\script.html";i:1529292885;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:81:"F:\phpStudy\WWW\newproject\public/../application/admin\view\user\member\edit.html";i:1543827774;s:69:"F:\phpStudy\WWW\newproject\application\admin\view\layout\default.html";i:1532420613;s:66:"F:\phpStudy\WWW\newproject\application\admin\view\common\meta.html";i:1529292885;s:68:"F:\phpStudy\WWW\newproject\application\admin\view\common\script.html";i:1529292885;}*/ ?>
 <!DOCTYPE html>
 <html lang="<?php echo $config['language']; ?>">
     <head>
@@ -61,7 +61,7 @@
     <div class="form-group">
         <label class="control-label col-xs-12 col-sm-2"><?php echo __('Gender'); ?>:</label>
         <div class="col-xs-12 col-sm-8">
-                        
+
             <select  id="c-gender" data-rule="required" class="form-control selectpicker" name="row[gender]">
                 <?php if(is_array($genderList) || $genderList instanceof \think\Collection || $genderList instanceof \think\Paginator): if( count($genderList)==0 ) : echo "" ;else: foreach($genderList as $key=>$vo): ?>
                     <option value="<?php echo $key; ?>" <?php if(in_array(($key), is_array($row['gender'])?$row['gender']:explode(',',$row['gender']))): ?>selected<?php endif; ?>><?php echo $vo; ?></option>
@@ -73,7 +73,7 @@
     <div class="form-group">
         <label class="control-label col-xs-12 col-sm-2"><?php echo __('Identity_type'); ?>:</label>
         <div class="col-xs-12 col-sm-8">
-                        
+
             <select  id="c-identity_type" data-rule="required" class="form-control selectpicker" name="row[identity_type]">
                 <?php if(is_array($identityTypeList) || $identityTypeList instanceof \think\Collection || $identityTypeList instanceof \think\Paginator): if( count($identityTypeList)==0 ) : echo "" ;else: foreach($identityTypeList as $key=>$vo): ?>
                     <option value="<?php echo $key; ?>" <?php if(in_array(($key), is_array($row['identity_type'])?$row['identity_type']:explode(',',$row['identity_type']))): ?>selected<?php endif; ?>><?php echo $vo; ?></option>
@@ -85,7 +85,7 @@
     <div class="form-group">
         <label class="control-label col-xs-12 col-sm-2"><?php echo __('Identity_id'); ?>:</label>
         <div class="col-xs-12 col-sm-8">
-            <input id="c-identity_id" data-rule="required" data-source="identity/index" class="form-control selectpage" name="row[identity_id]" type="text" value="<?php echo $row['identity_id']; ?>">
+            <input id="c-identity_id" data-rule="required"  class="form-control " name="row[identity_id]" type="text" value="<?php echo $row['identity_id']; ?>">
         </div>
     </div>
     <div class="form-group">
@@ -108,12 +108,12 @@
             <input id="c-telephone" data-rule="required" class="form-control" name="row[telephone]" type="text" value="<?php echo $row['telephone']; ?>">
         </div>
     </div>
-    <div class="form-group">
+    <!-- <div class="form-group">
         <label class="control-label col-xs-12 col-sm-2"><?php echo __('User_id'); ?>:</label>
         <div class="col-xs-12 col-sm-8">
-            <input id="c-user_id" data-rule="required" data-source="user/index" data-field="nickname" class="form-control selectpage" name="row[user_id]" type="text" value="<?php echo $row['user_id']; ?>">
+            <input id="c-user_id" data-rule="required"  data-field="nickname" class="form-control selectpage" name="row[user_id]" type="text" value="<?php echo $row['user_id']; ?>">
         </div>
-    </div>
+    </div> -->
     <div class="form-group">
         <label class="control-label col-xs-12 col-sm-2"><?php echo __('Nationality'); ?>:</label>
         <div class="col-xs-12 col-sm-8">
@@ -141,7 +141,7 @@
     <div class="form-group">
         <label class="control-label col-xs-12 col-sm-2"><?php echo __('User_type'); ?>:</label>
         <div class="col-xs-12 col-sm-8">
-                        
+
             <select  id="c-user_type" class="form-control selectpicker" name="row[user_type]">
                 <?php if(is_array($userTypeList) || $userTypeList instanceof \think\Collection || $userTypeList instanceof \think\Paginator): if( count($userTypeList)==0 ) : echo "" ;else: foreach($userTypeList as $key=>$vo): ?>
                     <option value="<?php echo $key; ?>" <?php if(in_array(($key), is_array($row['user_type'])?$row['user_type']:explode(',',$row['user_type']))): ?>selected<?php endif; ?>><?php echo $vo; ?></option>
@@ -171,7 +171,7 @@
     <div class="form-group">
         <label class="control-label col-xs-12 col-sm-2"><?php echo __('Driver_license_type'); ?>:</label>
         <div class="col-xs-12 col-sm-8">
-                        
+
             <select  id="c-driver_license_type" class="form-control selectpicker" name="row[driver_license_type]">
                 <?php if(is_array($driverLicenseTypeList) || $driverLicenseTypeList instanceof \think\Collection || $driverLicenseTypeList instanceof \think\Paginator): if( count($driverLicenseTypeList)==0 ) : echo "" ;else: foreach($driverLicenseTypeList as $key=>$vo): ?>
                     <option value="<?php echo $key; ?>" <?php if(in_array(($key), is_array($row['driver_license_type'])?$row['driver_license_type']:explode(',',$row['driver_license_type']))): ?>selected<?php endif; ?>><?php echo $vo; ?></option>
@@ -183,13 +183,13 @@
     <div class="form-group">
         <label class="control-label col-xs-12 col-sm-2"><?php echo __('Driver_license_time'); ?>:</label>
         <div class="col-xs-12 col-sm-8">
-            <input id="c-driver_license_time" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[driver_license_time]" type="text" value="<?php echo datetime($row['driver_license_time']); ?>">
+            <input id="c-driver_license_time" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[driver_license_time]" type="text" value="<?php echo !empty($row['driver_license_time'])?$row['driver_license_time']|datetime:''; ?>">
         </div>
     </div>
     <div class="form-group">
         <label class="control-label col-xs-12 col-sm-2"><?php echo __('Driver_license_expire_time'); ?>:</label>
         <div class="col-xs-12 col-sm-8">
-            <input id="c-driver_license_expire_time" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[driver_license_expire_time]" type="text" value="<?php echo datetime($row['driver_license_expire_time']); ?>">
+            <input id="c-driver_license_expire_time" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[driver_license_expire_time]" type="text" value="<?php echo !empty($row['driver_license_expire_time'])?$row['driver_license_expire_time']|datetime:''; ?>">
         </div>
     </div>
     <div class="form-group">
@@ -209,25 +209,25 @@
     <div class="form-group">
         <label class="control-label col-xs-12 col-sm-2"><?php echo __('Total_consumption'); ?>:</label>
         <div class="col-xs-12 col-sm-8">
-            <input id="c-total_consumption" class="form-control" step="0.01" name="row[total_consumption]" type="number" value="<?php echo $row['total_consumption']; ?>">
+            <input id="c-total_consumption" class="form-control" readonly="true" step="0.01" name="row[total_consumption]" type="number" value="<?php echo $row['total_consumption']; ?>">
         </div>
     </div>
     <div class="form-group">
         <label class="control-label col-xs-12 col-sm-2"><?php echo __('Score'); ?>:</label>
         <div class="col-xs-12 col-sm-8">
-            <input id="c-score" class="form-control" name="row[score]" type="number" value="<?php echo $row['score']; ?>">
+            <input id="c-score" class="form-control" readonly="true"  name="row[score]" type="number" value="<?php echo $row['score']; ?>">
         </div>
     </div>
     <div class="form-group">
         <label class="control-label col-xs-12 col-sm-2"><?php echo __('Use_score'); ?>:</label>
         <div class="col-xs-12 col-sm-8">
-            <input id="c-use_score" class="form-control" name="row[use_score]" type="number" value="<?php echo $row['use_score']; ?>">
+            <input id="c-use_score" class="form-control" readonly="true" name="row[use_score]" type="number" value="<?php echo $row['use_score']; ?>">
         </div>
     </div>
     <div class="form-group">
         <label class="control-label col-xs-12 col-sm-2"><?php echo __('Invite_code'); ?>:</label>
         <div class="col-xs-12 col-sm-8">
-            <input id="c-invite_code" class="form-control" name="row[invite_code]" type="text" value="<?php echo $row['invite_code']; ?>">
+            <input id="c-invite_code" class="form-control" readonly="true"  name="row[invite_code]" type="text" value="<?php echo $row['invite_code']; ?>">
         </div>
     </div>
     <div class="form-group">
@@ -239,19 +239,13 @@
     <div class="form-group">
         <label class="control-label col-xs-12 col-sm-2"><?php echo __('Max_renting_cars'); ?>:</label>
         <div class="col-xs-12 col-sm-8">
-                        
-            <select  id="c-max_renting_cars" class="form-control selectpicker" name="row[max_renting_cars]">
-                <?php if(is_array($maxRentingCarsList) || $maxRentingCarsList instanceof \think\Collection || $maxRentingCarsList instanceof \think\Paginator): if( count($maxRentingCarsList)==0 ) : echo "" ;else: foreach($maxRentingCarsList as $key=>$vo): ?>
-                    <option value="<?php echo $key; ?>" <?php if(in_array(($key), is_array($row['max_renting_cars'])?$row['max_renting_cars']:explode(',',$row['max_renting_cars']))): ?>selected<?php endif; ?>><?php echo $vo; ?></option>
-                <?php endforeach; endif; else: echo "" ;endif; ?>
-            </select>
-
+            <input id="c-max_renting_cars" class="form-control" name="row[max_renting_cars]" type="text" value="<?php echo $row['max_renting_cars']; ?>">
         </div>
     </div>
     <div class="form-group">
         <label class="control-label col-xs-12 col-sm-2"><?php echo __('Isblack'); ?>:</label>
         <div class="col-xs-12 col-sm-8">
-                        
+
             <select  id="c-isblack" class="form-control selectpicker" name="row[isblack]">
                 <?php if(is_array($isblackList) || $isblackList instanceof \think\Collection || $isblackList instanceof \think\Paginator): if( count($isblackList)==0 ) : echo "" ;else: foreach($isblackList as $key=>$vo): ?>
                     <option value="<?php echo $key; ?>" <?php if(in_array(($key), is_array($row['isblack'])?$row['isblack']:explode(',',$row['isblack']))): ?>selected<?php endif; ?>><?php echo $vo; ?></option>
@@ -281,13 +275,7 @@
     <div class="form-group">
         <label class="control-label col-xs-12 col-sm-2"><?php echo __('Accident'); ?>:</label>
         <div class="col-xs-12 col-sm-8">
-                        
-            <select  id="c-accident" class="form-control selectpicker" name="row[accident]">
-                <?php if(is_array($accidentList) || $accidentList instanceof \think\Collection || $accidentList instanceof \think\Paginator): if( count($accidentList)==0 ) : echo "" ;else: foreach($accidentList as $key=>$vo): ?>
-                    <option value="<?php echo $key; ?>" <?php if(in_array(($key), is_array($row['accident'])?$row['accident']:explode(',',$row['accident']))): ?>selected<?php endif; ?>><?php echo $vo; ?></option>
-                <?php endforeach; endif; else: echo "" ;endif; ?>
-            </select>
-
+            <input id="c-accident" class="form-control" name="row[accident]" type="number" value="<?php echo $row['accident']; ?>">
         </div>
     </div>
     <div class="form-group">
@@ -311,13 +299,13 @@
     <div class="form-group">
         <label class="control-label col-xs-12 col-sm-2"><?php echo __('Unfreeze_time'); ?>:</label>
         <div class="col-xs-12 col-sm-8">
-            <input id="c-unfreeze_time" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[unfreeze_time]" type="text" value="<?php echo datetime($row['unfreeze_time']); ?>">
+            <input id="c-unfreeze_time" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[unfreeze_time]" type="text" value="<?php echo !empty($row['unfreeze_time'])?$row['unfreeze_time']|datetime:''; ?>">
         </div>
     </div>
     <div class="form-group">
         <label class="control-label col-xs-12 col-sm-2"><?php echo __('Office_id'); ?>:</label>
         <div class="col-xs-12 col-sm-8">
-            <input id="c-office_id" data-rule="required" data-source="office/index" class="form-control selectpage" name="row[office_id]" type="text" value="<?php echo $row['office_id']; ?>">
+            <input id="c-office_id" data-rule="required" data-source="office/index" data-field="fullname" data-params='{"custom[parentid]":"1","custom[status]":"0"}' data-pagination="true" data-page-size="5" data-order-by="id asc,areaid" class="form-control selectpage" name="row[office_id]" type="text" value="<?php echo $row['office_id']; ?>">
         </div>
     </div>
     <div class="form-group layer-footer">
