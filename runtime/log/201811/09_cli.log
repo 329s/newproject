@@ -1,0 +1,123 @@
+[ 2018-11-09T09:00:01+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ 2018-11-09T09:00:01+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-11-09T09:00:01+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005000s ]
+[ 2018-11-09T09:00:01+08:00 ][ info ] [ DB ] INIT mysql
+[ 2018-11-09T09:00:01+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2018-11-09T09:00:01+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'vehicle/vehicle' [ RunTime:0.002000s ]
+[ 2018-11-09T09:00:01+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_vehicle/vehicle' [ RunTime:0.001000s ]
+[ 2018-11-09T09:00:48+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ 2018-11-09T09:00:48+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-11-09T09:00:48+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004000s ]
+[ 2018-11-09T09:00:48+08:00 ][ info ] [ DB ] INIT mysql
+[ 2018-11-09T09:00:48+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2018-11-09T09:00:48+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'vehicle/vehicle' [ RunTime:0.001000s ]
+[ 2018-11-09T09:00:48+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_vehicle/vehicle' [ RunTime:0.001000s ]
+[ 2018-11-09T09:02:38+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ 2018-11-09T09:02:38+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-11-09T09:02:38+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004000s ]
+[ 2018-11-09T09:02:38+08:00 ][ info ] [ DB ] INIT mysql
+[ 2018-11-09T09:02:38+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2018-11-09T09:02:38+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'vehicle' [ RunTime:0.002000s ]
+[ 2018-11-09T09:02:38+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_vehicle' [ RunTime:0.002000s ]
+[ 2018-11-09T09:02:38+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'fastadmin' AND table_name = 'fa_vehicle' ORDER BY ORDINAL_POSITION [ RunTime:0.011000s ]
+[ 2018-11-09T09:02:38+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ 2018-11-09T09:02:38+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-11-09T09:02:38+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004000s ]
+[ 2018-11-09T09:02:38+08:00 ][ info ] [ DB ] INIT mysql
+[ 2018-11-09T09:02:38+08:00 ][ info ] [ LANG ] F:\phpStudy\WWW\newproject\application\admin\lang/zh-cn.php
+[ 2018-11-09T09:02:38+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2018-11-09T09:02:38+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.012000s ]
+[ 2018-11-09T09:02:38+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'vehicle' LIMIT 1 [ RunTime:0.008000s ]
+[ 2018-11-09T09:02:38+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'vehicle/vehicle' LIMIT 1 [ RunTime:0.000000s ]
+[ 2018-11-09T09:02:38+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`pid` , `name` , `title` , `icon` , `remark` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (318 , 'vehicle/vehicle' , 'Vehicle' , 'fa fa-circle-o' , '' , 1 , 'normal' , 1541725358 , 1541725358) [ RunTime:0.046000s ]
+[ 2018-11-09T09:02:38+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'vehicle/vehicle/index' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-11-09T09:02:38+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'vehicle/vehicle/add' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-11-09T09:02:38+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'vehicle/vehicle/edit' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-11-09T09:02:39+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'vehicle/vehicle/del' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-11-09T09:02:39+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'vehicle/vehicle/multi' LIMIT 1 [ RunTime:0.000000s ]
+[ 2018-11-09T09:02:39+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 355 , 'vehicle/vehicle/index' , 'fa fa-circle-o' , '查看' , 0 , 'normal' , 1541725359 , 1541725359) [ RunTime:0.001000s ]
+[ 2018-11-09T09:02:39+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 355 , 'vehicle/vehicle/add' , 'fa fa-circle-o' , '添加' , 0 , 'normal' , 1541725359 , 1541725359) [ RunTime:0.000000s ]
+[ 2018-11-09T09:02:39+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 355 , 'vehicle/vehicle/edit' , 'fa fa-circle-o' , '编辑' , 0 , 'normal' , 1541725359 , 1541725359) [ RunTime:0.000000s ]
+[ 2018-11-09T09:02:39+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 355 , 'vehicle/vehicle/del' , 'fa fa-circle-o' , '删除' , 0 , 'normal' , 1541725359 , 1541725359) [ RunTime:0.001000s ]
+[ 2018-11-09T09:02:39+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 355 , 'vehicle/vehicle/multi' , 'fa fa-circle-o' , '批量更新' , 0 , 'normal' , 1541725359 , 1541725359) [ RunTime:0.001000s ]
+[ 2018-11-09T09:09:45+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ 2018-11-09T09:09:45+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-11-09T09:09:45+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005000s ]
+[ 2018-11-09T09:09:45+08:00 ][ info ] [ DB ] INIT mysql
+[ 2018-11-09T09:09:45+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2018-11-09T09:09:45+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.012000s ]
+[ 2018-11-09T09:09:45+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  (  `name` LIKE 'vehicle/vehicle%' ) [ RunTime:0.001000s ]
+[ 2018-11-09T09:09:48+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `id` IN (355,357,359,358,356,360) [ RunTime:0.002000s ]
+[ 2018-11-09T09:09:48+08:00 ][ sql ] [ SQL ] DELETE FROM `fa_auth_rule`    WHERE  `id` = 355 [ RunTime:0.052000s ]
+[ 2018-11-09T09:09:48+08:00 ][ sql ] [ SQL ] DELETE FROM `fa_auth_rule`    WHERE  `id` = 356 [ RunTime:0.037000s ]
+[ 2018-11-09T09:09:48+08:00 ][ sql ] [ SQL ] DELETE FROM `fa_auth_rule`    WHERE  `id` = 357 [ RunTime:0.035000s ]
+[ 2018-11-09T09:09:48+08:00 ][ sql ] [ SQL ] DELETE FROM `fa_auth_rule`    WHERE  `id` = 358 [ RunTime:0.030000s ]
+[ 2018-11-09T09:09:48+08:00 ][ sql ] [ SQL ] DELETE FROM `fa_auth_rule`    WHERE  `id` = 359 [ RunTime:0.125000s ]
+[ 2018-11-09T09:09:49+08:00 ][ sql ] [ SQL ] DELETE FROM `fa_auth_rule`    WHERE  `id` = 360 [ RunTime:0.165000s ]
+[ 2018-11-09T09:10:26+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ 2018-11-09T09:10:26+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-11-09T09:10:26+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005000s ]
+[ 2018-11-09T09:10:26+08:00 ][ info ] [ DB ] INIT mysql
+[ 2018-11-09T09:10:26+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2018-11-09T09:10:26+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'vehicle' [ RunTime:0.002000s ]
+[ 2018-11-09T09:10:26+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_vehicle' [ RunTime:0.001000s ]
+[ 2018-11-09T09:48:08+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001000s ]
+[ info ] [ LOG ] INIT File
+[ 2018-11-09T09:48:08+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-11-09T09:48:08+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005000s ]
+[ 2018-11-09T09:48:22+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ 2018-11-09T09:48:22+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-11-09T09:48:22+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004000s ]
+[ 2018-11-09T09:50:41+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ 2018-11-09T09:50:41+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-11-09T09:50:41+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004000s ]
+[ 2018-11-09T09:50:41+08:00 ][ info ] [ DB ] INIT mysql
+[ 2018-11-09T09:50:41+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2018-11-09T09:50:41+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'vehicle' [ RunTime:0.002000s ]
+[ 2018-11-09T09:50:41+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_vehicle' [ RunTime:0.002000s ]
+[ 2018-11-09T09:50:41+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'vehiclemodel' [ RunTime:0.001000s ]
+[ 2018-11-09T09:50:41+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_vehiclemodel' [ RunTime:0.001000s ]
+[ 2018-11-09T09:51:15+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ 2018-11-09T09:51:15+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-11-09T09:51:15+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004000s ]
+[ 2018-11-09T09:51:15+08:00 ][ info ] [ DB ] INIT mysql
+[ 2018-11-09T09:51:15+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2018-11-09T09:51:15+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'vehicle' [ RunTime:0.001000s ]
+[ 2018-11-09T09:51:15+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_vehicle' [ RunTime:0.001000s ]
+[ 2018-11-09T09:51:15+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'vehicle_model' [ RunTime:0.001000s ]
+[ 2018-11-09T09:51:15+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_vehicle_model' [ RunTime:0.001000s ]
+[ 2018-11-09T09:51:15+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'office' [ RunTime:0.001000s ]
+[ 2018-11-09T09:51:15+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_office' [ RunTime:0.002000s ]
+[ 2018-11-09T09:51:15+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'fastadmin' AND table_name = 'fa_vehicle' ORDER BY ORDINAL_POSITION [ RunTime:0.009000s ]
+[ 2018-11-09T09:51:15+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'fastadmin' AND table_name = 'fa_vehicle_model' ORDER BY ORDINAL_POSITION [ RunTime:0.009000s ]
+[ 2018-11-09T09:51:15+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'fastadmin' AND table_name = 'fa_office' ORDER BY ORDINAL_POSITION [ RunTime:0.010000s ]
+[ 2018-11-09T09:51:15+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ 2018-11-09T09:51:15+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-11-09T09:51:15+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005000s ]
+[ 2018-11-09T09:51:15+08:00 ][ info ] [ DB ] INIT mysql
+[ 2018-11-09T09:51:15+08:00 ][ info ] [ LANG ] F:\phpStudy\WWW\newproject\application\admin\lang/zh-cn.php
+[ 2018-11-09T09:51:15+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2018-11-09T09:51:15+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.010000s ]
+[ 2018-11-09T09:51:15+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'vehicle' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-11-09T09:51:15+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'vehicle/vehicle' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-11-09T09:51:15+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`pid` , `name` , `title` , `icon` , `remark` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (318 , 'vehicle/vehicle' , '车辆信息' , 'fa fa-circle-o' , '' , 1 , 'normal' , 1541728275 , 1541728275) [ RunTime:0.072000s ]
+[ 2018-11-09T09:51:15+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'vehicle/vehicle/index' LIMIT 1 [ RunTime:0.002000s ]
+[ 2018-11-09T09:51:15+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'vehicle/vehicle/add' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-11-09T09:51:15+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'vehicle/vehicle/edit' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-11-09T09:51:15+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'vehicle/vehicle/del' LIMIT 1 [ RunTime:0.000000s ]
+[ 2018-11-09T09:51:15+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'vehicle/vehicle/multi' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-11-09T09:51:15+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 361 , 'vehicle/vehicle/index' , 'fa fa-circle-o' , '查看' , 0 , 'normal' , 1541728275 , 1541728275) [ RunTime:0.000000s ]
+[ 2018-11-09T09:51:15+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 361 , 'vehicle/vehicle/add' , 'fa fa-circle-o' , '添加' , 0 , 'normal' , 1541728275 , 1541728275) [ RunTime:0.000000s ]
+[ 2018-11-09T09:51:15+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 361 , 'vehicle/vehicle/edit' , 'fa fa-circle-o' , '编辑' , 0 , 'normal' , 1541728275 , 1541728275) [ RunTime:0.001000s ]
+[ 2018-11-09T09:51:15+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 361 , 'vehicle/vehicle/del' , 'fa fa-circle-o' , '删除' , 0 , 'normal' , 1541728275 , 1541728275) [ RunTime:0.000000s ]
+[ 2018-11-09T09:51:15+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 361 , 'vehicle/vehicle/multi' , 'fa fa-circle-o' , '批量更新' , 0 , 'normal' , 1541728275 , 1541728275) [ RunTime:0.000000s ]

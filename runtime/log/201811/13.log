@@ -1,0 +1,1524 @@
+---------------------------------------------------------------
+[ 2018-11-13T10:16:12+08:00 ] 127.0.0.1 GET /admin/addon?ref=addtabs
+[ info ] www.newproject.com/admin/addon?ref=addtabs [运行时间：0.101000s][吞吐率：9.90req/s] [内存消耗：3,443.98kb] [文件加载：84]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005000s ]
+[ info ] [ LANG ] F:\phpStudy\WWW\newproject\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'addon',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.newproject.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.23 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.newproject.com/admin/index/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'en,zh;q=0.9,zh-CN;q=0.8',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1539564661,1540173986,1540776784,1541377744; PHPSESSID=c30tlrco9mdtbv6to0aoanueo7; think_var=zh-cn; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1541991707',
+)
+[ info ] [ PARAM ] array (
+  'ref' => 'addtabs',
+)
+[ info ] [ LANG ] F:\phpStudy\WWW\newproject\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.001000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-11-13T10:16:13+08:00 ] 127.0.0.1 GET /admin/index/index
+[ info ] www.newproject.com/admin/index/index [运行时间：0.565000s][吞吐率：1.77req/s] [内存消耗：4,013.06kb] [文件加载：99]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004000s ]
+[ info ] [ LANG ] F:\phpStudy\WWW\newproject\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.newproject.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.23 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.newproject.com/admin/index/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'en,zh;q=0.9,zh-CN;q=0.8',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1539564661,1540173986,1540776784,1541377744; PHPSESSID=c30tlrco9mdtbv6to0aoanueo7; think_var=zh-cn; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1541991707',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] F:\phpStudy\WWW\newproject\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] F:\phpStudy\WWW\newproject\public/../application/admin/lang/zh-cn/index.php
+[ info ] [ RUN ] app\admin\controller\Index->index[ F:\phpStudy\WWW\newproject\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\phpStudy\WWW\newproject\public/../application/admin\view\index\index.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'menulist',
+  6 => 'navlist',
+  7 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.001000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-11-13T10:16:13+08:00 ] 127.0.0.1 GET /admin/ajax/lang?callback=define&controllername=index&v=1542075372
+[ info ] www.newproject.com/admin/ajax/lang?callback=define&controllername=index&v=1542075372 [运行时间：0.046000s][吞吐率：21.74req/s] [内存消耗：2,844.58kb] [文件加载：80]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003000s ]
+[ info ] [ LANG ] F:\phpStudy\WWW\newproject\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.newproject.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.23 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://www.newproject.com/admin/index/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'en,zh;q=0.9,zh-CN;q=0.8',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1539564661,1540173986,1540776784,1541377744; PHPSESSID=c30tlrco9mdtbv6to0aoanueo7; think_var=zh-cn; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1541991707',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'index',
+  'v' => '1542075372',
+)
+[ info ] [ LANG ] F:\phpStudy\WWW\newproject\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] F:\phpStudy\WWW\newproject\public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ F:\phpStudy\WWW\newproject\application\admin\controller\Ajax.php ]
+[ info ] [ LANG ] F:\phpStudy\WWW\newproject\public/../application/admin/lang/zh-cn/index.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.001000s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-13T10:16:13+08:00 ] 127.0.0.1 GET /admin/dashboard?addtabs=1
+[ info ] www.newproject.com/admin/dashboard?addtabs=1 [运行时间：0.081000s][吞吐率：12.35req/s] [内存消耗：3,811.38kb] [文件加载：89]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005000s ]
+[ info ] [ LANG ] F:\phpStudy\WWW\newproject\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'dashboard',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.newproject.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.23 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.newproject.com/admin/dashboard?ref=addtabs',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'en,zh;q=0.9,zh-CN;q=0.8',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1539564661,1540173986,1540776784,1541377744; PHPSESSID=c30tlrco9mdtbv6to0aoanueo7; think_var=zh-cn; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1541991707',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+)
+[ info ] [ LANG ] F:\phpStudy\WWW\newproject\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] F:\phpStudy\WWW\newproject\public/../application/admin/lang/zh-cn/dashboard.php
+[ info ] [ RUN ] app\admin\controller\Dashboard->index[ F:\phpStudy\WWW\newproject\application\admin\controller\Dashboard.php ]
+[ info ] [ VIEW ] F:\phpStudy\WWW\newproject\public/../application/admin\view\dashboard\index.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'totaluser',
+  6 => 'totalviews',
+  7 => 'totalorder',
+  8 => 'totalorderamount',
+  9 => 'todayuserlogin',
+  10 => 'todayusersignup',
+  11 => 'todayorder',
+  12 => 'unsettleorder',
+  13 => 'sevendnu',
+  14 => 'sevendau',
+  15 => 'paylist',
+  16 => 'createlist',
+  17 => 'addonversion',
+  18 => 'uploadmode',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.001000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'dashboard' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-11-13T10:16:13+08:00 ] 127.0.0.1 GET /admin/addon?addtabs=1
+[ info ] www.newproject.com/admin/addon?addtabs=1 [运行时间：0.104000s][吞吐率：9.62req/s] [内存消耗：3,873.82kb] [文件加载：94]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004000s ]
+[ info ] [ LANG ] F:\phpStudy\WWW\newproject\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'addon',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.newproject.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.23 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.newproject.com/admin/addon?ref=addtabs',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'en,zh;q=0.9,zh-CN;q=0.8',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1539564661,1540173986,1540776784,1541377744; PHPSESSID=c30tlrco9mdtbv6to0aoanueo7; think_var=zh-cn; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1541991707',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+)
+[ info ] [ LANG ] F:\phpStudy\WWW\newproject\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] F:\phpStudy\WWW\newproject\public/../application/admin/lang/zh-cn/addon.php
+[ info ] [ RUN ] app\admin\controller\Addon->index[ F:\phpStudy\WWW\newproject\application\admin\controller\Addon.php ]
+[ info ] [ VIEW ] F:\phpStudy\WWW\newproject\public/../application/admin\view\addon\index.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'addon' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-11-13T10:16:14+08:00 ] 127.0.0.1 GET /admin/ajax/lang?callback=define&controllername=addon&v=1542075373
+[ info ] www.newproject.com/admin/ajax/lang?callback=define&controllername=addon&v=1542075373 [运行时间：0.046000s][吞吐率：21.74req/s] [内存消耗：2,847.80kb] [文件加载：80]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005000s ]
+[ info ] [ LANG ] F:\phpStudy\WWW\newproject\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.newproject.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.23 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://www.newproject.com/admin/addon?addtabs=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'en,zh;q=0.9,zh-CN;q=0.8',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1539564661,1540173986,1540776784,1541377744; PHPSESSID=c30tlrco9mdtbv6to0aoanueo7; think_var=zh-cn; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1541991707',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'addon',
+  'v' => '1542075373',
+)
+[ info ] [ LANG ] F:\phpStudy\WWW\newproject\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] F:\phpStudy\WWW\newproject\public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ F:\phpStudy\WWW\newproject\application\admin\controller\Ajax.php ]
+[ info ] [ LANG ] F:\phpStudy\WWW\newproject\public/../application/admin/lang/zh-cn/addon.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-13T10:16:14+08:00 ] 127.0.0.1 GET /admin/ajax/lang?callback=define&controllername=dashboard&v=1542075373
+[ info ] www.newproject.com/admin/ajax/lang?callback=define&controllername=dashboard&v=1542075373 [运行时间：0.047000s][吞吐率：21.28req/s] [内存消耗：2,842.34kb] [文件加载：80]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003000s ]
+[ info ] [ LANG ] F:\phpStudy\WWW\newproject\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.newproject.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.23 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://www.newproject.com/admin/dashboard?addtabs=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'en,zh;q=0.9,zh-CN;q=0.8',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1539564661,1540173986,1540776784,1541377744; PHPSESSID=c30tlrco9mdtbv6to0aoanueo7; think_var=zh-cn; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1541991707',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'dashboard',
+  'v' => '1542075373',
+)
+[ info ] [ LANG ] F:\phpStudy\WWW\newproject\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] F:\phpStudy\WWW\newproject\public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ F:\phpStudy\WWW\newproject\application\admin\controller\Ajax.php ]
+[ info ] [ LANG ] F:\phpStudy\WWW\newproject\public/../application/admin/lang/zh-cn/dashboard.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.001000s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-13T10:16:16+08:00 ] 127.0.0.1 GET /admin/vehicle/vehicle?addtabs=1
+[ info ] www.newproject.com/admin/vehicle/vehicle?addtabs=1 [运行时间：0.088000s][吞吐率：11.36req/s] [内存消耗：3,829.56kb] [文件加载：88]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004000s ]
+[ info ] [ LANG ] F:\phpStudy\WWW\newproject\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'vehicle.vehicle',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.newproject.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.23 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.newproject.com/admin/vehicle/vehicle?ref=addtabs',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'en,zh;q=0.9,zh-CN;q=0.8',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1539564661,1540173986,1540776784,1541377744; PHPSESSID=c30tlrco9mdtbv6to0aoanueo7; think_var=zh-cn; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1541991707',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+)
+[ info ] [ LANG ] F:\phpStudy\WWW\newproject\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] F:\phpStudy\WWW\newproject\public/../application/admin/lang/zh-cn/vehicle/vehicle.php
+[ info ] [ RUN ] app\admin\controller\vehicle\Vehicle->index[ F:\phpStudy\WWW\newproject\application\admin\controller\vehicle\Vehicle.php ]
+[ info ] [ VIEW ] F:\phpStudy\WWW\newproject\public/../application/admin\view\vehicle\vehicle\index.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'statusList',
+  6 => 'colorList',
+  7 => 'vehiclePropertyList',
+  8 => 'isactivityList',
+  9 => 'insuranceList',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.001000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'vehicle/vehicle' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-11-13T10:16:16+08:00 ] 127.0.0.1 GET /admin/ajax/lang?callback=define&controllername=vehicle.vehicle&v=1542075376
+[ info ] www.newproject.com/admin/ajax/lang?callback=define&controllername=vehicle.vehicle&v=1542075376 [运行时间：0.047000s][吞吐率：21.28req/s] [内存消耗：2,850.66kb] [文件加载：80]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003000s ]
+[ info ] [ LANG ] F:\phpStudy\WWW\newproject\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.newproject.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.23 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://www.newproject.com/admin/vehicle/vehicle?addtabs=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'en,zh;q=0.9,zh-CN;q=0.8',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1539564661,1540173986,1540776784,1541377744; PHPSESSID=c30tlrco9mdtbv6to0aoanueo7; think_var=zh-cn; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1541991707',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'vehicle.vehicle',
+  'v' => '1542075376',
+)
+[ info ] [ LANG ] F:\phpStudy\WWW\newproject\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] F:\phpStudy\WWW\newproject\public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ F:\phpStudy\WWW\newproject\application\admin\controller\Ajax.php ]
+[ info ] [ LANG ] F:\phpStudy\WWW\newproject\public/../application/admin/lang/zh-cn/vehicle/vehicle.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.001000s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-13T10:16:16+08:00 ] 127.0.0.1 GET /admin/vehicle/vehicle/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1542075376488
+[ info ] www.newproject.com/admin/vehicle/vehicle/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1542075376488 [运行时间：0.121000s][吞吐率：8.26req/s] [内存消耗：4,241.01kb] [文件加载：95]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004000s ]
+[ info ] [ LANG ] F:\phpStudy\WWW\newproject\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'vehicle.vehicle',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.newproject.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.23 Safari/537.36',
+  'content-type' => 'application/json',
+  'referer' => 'http://www.newproject.com/admin/vehicle/vehicle?addtabs=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'en,zh;q=0.9,zh-CN;q=0.8',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1539564661,1540173986,1540776784,1541377744; PHPSESSID=c30tlrco9mdtbv6to0aoanueo7; think_var=zh-cn; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1541991707',
+)
+[ info ] [ PARAM ] array (
+  'sort' => 'id',
+  'order' => 'desc',
+  'offset' => '0',
+  'limit' => '10',
+  'filter' => '{}',
+  'op' => '{}',
+  '_' => '1542075376488',
+)
+[ info ] [ LANG ] F:\phpStudy\WWW\newproject\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] F:\phpStudy\WWW\newproject\public/../application/admin/lang/zh-cn/vehicle/vehicle.php
+[ info ] [ RUN ] app\admin\controller\vehicle\Vehicle->index[ F:\phpStudy\WWW\newproject\application\admin\controller\vehicle\Vehicle.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_vehicle` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_vehicle_model` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_office` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_vehicle` `vehicle` LEFT JOIN `fa_vehicle_model` `vehiclemodel` ON `vehicle`.`vehicle_model_id`=`vehiclemodel`.`id` LEFT JOIN `fa_office` `belongoffice` ON `vehicle`.`belong_office_id`=`belongoffice`.`id` LEFT JOIN `fa_office` `stopoffice` ON `vehicle`.`stop_office_id`=`stopoffice`.`id` ORDER BY `vehicle`.`id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `vehicle`.`id`,`vehicle`.`plate_number`,`vehicle`.`vehicle_model_id`,`vehicle`.`status`,`vehicle`.`belong_office_id`,`vehicle`.`stop_office_id`,`vehicle`.`engine_number`,`vehicle`.`vehicle_number`,`vehicle`.`color`,`vehicle`.`cur_kilometers`,`vehicle`.`vehicle_property`,`vehicle`.`isactivity`,`vehicle`.`annual_inspection_time`,`vehicle`.`tci_renewal_time`,`vehicle`.`vci_renewal_time`,`vehicle`.`insurance`,`vehicle`.`upkeep_mileage_interval`,`vehicle`.`next_upkeep_mileage`,`vehicle`.`upkeep_time_interval`,`vehicle`.`next_upkeep_time`,`vehicle`.`baught_time`,`vehicle`.`total_price`,`vehicle`.`baught_price`,`vehicle`.`baught_tax`,`vehicle`.`compulsory_insurance`,`vehicle`.`commercial_insurance`,`vehicle`.`license_plate_fee`,`vehicle`.`location`,`vehicle`.`location_number`,`vehicle`.`admin_id`,`vehicle`.`updatetime`,`vehicle`.`createtime`,vehiclemodel.id AS vehiclemodel__id,vehiclemodel.vehicle_brand_id AS vehiclemodel__vehicle_brand_id,vehiclemodel.model_series_id AS vehiclemodel__model_series_id,vehiclemodel.vehicle_model AS vehiclemodel__vehicle_model,vehiclemodel.vehicle_type AS vehiclemodel__vehicle_type,vehiclemodel.vehicle_flag AS vehiclemodel__vehicle_flag,vehiclemodel.carriage AS vehiclemodel__carriage,vehiclemodel.seat AS vehiclemodel__seat,vehiclemodel.gearbox AS vehiclemodel__gearbox,vehiclemodel.emission AS vehiclemodel__emission,vehiclemodel.oil_capacity AS vehiclemodel__oil_capacity,vehiclemodel.oil_label AS vehiclemodel__oil_label,vehiclemodel.air_intake_mode AS vehiclemodel__air_intake_mode,vehiclemodel.poundage AS vehiclemodel__poundage,vehiclemodel.basic_service_charge AS vehiclemodel__basic_service_charge,vehiclemodel.rent_deposit AS vehiclemodel__rent_deposit,vehiclemodel.overtime_price_personal AS vehiclemodel__overtime_price_personal,vehiclemodel.vehicle_model_logo_image AS vehiclemodel__vehicle_model_logo_image,vehiclemodel.vehicle_model_main_image AS vehiclemodel__vehicle_model_main_image,vehiclemodel.vehicle_model_left_image AS vehiclemodel__vehicle_model_left_image,vehiclemodel.vehicle_model_right_image AS vehiclemodel__vehicle_model_right_image,vehiclemodel.vehicle_model_front_image AS vehiclemodel__vehicle_model_front_image,vehiclemodel.vehicle_model_back_image AS vehiclemodel__vehicle_model_back_image,vehiclemodel.admin_id AS vehiclemodel__admin_id,vehiclemodel.weight AS vehiclemodel__weight,vehiclemodel.updatetime AS vehiclemodel__updatetime,vehiclemodel.createtime AS vehiclemodel__createtime,belongoffice.id AS belongoffice__id,belongoffice.fullname AS belongoffice__fullname,belongoffice.shortname AS belongoffice__shortname,belongoffice.manager AS belongoffice__manager,belongoffice.telephone AS belongoffice__telephone,belongoffice.mobile AS belongoffice__mobile,belongoffice.open_time AS belongoffice__open_time,belongoffice.close_time AS belongoffice__close_time,belongoffice.address AS belongoffice__address,belongoffice.lng AS belongoffice__lng,belongoffice.lat AS belongoffice__lat,belongoffice.status AS belongoffice__status,belongoffice.isactivity AS belongoffice__isactivity,belongoffice.cityid AS belongoffice__cityid,belongoffice.areaid AS belongoffice__areaid,belongoffice.parentid AS belongoffice__parentid,belongoffice.officeimages AS belongoffice__officeimages,belongoffice.edit_userid AS belongoffice__edit_userid,belongoffice.createtime AS belongoffice__createtime,belongoffice.updatetime AS belongoffice__updatetime,stopoffice.id AS stopoffice__id,stopoffice.fullname AS stopoffice__fullname,stopoffice.shortname AS stopoffice__shortname,stopoffice.manager AS stopoffice__manager,stopoffice.telephone AS stopoffice__telephone,stopoffice.mobile AS stopoffice__mobile,stopoffice.open_time AS stopoffice__open_time,stopoffice.close_time AS stopoffice__close_time,stopoffice.address AS stopoffice__address,stopoffice.lng AS stopoffice__lng,stopoffice.lat AS stopoffice__lat,stopoffice.status AS stopoffice__status,stopoffice.isactivity AS stopoffice__isactivity,stopoffice.cityid AS stopoffice__cityid,stopoffice.areaid AS stopoffice__areaid,stopoffice.parentid AS stopoffice__parentid,stopoffice.officeimages AS stopoffice__officeimages,stopoffice.edit_userid AS stopoffice__edit_userid,stopoffice.createtime AS stopoffice__createtime,stopoffice.updatetime AS stopoffice__updatetime FROM `fa_vehicle` `vehicle` LEFT JOIN `fa_vehicle_model` `vehiclemodel` ON `vehicle`.`vehicle_model_id`=`vehiclemodel`.`id` LEFT JOIN `fa_office` `belongoffice` ON `vehicle`.`belong_office_id`=`belongoffice`.`id` LEFT JOIN `fa_office` `stopoffice` ON `vehicle`.`stop_office_id`=`stopoffice`.`id` ORDER BY `vehicle`.`id` DESC LIMIT 0,10 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-11-13T10:17:58+08:00 ] 127.0.0.1 GET /admin/vehicle/vehicle?ref=addtabs
+[ info ] www.newproject.com/admin/vehicle/vehicle?ref=addtabs [运行时间：0.090000s][吞吐率：11.11req/s] [内存消耗：3,385.83kb] [文件加载：84]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003000s ]
+[ info ] [ LANG ] F:\phpStudy\WWW\newproject\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'vehicle.vehicle',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.newproject.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.23 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.newproject.com/admin/index/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'en,zh;q=0.9,zh-CN;q=0.8',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1539564661,1540173986,1540776784,1541377744; PHPSESSID=c30tlrco9mdtbv6to0aoanueo7; think_var=zh-cn; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1541991707',
+)
+[ info ] [ PARAM ] array (
+  'ref' => 'addtabs',
+)
+[ info ] [ LANG ] F:\phpStudy\WWW\newproject\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.001000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-11-13T10:17:58+08:00 ] 127.0.0.1 GET /admin/index/index
+[ info ] www.newproject.com/admin/index/index [运行时间：0.571000s][吞吐率：1.75req/s] [内存消耗：4,013.06kb] [文件加载：99]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003000s ]
+[ info ] [ LANG ] F:\phpStudy\WWW\newproject\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.newproject.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.23 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.newproject.com/admin/index/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'en,zh;q=0.9,zh-CN;q=0.8',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1539564661,1540173986,1540776784,1541377744; PHPSESSID=c30tlrco9mdtbv6to0aoanueo7; think_var=zh-cn; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1541991707',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] F:\phpStudy\WWW\newproject\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] F:\phpStudy\WWW\newproject\public/../application/admin/lang/zh-cn/index.php
+[ info ] [ RUN ] app\admin\controller\Index->index[ F:\phpStudy\WWW\newproject\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\phpStudy\WWW\newproject\public/../application/admin\view\index\index.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'menulist',
+  6 => 'navlist',
+  7 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.001000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-11-13T10:17:58+08:00 ] 127.0.0.1 GET /admin/ajax/lang?callback=define&controllername=index&v=1542075478
+[ info ] www.newproject.com/admin/ajax/lang?callback=define&controllername=index&v=1542075478 [运行时间：0.046000s][吞吐率：21.74req/s] [内存消耗：2,844.59kb] [文件加载：80]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002000s ]
+[ info ] [ LANG ] F:\phpStudy\WWW\newproject\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.newproject.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.23 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://www.newproject.com/admin/index/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'en,zh;q=0.9,zh-CN;q=0.8',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1539564661,1540173986,1540776784,1541377744; PHPSESSID=c30tlrco9mdtbv6to0aoanueo7; think_var=zh-cn; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1541991707',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'index',
+  'v' => '1542075478',
+)
+[ info ] [ LANG ] F:\phpStudy\WWW\newproject\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] F:\phpStudy\WWW\newproject\public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ F:\phpStudy\WWW\newproject\application\admin\controller\Ajax.php ]
+[ info ] [ LANG ] F:\phpStudy\WWW\newproject\public/../application/admin/lang/zh-cn/index.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-13T10:17:59+08:00 ] 127.0.0.1 GET /admin/dashboard?addtabs=1
+[ info ] www.newproject.com/admin/dashboard?addtabs=1 [运行时间：0.084000s][吞吐率：11.90req/s] [内存消耗：3,811.38kb] [文件加载：89]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003000s ]
+[ info ] [ LANG ] F:\phpStudy\WWW\newproject\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'dashboard',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.newproject.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.23 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.newproject.com/admin/dashboard?ref=addtabs',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'en,zh;q=0.9,zh-CN;q=0.8',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1539564661,1540173986,1540776784,1541377744; PHPSESSID=c30tlrco9mdtbv6to0aoanueo7; think_var=zh-cn; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1541991707',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+)
+[ info ] [ LANG ] F:\phpStudy\WWW\newproject\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] F:\phpStudy\WWW\newproject\public/../application/admin/lang/zh-cn/dashboard.php
+[ info ] [ RUN ] app\admin\controller\Dashboard->index[ F:\phpStudy\WWW\newproject\application\admin\controller\Dashboard.php ]
+[ info ] [ VIEW ] F:\phpStudy\WWW\newproject\public/../application/admin\view\dashboard\index.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'totaluser',
+  6 => 'totalviews',
+  7 => 'totalorder',
+  8 => 'totalorderamount',
+  9 => 'todayuserlogin',
+  10 => 'todayusersignup',
+  11 => 'todayorder',
+  12 => 'unsettleorder',
+  13 => 'sevendnu',
+  14 => 'sevendau',
+  15 => 'paylist',
+  16 => 'createlist',
+  17 => 'addonversion',
+  18 => 'uploadmode',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'dashboard' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-11-13T10:17:59+08:00 ] 127.0.0.1 GET /admin/vehicle/vehicle?addtabs=1
+[ info ] www.newproject.com/admin/vehicle/vehicle?addtabs=1 [运行时间：0.109000s][吞吐率：9.17req/s] [内存消耗：3,829.56kb] [文件加载：88]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004000s ]
+[ info ] [ LANG ] F:\phpStudy\WWW\newproject\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'vehicle.vehicle',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.newproject.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.23 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.newproject.com/admin/vehicle/vehicle?ref=addtabs',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'en,zh;q=0.9,zh-CN;q=0.8',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1539564661,1540173986,1540776784,1541377744; PHPSESSID=c30tlrco9mdtbv6to0aoanueo7; think_var=zh-cn; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1541991707',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+)
+[ info ] [ LANG ] F:\phpStudy\WWW\newproject\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] F:\phpStudy\WWW\newproject\public/../application/admin/lang/zh-cn/vehicle/vehicle.php
+[ info ] [ RUN ] app\admin\controller\vehicle\Vehicle->index[ F:\phpStudy\WWW\newproject\application\admin\controller\vehicle\Vehicle.php ]
+[ info ] [ VIEW ] F:\phpStudy\WWW\newproject\public/../application/admin\view\vehicle\vehicle\index.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'statusList',
+  6 => 'colorList',
+  7 => 'vehiclePropertyList',
+  8 => 'isactivityList',
+  9 => 'insuranceList',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'vehicle/vehicle' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-11-13T10:17:59+08:00 ] 127.0.0.1 GET /admin/ajax/lang?callback=define&controllername=vehicle.vehicle&v=1542075479
+[ info ] www.newproject.com/admin/ajax/lang?callback=define&controllername=vehicle.vehicle&v=1542075479 [运行时间：0.048000s][吞吐率：20.83req/s] [内存消耗：2,850.66kb] [文件加载：80]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004000s ]
+[ info ] [ LANG ] F:\phpStudy\WWW\newproject\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.newproject.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.23 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://www.newproject.com/admin/vehicle/vehicle?addtabs=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'en,zh;q=0.9,zh-CN;q=0.8',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1539564661,1540173986,1540776784,1541377744; PHPSESSID=c30tlrco9mdtbv6to0aoanueo7; think_var=zh-cn; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1541991707',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'vehicle.vehicle',
+  'v' => '1542075479',
+)
+[ info ] [ LANG ] F:\phpStudy\WWW\newproject\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] F:\phpStudy\WWW\newproject\public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ F:\phpStudy\WWW\newproject\application\admin\controller\Ajax.php ]
+[ info ] [ LANG ] F:\phpStudy\WWW\newproject\public/../application/admin/lang/zh-cn/vehicle/vehicle.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.001000s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-13T10:17:59+08:00 ] 127.0.0.1 GET /admin/ajax/lang?callback=define&controllername=dashboard&v=1542075479
+[ info ] www.newproject.com/admin/ajax/lang?callback=define&controllername=dashboard&v=1542075479 [运行时间：0.046000s][吞吐率：21.74req/s] [内存消耗：2,842.36kb] [文件加载：80]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003000s ]
+[ info ] [ LANG ] F:\phpStudy\WWW\newproject\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.newproject.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.23 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://www.newproject.com/admin/dashboard?addtabs=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'en,zh;q=0.9,zh-CN;q=0.8',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1539564661,1540173986,1540776784,1541377744; PHPSESSID=c30tlrco9mdtbv6to0aoanueo7; think_var=zh-cn; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1541991707',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'dashboard',
+  'v' => '1542075479',
+)
+[ info ] [ LANG ] F:\phpStudy\WWW\newproject\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] F:\phpStudy\WWW\newproject\public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ F:\phpStudy\WWW\newproject\application\admin\controller\Ajax.php ]
+[ info ] [ LANG ] F:\phpStudy\WWW\newproject\public/../application/admin/lang/zh-cn/dashboard.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.001000s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-13T10:17:59+08:00 ] 127.0.0.1 GET /admin/vehicle/vehicle/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1542075479204
+[ info ] www.newproject.com/admin/vehicle/vehicle/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1542075479204 [运行时间：0.116000s][吞吐率：8.62req/s] [内存消耗：4,241.01kb] [文件加载：95]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004000s ]
+[ info ] [ LANG ] F:\phpStudy\WWW\newproject\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'vehicle.vehicle',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.newproject.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.23 Safari/537.36',
+  'content-type' => 'application/json',
+  'referer' => 'http://www.newproject.com/admin/vehicle/vehicle?addtabs=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'en,zh;q=0.9,zh-CN;q=0.8',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1539564661,1540173986,1540776784,1541377744; PHPSESSID=c30tlrco9mdtbv6to0aoanueo7; think_var=zh-cn; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1541991707',
+)
+[ info ] [ PARAM ] array (
+  'sort' => 'id',
+  'order' => 'desc',
+  'offset' => '0',
+  'limit' => '10',
+  'filter' => '{}',
+  'op' => '{}',
+  '_' => '1542075479204',
+)
+[ info ] [ LANG ] F:\phpStudy\WWW\newproject\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] F:\phpStudy\WWW\newproject\public/../application/admin/lang/zh-cn/vehicle/vehicle.php
+[ info ] [ RUN ] app\admin\controller\vehicle\Vehicle->index[ F:\phpStudy\WWW\newproject\application\admin\controller\vehicle\Vehicle.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.001000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_vehicle` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_vehicle_model` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_office` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_vehicle` `vehicle` LEFT JOIN `fa_vehicle_model` `vehiclemodel` ON `vehicle`.`vehicle_model_id`=`vehiclemodel`.`id` LEFT JOIN `fa_office` `belongoffice` ON `vehicle`.`belong_office_id`=`belongoffice`.`id` LEFT JOIN `fa_office` `stopoffice` ON `vehicle`.`stop_office_id`=`stopoffice`.`id` ORDER BY `vehicle`.`id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `vehicle`.`id`,`vehicle`.`plate_number`,`vehicle`.`vehicle_model_id`,`vehicle`.`status`,`vehicle`.`belong_office_id`,`vehicle`.`stop_office_id`,`vehicle`.`engine_number`,`vehicle`.`vehicle_number`,`vehicle`.`color`,`vehicle`.`cur_kilometers`,`vehicle`.`vehicle_property`,`vehicle`.`isactivity`,`vehicle`.`annual_inspection_time`,`vehicle`.`tci_renewal_time`,`vehicle`.`vci_renewal_time`,`vehicle`.`insurance`,`vehicle`.`upkeep_mileage_interval`,`vehicle`.`next_upkeep_mileage`,`vehicle`.`upkeep_time_interval`,`vehicle`.`next_upkeep_time`,`vehicle`.`baught_time`,`vehicle`.`total_price`,`vehicle`.`baught_price`,`vehicle`.`baught_tax`,`vehicle`.`compulsory_insurance`,`vehicle`.`commercial_insurance`,`vehicle`.`license_plate_fee`,`vehicle`.`location`,`vehicle`.`location_number`,`vehicle`.`admin_id`,`vehicle`.`updatetime`,`vehicle`.`createtime`,vehiclemodel.id AS vehiclemodel__id,vehiclemodel.vehicle_brand_id AS vehiclemodel__vehicle_brand_id,vehiclemodel.model_series_id AS vehiclemodel__model_series_id,vehiclemodel.vehicle_model AS vehiclemodel__vehicle_model,vehiclemodel.vehicle_type AS vehiclemodel__vehicle_type,vehiclemodel.vehicle_flag AS vehiclemodel__vehicle_flag,vehiclemodel.carriage AS vehiclemodel__carriage,vehiclemodel.seat AS vehiclemodel__seat,vehiclemodel.gearbox AS vehiclemodel__gearbox,vehiclemodel.emission AS vehiclemodel__emission,vehiclemodel.oil_capacity AS vehiclemodel__oil_capacity,vehiclemodel.oil_label AS vehiclemodel__oil_label,vehiclemodel.air_intake_mode AS vehiclemodel__air_intake_mode,vehiclemodel.poundage AS vehiclemodel__poundage,vehiclemodel.basic_service_charge AS vehiclemodel__basic_service_charge,vehiclemodel.rent_deposit AS vehiclemodel__rent_deposit,vehiclemodel.overtime_price_personal AS vehiclemodel__overtime_price_personal,vehiclemodel.vehicle_model_logo_image AS vehiclemodel__vehicle_model_logo_image,vehiclemodel.vehicle_model_main_image AS vehiclemodel__vehicle_model_main_image,vehiclemodel.vehicle_model_left_image AS vehiclemodel__vehicle_model_left_image,vehiclemodel.vehicle_model_right_image AS vehiclemodel__vehicle_model_right_image,vehiclemodel.vehicle_model_front_image AS vehiclemodel__vehicle_model_front_image,vehiclemodel.vehicle_model_back_image AS vehiclemodel__vehicle_model_back_image,vehiclemodel.admin_id AS vehiclemodel__admin_id,vehiclemodel.weight AS vehiclemodel__weight,vehiclemodel.updatetime AS vehiclemodel__updatetime,vehiclemodel.createtime AS vehiclemodel__createtime,belongoffice.id AS belongoffice__id,belongoffice.fullname AS belongoffice__fullname,belongoffice.shortname AS belongoffice__shortname,belongoffice.manager AS belongoffice__manager,belongoffice.telephone AS belongoffice__telephone,belongoffice.mobile AS belongoffice__mobile,belongoffice.open_time AS belongoffice__open_time,belongoffice.close_time AS belongoffice__close_time,belongoffice.address AS belongoffice__address,belongoffice.lng AS belongoffice__lng,belongoffice.lat AS belongoffice__lat,belongoffice.status AS belongoffice__status,belongoffice.isactivity AS belongoffice__isactivity,belongoffice.cityid AS belongoffice__cityid,belongoffice.areaid AS belongoffice__areaid,belongoffice.parentid AS belongoffice__parentid,belongoffice.officeimages AS belongoffice__officeimages,belongoffice.edit_userid AS belongoffice__edit_userid,belongoffice.createtime AS belongoffice__createtime,belongoffice.updatetime AS belongoffice__updatetime,stopoffice.id AS stopoffice__id,stopoffice.fullname AS stopoffice__fullname,stopoffice.shortname AS stopoffice__shortname,stopoffice.manager AS stopoffice__manager,stopoffice.telephone AS stopoffice__telephone,stopoffice.mobile AS stopoffice__mobile,stopoffice.open_time AS stopoffice__open_time,stopoffice.close_time AS stopoffice__close_time,stopoffice.address AS stopoffice__address,stopoffice.lng AS stopoffice__lng,stopoffice.lat AS stopoffice__lat,stopoffice.status AS stopoffice__status,stopoffice.isactivity AS stopoffice__isactivity,stopoffice.cityid AS stopoffice__cityid,stopoffice.areaid AS stopoffice__areaid,stopoffice.parentid AS stopoffice__parentid,stopoffice.officeimages AS stopoffice__officeimages,stopoffice.edit_userid AS stopoffice__edit_userid,stopoffice.createtime AS stopoffice__createtime,stopoffice.updatetime AS stopoffice__updatetime FROM `fa_vehicle` `vehicle` LEFT JOIN `fa_vehicle_model` `vehiclemodel` ON `vehicle`.`vehicle_model_id`=`vehiclemodel`.`id` LEFT JOIN `fa_office` `belongoffice` ON `vehicle`.`belong_office_id`=`belongoffice`.`id` LEFT JOIN `fa_office` `stopoffice` ON `vehicle`.`stop_office_id`=`stopoffice`.`id` ORDER BY `vehicle`.`id` DESC LIMIT 0,10 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-11-13T10:19:33+08:00 ] 127.0.0.1 GET /admin/vehicle/vehicle/index?search=&sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1542075479205
+[ info ] www.newproject.com/admin/vehicle/vehicle/index?search=&sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1542075479205 [运行时间：0.148000s][吞吐率：6.76req/s] [内存消耗：4,241.20kb] [文件加载：95]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004000s ]
+[ info ] [ LANG ] F:\phpStudy\WWW\newproject\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'vehicle.vehicle',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.newproject.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.23 Safari/537.36',
+  'content-type' => 'application/json',
+  'referer' => 'http://www.newproject.com/admin/vehicle/vehicle?addtabs=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'en,zh;q=0.9,zh-CN;q=0.8',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1539564661,1540173986,1540776784,1541377744; PHPSESSID=c30tlrco9mdtbv6to0aoanueo7; think_var=zh-cn; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1541991707',
+)
+[ info ] [ PARAM ] array (
+  'search' => '',
+  'sort' => 'id',
+  'order' => 'desc',
+  'offset' => '0',
+  'limit' => '10',
+  'filter' => '{}',
+  'op' => '{}',
+  '_' => '1542075479205',
+)
+[ info ] [ LANG ] F:\phpStudy\WWW\newproject\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] F:\phpStudy\WWW\newproject\public/../application/admin/lang/zh-cn/vehicle/vehicle.php
+[ info ] [ RUN ] app\admin\controller\vehicle\Vehicle->index[ F:\phpStudy\WWW\newproject\application\admin\controller\vehicle\Vehicle.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_vehicle` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_vehicle_model` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_office` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_vehicle` `vehicle` LEFT JOIN `fa_vehicle_model` `vehiclemodel` ON `vehicle`.`vehicle_model_id`=`vehiclemodel`.`id` LEFT JOIN `fa_office` `belongoffice` ON `vehicle`.`belong_office_id`=`belongoffice`.`id` LEFT JOIN `fa_office` `stopoffice` ON `vehicle`.`stop_office_id`=`stopoffice`.`id` ORDER BY `vehicle`.`id` DESC LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `vehicle`.`id`,`vehicle`.`plate_number`,`vehicle`.`vehicle_model_id`,`vehicle`.`status`,`vehicle`.`belong_office_id`,`vehicle`.`stop_office_id`,`vehicle`.`engine_number`,`vehicle`.`vehicle_number`,`vehicle`.`color`,`vehicle`.`cur_kilometers`,`vehicle`.`vehicle_property`,`vehicle`.`isactivity`,`vehicle`.`annual_inspection_time`,`vehicle`.`tci_renewal_time`,`vehicle`.`vci_renewal_time`,`vehicle`.`insurance`,`vehicle`.`upkeep_mileage_interval`,`vehicle`.`next_upkeep_mileage`,`vehicle`.`upkeep_time_interval`,`vehicle`.`next_upkeep_time`,`vehicle`.`baught_time`,`vehicle`.`total_price`,`vehicle`.`baught_price`,`vehicle`.`baught_tax`,`vehicle`.`compulsory_insurance`,`vehicle`.`commercial_insurance`,`vehicle`.`license_plate_fee`,`vehicle`.`location`,`vehicle`.`location_number`,`vehicle`.`admin_id`,`vehicle`.`updatetime`,`vehicle`.`createtime`,vehiclemodel.id AS vehiclemodel__id,vehiclemodel.vehicle_brand_id AS vehiclemodel__vehicle_brand_id,vehiclemodel.model_series_id AS vehiclemodel__model_series_id,vehiclemodel.vehicle_model AS vehiclemodel__vehicle_model,vehiclemodel.vehicle_type AS vehiclemodel__vehicle_type,vehiclemodel.vehicle_flag AS vehiclemodel__vehicle_flag,vehiclemodel.carriage AS vehiclemodel__carriage,vehiclemodel.seat AS vehiclemodel__seat,vehiclemodel.gearbox AS vehiclemodel__gearbox,vehiclemodel.emission AS vehiclemodel__emission,vehiclemodel.oil_capacity AS vehiclemodel__oil_capacity,vehiclemodel.oil_label AS vehiclemodel__oil_label,vehiclemodel.air_intake_mode AS vehiclemodel__air_intake_mode,vehiclemodel.poundage AS vehiclemodel__poundage,vehiclemodel.basic_service_charge AS vehiclemodel__basic_service_charge,vehiclemodel.rent_deposit AS vehiclemodel__rent_deposit,vehiclemodel.overtime_price_personal AS vehiclemodel__overtime_price_personal,vehiclemodel.vehicle_model_logo_image AS vehiclemodel__vehicle_model_logo_image,vehiclemodel.vehicle_model_main_image AS vehiclemodel__vehicle_model_main_image,vehiclemodel.vehicle_model_left_image AS vehiclemodel__vehicle_model_left_image,vehiclemodel.vehicle_model_right_image AS vehiclemodel__vehicle_model_right_image,vehiclemodel.vehicle_model_front_image AS vehiclemodel__vehicle_model_front_image,vehiclemodel.vehicle_model_back_image AS vehiclemodel__vehicle_model_back_image,vehiclemodel.admin_id AS vehiclemodel__admin_id,vehiclemodel.weight AS vehiclemodel__weight,vehiclemodel.updatetime AS vehiclemodel__updatetime,vehiclemodel.createtime AS vehiclemodel__createtime,belongoffice.id AS belongoffice__id,belongoffice.fullname AS belongoffice__fullname,belongoffice.shortname AS belongoffice__shortname,belongoffice.manager AS belongoffice__manager,belongoffice.telephone AS belongoffice__telephone,belongoffice.mobile AS belongoffice__mobile,belongoffice.open_time AS belongoffice__open_time,belongoffice.close_time AS belongoffice__close_time,belongoffice.address AS belongoffice__address,belongoffice.lng AS belongoffice__lng,belongoffice.lat AS belongoffice__lat,belongoffice.status AS belongoffice__status,belongoffice.isactivity AS belongoffice__isactivity,belongoffice.cityid AS belongoffice__cityid,belongoffice.areaid AS belongoffice__areaid,belongoffice.parentid AS belongoffice__parentid,belongoffice.officeimages AS belongoffice__officeimages,belongoffice.edit_userid AS belongoffice__edit_userid,belongoffice.createtime AS belongoffice__createtime,belongoffice.updatetime AS belongoffice__updatetime,stopoffice.id AS stopoffice__id,stopoffice.fullname AS stopoffice__fullname,stopoffice.shortname AS stopoffice__shortname,stopoffice.manager AS stopoffice__manager,stopoffice.telephone AS stopoffice__telephone,stopoffice.mobile AS stopoffice__mobile,stopoffice.open_time AS stopoffice__open_time,stopoffice.close_time AS stopoffice__close_time,stopoffice.address AS stopoffice__address,stopoffice.lng AS stopoffice__lng,stopoffice.lat AS stopoffice__lat,stopoffice.status AS stopoffice__status,stopoffice.isactivity AS stopoffice__isactivity,stopoffice.cityid AS stopoffice__cityid,stopoffice.areaid AS stopoffice__areaid,stopoffice.parentid AS stopoffice__parentid,stopoffice.officeimages AS stopoffice__officeimages,stopoffice.edit_userid AS stopoffice__edit_userid,stopoffice.createtime AS stopoffice__createtime,stopoffice.updatetime AS stopoffice__updatetime FROM `fa_vehicle` `vehicle` LEFT JOIN `fa_vehicle_model` `vehiclemodel` ON `vehicle`.`vehicle_model_id`=`vehiclemodel`.`id` LEFT JOIN `fa_office` `belongoffice` ON `vehicle`.`belong_office_id`=`belongoffice`.`id` LEFT JOIN `fa_office` `stopoffice` ON `vehicle`.`stop_office_id`=`stopoffice`.`id` ORDER BY `vehicle`.`id` DESC LIMIT 0,10 [ RunTime:0.003000s ]
+---------------------------------------------------------------
+[ 2018-11-13T15:36:38+08:00 ] 127.0.0.1 GET /admin/auth/rule?addtabs=1
+[ info ] www.newproject.com/admin/auth/rule?addtabs=1 [运行时间：0.119000s][吞吐率：8.40req/s] [内存消耗：4,029.27kb] [文件加载：90]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005000s ]
+[ info ] [ LANG ] F:\phpStudy\WWW\newproject\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'auth.rule',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.newproject.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.23 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.newproject.com/admin/auth/rule?ref=addtabs',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'en,zh;q=0.9,zh-CN;q=0.8',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1539564661,1540173986,1540776784,1541377744; PHPSESSID=c30tlrco9mdtbv6to0aoanueo7; think_var=zh-cn; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1541991707',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+)
+[ info ] [ LANG ] F:\phpStudy\WWW\newproject\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] F:\phpStudy\WWW\newproject\public/../application/admin/lang/zh-cn/auth/rule.php
+[ info ] [ RUN ] app\admin\controller\auth\Rule->index[ F:\phpStudy\WWW\newproject\application\admin\controller\auth\Rule.php ]
+[ info ] [ VIEW ] F:\phpStudy\WWW\newproject\public/../application/admin\view\auth\rule\index.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'ruledata',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` ORDER BY `weigh` DESC [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'auth/rule' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-11-13T15:36:38+08:00 ] 127.0.0.1 GET /admin/ajax/lang?callback=define&controllername=auth.rule&v=1542094598
+[ info ] www.newproject.com/admin/ajax/lang?callback=define&controllername=auth.rule&v=1542094598 [运行时间：0.049000s][吞吐率：20.41req/s] [内存消耗：2,839.70kb] [文件加载：80]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004000s ]
+[ info ] [ LANG ] F:\phpStudy\WWW\newproject\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.newproject.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.23 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://www.newproject.com/admin/auth/rule?addtabs=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'en,zh;q=0.9,zh-CN;q=0.8',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1539564661,1540173986,1540776784,1541377744; PHPSESSID=c30tlrco9mdtbv6to0aoanueo7; think_var=zh-cn; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1541991707',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'auth.rule',
+  'v' => '1542094598',
+)
+[ info ] [ LANG ] F:\phpStudy\WWW\newproject\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] F:\phpStudy\WWW\newproject\public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ F:\phpStudy\WWW\newproject\application\admin\controller\Ajax.php ]
+[ info ] [ LANG ] F:\phpStudy\WWW\newproject\public/../application/admin/lang/zh-cn/auth/rule.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-13T15:36:38+08:00 ] 127.0.0.1 GET /admin/auth/rule/index?sort=weigh&order=desc&_=1542094598495
+[ info ] www.newproject.com/admin/auth/rule/index?sort=weigh&order=desc&_=1542094598495 [运行时间：0.092000s][吞吐率：10.87req/s] [内存消耗：4,126.87kb] [文件加载：90]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004000s ]
+[ info ] [ LANG ] F:\phpStudy\WWW\newproject\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'auth.rule',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.newproject.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.23 Safari/537.36',
+  'content-type' => 'application/json',
+  'referer' => 'http://www.newproject.com/admin/auth/rule?addtabs=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'en,zh;q=0.9,zh-CN;q=0.8',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1539564661,1540173986,1540776784,1541377744; PHPSESSID=c30tlrco9mdtbv6to0aoanueo7; think_var=zh-cn; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1541991707',
+)
+[ info ] [ PARAM ] array (
+  'sort' => 'weigh',
+  'order' => 'desc',
+  '_' => '1542094598495',
+)
+[ info ] [ LANG ] F:\phpStudy\WWW\newproject\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] F:\phpStudy\WWW\newproject\public/../application/admin/lang/zh-cn/auth/rule.php
+[ info ] [ RUN ] app\admin\controller\auth\Rule->index[ F:\phpStudy\WWW\newproject\application\admin\controller\auth\Rule.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.001000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` ORDER BY `weigh` DESC [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-11-13T15:36:51+08:00 ] 127.0.0.1 GET /admin/auth/group?addtabs=1
+[ info ] www.newproject.com/admin/auth/group?addtabs=1 [运行时间：0.097000s][吞吐率：10.31req/s] [内存消耗：3,909.45kb] [文件加载：90]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003000s ]
+[ info ] [ LANG ] F:\phpStudy\WWW\newproject\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'auth.group',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.newproject.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.23 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.newproject.com/admin/auth/group?ref=addtabs',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'en,zh;q=0.9,zh-CN;q=0.8',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1539564661,1540173986,1540776784,1541377744; PHPSESSID=c30tlrco9mdtbv6to0aoanueo7; think_var=zh-cn; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1541991707',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+)
+[ info ] [ LANG ] F:\phpStudy\WWW\newproject\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] F:\phpStudy\WWW\newproject\public/../application/admin/lang/zh-cn/auth/group.php
+[ info ] [ RUN ] app\admin\controller\auth\Group->index[ F:\phpStudy\WWW\newproject\application\admin\controller\auth\Group.php ]
+[ info ] [ VIEW ] F:\phpStudy\WWW\newproject\public/../application/admin\view\auth\group\index.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'groupdata',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_auth_group` WHERE  `status` = 'normal' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_auth_group` WHERE  `id` IN (1,2,3,5,6,7,8,9,10,11,12,13) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'auth/group' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-11-13T15:36:51+08:00 ] 127.0.0.1 GET /admin/ajax/lang?callback=define&controllername=auth.group&v=1542094611
+[ info ] www.newproject.com/admin/ajax/lang?callback=define&controllername=auth.group&v=1542094611 [运行时间：0.051000s][吞吐率：19.61req/s] [内存消耗：2,838.79kb] [文件加载：80]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003000s ]
+[ info ] [ LANG ] F:\phpStudy\WWW\newproject\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.newproject.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.23 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://www.newproject.com/admin/auth/group?addtabs=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'en,zh;q=0.9,zh-CN;q=0.8',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1539564661,1540173986,1540776784,1541377744; PHPSESSID=c30tlrco9mdtbv6to0aoanueo7; think_var=zh-cn; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1541991707',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'auth.group',
+  'v' => '1542094611',
+)
+[ info ] [ LANG ] F:\phpStudy\WWW\newproject\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] F:\phpStudy\WWW\newproject\public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ F:\phpStudy\WWW\newproject\application\admin\controller\Ajax.php ]
+[ info ] [ LANG ] F:\phpStudy\WWW\newproject\public/../application/admin/lang/zh-cn/auth/group.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.001000s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-13T15:36:51+08:00 ] 127.0.0.1 GET /admin/auth/group/index?sort=id&order=desc&_=1542094611200
+[ info ] www.newproject.com/admin/auth/group/index?sort=id&order=desc&_=1542094611200 [运行时间：0.090000s][吞吐率：11.11req/s] [内存消耗：3,930.47kb] [文件加载：90]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003000s ]
+[ info ] [ LANG ] F:\phpStudy\WWW\newproject\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'auth.group',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.newproject.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.23 Safari/537.36',
+  'content-type' => 'application/json',
+  'referer' => 'http://www.newproject.com/admin/auth/group?addtabs=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'en,zh;q=0.9,zh-CN;q=0.8',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1539564661,1540173986,1540776784,1541377744; PHPSESSID=c30tlrco9mdtbv6to0aoanueo7; think_var=zh-cn; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1541991707',
+)
+[ info ] [ PARAM ] array (
+  'sort' => 'id',
+  'order' => 'desc',
+  '_' => '1542094611200',
+)
+[ info ] [ LANG ] F:\phpStudy\WWW\newproject\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] F:\phpStudy\WWW\newproject\public/../application/admin/lang/zh-cn/auth/group.php
+[ info ] [ RUN ] app\admin\controller\auth\Group->index[ F:\phpStudy\WWW\newproject\application\admin\controller\auth\Group.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_auth_group` WHERE  `status` = 'normal' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_auth_group` WHERE  `id` IN (1,2,3,5,6,7,8,9,10,11,12,13) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_auth_group` WHERE  `id` IN (1,2,3,5,6,7,8,9,10,11,12,13) [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-11-13T15:36:58+08:00 ] 127.0.0.1 GET /admin/auth/group/edit/ids/2?dialog=1
+[ info ] www.newproject.com/admin/auth/group/edit/ids/2?dialog=1 [运行时间：0.124000s][吞吐率：8.06req/s] [内存消耗：4,031.34kb] [文件加载：91]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.006000s ]
+[ info ] [ LANG ] F:\phpStudy\WWW\newproject\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'auth.group',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.newproject.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.23 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.newproject.com/admin/auth/group?addtabs=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'en,zh;q=0.9,zh-CN;q=0.8',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1539564661,1540173986,1540776784,1541377744; PHPSESSID=c30tlrco9mdtbv6to0aoanueo7; think_var=zh-cn; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1541991707',
+)
+[ info ] [ PARAM ] array (
+  'dialog' => '1',
+  'ids' => '2',
+)
+[ info ] [ LANG ] F:\phpStudy\WWW\newproject\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] F:\phpStudy\WWW\newproject\public/../application/admin/lang/zh-cn/auth/group.php
+[ info ] [ RUN ] app\admin\controller\auth\Group->edit[ F:\phpStudy\WWW\newproject\application\admin\controller\auth\Group.php ]
+[ info ] [ VIEW ] F:\phpStudy\WWW\newproject\public/../application/admin\view\auth\group\edit.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'groupdata',
+  6 => 'row',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.001000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_auth_group` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_auth_group` WHERE  `id` IN (1,2,3,5,6,7,8,9,10,11,12,13) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_auth_group` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-11-13T15:36:58+08:00 ] 127.0.0.1 GET /admin/ajax/lang?callback=define&controllername=auth.group&v=1542094618
+[ info ] www.newproject.com/admin/ajax/lang?callback=define&controllername=auth.group&v=1542094618 [运行时间：0.049000s][吞吐率：20.41req/s] [内存消耗：2,838.90kb] [文件加载：80]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004000s ]
+[ info ] [ LANG ] F:\phpStudy\WWW\newproject\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.newproject.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.23 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://www.newproject.com/admin/auth/group/edit/ids/2?dialog=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'en,zh;q=0.9,zh-CN;q=0.8',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1539564661,1540173986,1540776784,1541377744; PHPSESSID=c30tlrco9mdtbv6to0aoanueo7; think_var=zh-cn; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1541991707',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'auth.group',
+  'v' => '1542094618',
+)
+[ info ] [ LANG ] F:\phpStudy\WWW\newproject\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] F:\phpStudy\WWW\newproject\public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ F:\phpStudy\WWW\newproject\application\admin\controller\Ajax.php ]
+[ info ] [ LANG ] F:\phpStudy\WWW\newproject\public/../application/admin/lang/zh-cn/auth/group.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.001000s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-13T15:36:58+08:00 ] 127.0.0.1 POST /admin/auth/group/roletree
+[ info ] www.newproject.com/admin/auth/group/roletree [运行时间：0.220000s][吞吐率：4.55req/s] [内存消耗：4,063.39kb] [文件加载：93]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003000s ]
+[ info ] [ LANG ] F:\phpStudy\WWW\newproject\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'auth.group',
+    2 => 'roletree',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.newproject.com',
+  'connection' => 'keep-alive',
+  'content-length' => '10',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.newproject.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.23 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://www.newproject.com/admin/auth/group/edit/ids/2?dialog=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'en,zh;q=0.9,zh-CN;q=0.8',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1539564661,1540173986,1540776784,1541377744; PHPSESSID=c30tlrco9mdtbv6to0aoanueo7; think_var=zh-cn; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1541991707',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+  'pid' => '1',
+)
+[ info ] [ LANG ] F:\phpStudy\WWW\newproject\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] F:\phpStudy\WWW\newproject\public/../application/admin/lang/zh-cn/auth/group.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\auth\Group->roletree[ F:\phpStudy\WWW\newproject\application\admin\controller\auth\Group.php ]
+[ info ] [ LANG ] F:\phpStudy\WWW\newproject\public/../application/admin/lang/zh-cn/auth/group.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.116000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_auth_group` WHERE  `status` = 'normal' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_auth_group` WHERE  `id` IN (1,2,3,5,6,7,8,9,10,11,12,13) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_auth_group` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` ORDER BY `weigh` DESC [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.071000s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"id\":\"2\",\"pid\":\"1\"}' , '/admin/auth/group/roletree' , 1 , 'admin' , 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.23 Safari/537.36' , '127.0.0.1' , 1542094618) [ RunTime:0.041000s ]

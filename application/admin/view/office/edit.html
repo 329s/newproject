@@ -1,0 +1,149 @@
+<form id="edit-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Fullname')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-fullname" data-rule="required" class="form-control" name="row[fullname]" type="text" value="{$row.fullname}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Shortname')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-shortname" data-rule="required" class="form-control" name="row[shortname]" type="text" value="{$row.shortname}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Manager')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-manager" data-rule="required" class="form-control" name="row[manager]" type="text" value="{$row.manager}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Telephone')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-telephone" data-rule="required" class="form-control" name="row[telephone]" type="text" value="{$row.telephone}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Mobile')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-mobile" data-rule="required" class="form-control" name="row[mobile]" type="text" value="{$row.mobile}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Cityid')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-cityid" data-rule="required" class="form-control" name="row[cityid]" type="hidden" value="{$row.cityid}" >
+            <input id="c-cityidname"  class="form-control"  type="text" value="{$row.cityidname}" data-toggle="city-picker" >
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Areaid')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-areaid" data-rule="required" class="form-control" name="row[areaid]" type="hidden" value="{$row.areaid}">
+            <input id="c-areaidname"  class="form-control"  type="text" value="{$row.areaidname}"  data-toggle="city-picker">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Open_time')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-open_time" data-rule="required" class="form-control"  data-use-current="true" name="row[open_time]" type="text" value="{$row.open_time}">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Close_time')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-close_time" data-rule="required" class="form-control"  data-use-current="true" name="row[close_time]" type="text" value="{$row.close_time}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Address')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-address" data-rule="required" class="form-control" name="row[address]" type="text" value="{$row.address}"  data-toggle="addresspicker" data-input-id="c-address" data-lat-id="c-lng" data-lng-id="c-lat">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Lng')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-lng" data-rule="required" class="form-control" name="row[lng]" type="text" value="{$row.lng}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Lat')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-lat" data-rule="required" class="form-control" name="row[lat]" type="text" value="{$row.lat}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Status')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            
+            <div class="radio">
+            {foreach name="statusList" item="vo"}
+            <label for="row[status]-{$key}"><input id="row[status]-{$key}" name="row[status]" type="radio" value="{$key}" {in name="key" value="$row.status"}checked{/in} /> {$vo}</label> 
+            {/foreach}
+            </div>
+
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Isactivity')}:</label>
+        <div class="col-xs-12 col-sm-8">
+                        
+            <select  id="c-isactivity" data-rule="required" class="form-control selectpicker" name="row[isactivity]">
+                {foreach name="isactivityList" item="vo"}
+                    <option value="{$key}" {in name="key" value="$row.isactivity"}selected{/in}>{$vo}</option>
+                {/foreach}
+            </select>
+
+        </div>
+    </div>
+    
+    <!-- <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Parentid')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-parentid" data-rule="required" class="form-control" name="row[parentid]" type="number" value="{$row.parentid}">
+        </div>
+    </div> -->
+    <div class="form-group">
+        <label for="c-parentid" class="control-label col-xs-12 col-sm-2">{:__('Parentid')}:</label>
+        <div class="col-xs-12 col-sm-8">
+
+            <select id="c-parentid" data-rule="required" class="form-control selectpicker" name="row[parentid]">
+                {foreach name="parentList" item="vo"}
+                <option data-type="{$vo.id}" class="" value="{$key}" {in name="key" value="$row.parentid"}selected{/in}>{$vo.fullname}</option>
+                {/foreach}
+            </select>
+
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Officeimages')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <div class="input-group">
+                <input id="c-officeimages" data-rule="required" class="form-control" size="50" name="row[officeimages]" type="text" value="{$row.officeimages}">
+                <div class="input-group-addon no-border no-padding">
+                    <span><button type="button" id="plupload-officeimages" class="btn btn-danger plupload" data-input-id="c-officeimages" data-mimetype="image/gif,image/jpeg,image/png,image/jpg,image/bmp" data-multiple="true" data-preview-id="p-officeimages"><i class="fa fa-upload"></i> {:__('Upload')}</button></span>
+                    <span><button type="button" id="fachoose-officeimages" class="btn btn-primary fachoose" data-input-id="c-officeimages" data-mimetype="image/*" data-multiple="true"><i class="fa fa-list"></i> {:__('Choose')}</button></span>
+                </div>
+                <span class="msg-box n-right" for="c-officeimages"></span>
+            </div>
+            <ul class="row list-inline plupload-preview" id="p-officeimages"></ul>
+        </div>
+    </div>
+    <!-- <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Edit_userid')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-edit_userid" data-rule="required" class="form-control" name="row[edit_userid]" type="number" value="{$row.edit_userid}">
+        </div>
+    </div> -->
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>

@@ -1,0 +1,31 @@
+<?php
+
+return [
+    'Id'  =>  'ID',
+    'Name'  =>  '节日名称',
+    'Start_date'  =>  '节日开始日期',
+    'End_date'  =>  '节日结束日期',
+    'Is_full_required'  =>  '是否需要一次性租满',
+    'Is_full_required 0'  =>  '不需要',
+    'Is_full_required 1'  =>  '需要',
+    'Status'  =>  '状态',
+    'Status 0'  =>  '启用',
+    'Status 1'  =>  '临时关闭',
+    'Status 2'  =>  '禁用',
+    'Admin_id'  =>  '编辑者',
+    'Updatetime'  =>  '更新时间',
+    'Createtime'  =>  '创建时间',
+    'Admin.id'  =>  'ID',
+    'Admin.username'  =>  '用户名',
+    'Admin.nickname'  =>  '昵称',
+    'Admin.password'  =>  '密码',
+    'Admin.salt'  =>  '密码盐',
+    'Admin.avatar'  =>  '头像',
+    'Admin.email'  =>  '电子邮箱',
+    'Admin.loginfailure'  =>  '失败次数',
+    'Admin.logintime'  =>  '登录时间',
+    'Admin.createtime'  =>  '创建时间',
+    'Admin.updatetime'  =>  '更新时间',
+    'Admin.token'  =>  'Session标识',
+    'Admin.status'  =>  '状态'
+];

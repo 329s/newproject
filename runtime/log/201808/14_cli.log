@@ -1,0 +1,764 @@
+[ 2018-08-14T14:46:44+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ 2018-08-14T14:46:44+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-08-14T14:46:44+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003000s ]
+[ 2018-08-14T14:46:44+08:00 ][ info ] [ DB ] INIT mysql
+[ 2018-08-14T14:46:44+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.014000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2018-08-14T14:46:44+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'office' [ RunTime:0.001000s ]
+[ 2018-08-14T14:46:44+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_office' [ RunTime:0.001000s ]
+[ 2018-08-14T14:46:44+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'fastadmin' AND table_name = 'fa_office' ORDER BY ORDINAL_POSITION [ RunTime:0.009000s ]
+[ 2018-08-14T14:52:48+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001000s ]
+[ info ] [ LOG ] INIT File
+[ 2018-08-14T14:52:48+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-08-14T14:52:48+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004000s ]
+[ 2018-08-14T14:52:48+08:00 ][ info ] [ DB ] INIT mysql
+[ 2018-08-14T14:52:48+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.005000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2018-08-14T14:52:48+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'office' [ RunTime:0.001000s ]
+[ 2018-08-14T14:52:48+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_office' [ RunTime:0.001000s ]
+[ 2018-08-14T14:54:29+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ 2018-08-14T14:54:29+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-08-14T14:54:29+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004000s ]
+[ 2018-08-14T14:54:29+08:00 ][ info ] [ DB ] INIT mysql
+[ 2018-08-14T14:54:29+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.005000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2018-08-14T14:54:29+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'office' [ RunTime:0.001000s ]
+[ 2018-08-14T14:54:29+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_office' [ RunTime:0.002000s ]
+[ 2018-08-14T14:55:56+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ 2018-08-14T14:55:56+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-08-14T14:55:56+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004000s ]
+[ 2018-08-14T14:55:56+08:00 ][ info ] [ DB ] INIT mysql
+[ 2018-08-14T14:55:56+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.016000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2018-08-14T14:55:56+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'store/office' [ RunTime:0.002000s ]
+[ 2018-08-14T14:55:56+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_store/office' [ RunTime:0.002000s ]
+[ 2018-08-14T15:00:18+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001000s ]
+[ info ] [ LOG ] INIT File
+[ 2018-08-14T15:00:18+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-08-14T15:00:18+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005000s ]
+[ 2018-08-14T15:00:18+08:00 ][ info ] [ DB ] INIT mysql
+[ 2018-08-14T15:00:48+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ 2018-08-14T15:00:48+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-08-14T15:00:48+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004000s ]
+[ 2018-08-14T15:00:48+08:00 ][ info ] [ DB ] INIT mysql
+[ 2018-08-14T15:00:48+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.006000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2018-08-14T15:00:48+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'office' [ RunTime:0.001000s ]
+[ 2018-08-14T15:00:48+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_office' [ RunTime:0.001000s ]
+[ 2018-08-14T15:09:17+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ 2018-08-14T15:09:17+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-08-14T15:09:17+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004000s ]
+[ 2018-08-14T15:09:41+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ 2018-08-14T15:09:41+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-08-14T15:09:41+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003000s ]
+[ 2018-08-14T15:09:41+08:00 ][ info ] [ DB ] INIT mysql
+[ 2018-08-14T15:09:41+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.006000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2018-08-14T15:09:41+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.010000s ]
+[ 2018-08-14T15:09:41+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  (  `name` LIKE 'store/office%' ) [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:31+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001000s ]
+[ info ] [ LOG ] INIT File
+[ 2018-08-14T15:10:31+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-08-14T15:10:31+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004000s ]
+[ 2018-08-14T15:10:31+08:00 ][ info ] [ DB ] INIT mysql
+[ 2018-08-14T15:10:31+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.007000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2018-08-14T15:10:31+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.009000s ]
+[ 2018-08-14T15:10:31+08:00 ][ sql ] [ SQL ] DELETE FROM `fa_auth_rule`    WHERE  `id` > 0 [ RunTime:0.031000s ]
+[ 2018-08-14T15:10:31+08:00 ][ info ] [ LANG ] F:\phpStudy\WWW\newproject\application\admin\lang/zh-cn.php
+[ 2018-08-14T15:10:31+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'addon' LIMIT 1 [ RunTime:0.000000s ]
+[ 2018-08-14T15:10:31+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`pid` , `name` , `title` , `icon` , `remark` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (0 , 'addon' , '插件管理' , 'fa fa-circle-o' , '可在线安装、卸载、禁用、启用插件，同时支持添加本地插件。FastAdmin已上线插件商店 ，你可以发布你的免费或付费插件：<a href=\"https://www.fastadmin.net/store.html\" target=\"_blank\">https://www.fastadmin.net/store.html</a>' , 1 , 'normal' , 1534230631 , 1534230631) [ RunTime:0.035000s ]
+[ 2018-08-14T15:10:31+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'addon/index' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:31+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'addon/config' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:31+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'addon/install' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:31+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'addon/uninstall' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:31+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'addon/state' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:31+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'addon/local' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:31+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'addon/upgrade' LIMIT 1 [ RunTime:0.000000s ]
+[ 2018-08-14T15:10:31+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'addon/downloaded' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:31+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'addon/add' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:31+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'addon/edit' LIMIT 1 [ RunTime:0.000000s ]
+[ 2018-08-14T15:10:31+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'addon/del' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:31+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'addon/multi' LIMIT 1 [ RunTime:0.000000s ]
+[ 2018-08-14T15:10:31+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 99 , 'addon/index' , 'fa fa-circle-o' , '查看' , 0 , 'normal' , 1534230631 , 1534230631) [ RunTime:0.000000s ]
+[ 2018-08-14T15:10:31+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 99 , 'addon/config' , 'fa fa-circle-o' , '配置' , 0 , 'normal' , 1534230631 , 1534230631) [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:31+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 99 , 'addon/install' , 'fa fa-circle-o' , '安装' , 0 , 'normal' , 1534230631 , 1534230631) [ RunTime:0.000000s ]
+[ 2018-08-14T15:10:31+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 99 , 'addon/uninstall' , 'fa fa-circle-o' , '卸载' , 0 , 'normal' , 1534230631 , 1534230631) [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:31+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 99 , 'addon/state' , 'fa fa-circle-o' , '禁用启用' , 0 , 'normal' , 1534230631 , 1534230631) [ RunTime:0.000000s ]
+[ 2018-08-14T15:10:31+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 99 , 'addon/local' , 'fa fa-circle-o' , '本地上传' , 0 , 'normal' , 1534230631 , 1534230631) [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:31+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 99 , 'addon/upgrade' , 'fa fa-circle-o' , '更新插件' , 0 , 'normal' , 1534230631 , 1534230631) [ RunTime:0.000000s ]
+[ 2018-08-14T15:10:31+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 99 , 'addon/downloaded' , 'fa fa-circle-o' , '已装插件' , 0 , 'normal' , 1534230631 , 1534230631) [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:31+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 99 , 'addon/add' , 'fa fa-circle-o' , '添加' , 0 , 'normal' , 1534230631 , 1534230631) [ RunTime:0.000000s ]
+[ 2018-08-14T15:10:31+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 99 , 'addon/edit' , 'fa fa-circle-o' , '编辑' , 0 , 'normal' , 1534230631 , 1534230631) [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:31+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 99 , 'addon/del' , 'fa fa-circle-o' , '删除' , 0 , 'normal' , 1534230631 , 1534230631) [ RunTime:0.000000s ]
+[ 2018-08-14T15:10:31+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 99 , 'addon/multi' , 'fa fa-circle-o' , '批量更新' , 0 , 'normal' , 1534230631 , 1534230631) [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:31+08:00 ][ info ] [ LANG ] F:\phpStudy\WWW\newproject\application\admin\lang/zh-cn.php
+[ 2018-08-14T15:10:31+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'category' LIMIT 1 [ RunTime:0.002000s ]
+[ 2018-08-14T15:10:31+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`pid` , `name` , `title` , `icon` , `remark` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (0 , 'category' , '分类管理' , 'fa fa-list' , '用于统一管理网站的所有分类,分类可进行无限级分类' , 1 , 'normal' , 1534230631 , 1534230631) [ RunTime:0.040000s ]
+[ 2018-08-14T15:10:31+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'category/index' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:31+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'category/add' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:31+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'category/edit' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:31+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'category/del' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:31+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'category/multi' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:31+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 112 , 'category/index' , 'fa fa-circle-o' , '查看' , 0 , 'normal' , 1534230631 , 1534230631) [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:31+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 112 , 'category/add' , 'fa fa-circle-o' , '添加' , 0 , 'normal' , 1534230631 , 1534230631) [ RunTime:0.000000s ]
+[ 2018-08-14T15:10:31+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 112 , 'category/edit' , 'fa fa-circle-o' , '编辑' , 0 , 'normal' , 1534230631 , 1534230631) [ RunTime:0.000000s ]
+[ 2018-08-14T15:10:31+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 112 , 'category/del' , 'fa fa-circle-o' , '删除' , 0 , 'normal' , 1534230631 , 1534230631) [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:31+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 112 , 'category/multi' , 'fa fa-circle-o' , '批量更新' , 0 , 'normal' , 1534230631 , 1534230631) [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:31+08:00 ][ info ] [ LANG ] F:\phpStudy\WWW\newproject\application\admin\lang/zh-cn.php
+[ 2018-08-14T15:10:31+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'dashboard' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:31+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`pid` , `name` , `title` , `icon` , `remark` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (0 , 'dashboard' , '控制台' , 'fa fa-dashboard' , '用于展示当前系统中的统计数据、统计报表及重要实时数据' , 1 , 'normal' , 1534230631 , 1534230631) [ RunTime:0.045000s ]
+[ 2018-08-14T15:10:31+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'dashboard/index' LIMIT 1 [ RunTime:0.000000s ]
+[ 2018-08-14T15:10:31+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'dashboard/add' LIMIT 1 [ RunTime:0.000000s ]
+[ 2018-08-14T15:10:31+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'dashboard/edit' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:31+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'dashboard/del' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:31+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'dashboard/multi' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:31+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 118 , 'dashboard/index' , 'fa fa-circle-o' , '查看' , 0 , 'normal' , 1534230631 , 1534230631) [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:31+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 118 , 'dashboard/add' , 'fa fa-circle-o' , '添加' , 0 , 'normal' , 1534230631 , 1534230631) [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:31+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 118 , 'dashboard/edit' , 'fa fa-circle-o' , '编辑' , 0 , 'normal' , 1534230631 , 1534230631) [ RunTime:0.000000s ]
+[ 2018-08-14T15:10:31+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 118 , 'dashboard/del' , 'fa fa-circle-o' , '删除' , 0 , 'normal' , 1534230631 , 1534230631) [ RunTime:0.000000s ]
+[ 2018-08-14T15:10:31+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 118 , 'dashboard/multi' , 'fa fa-circle-o' , '批量更新' , 0 , 'normal' , 1534230631 , 1534230631) [ RunTime:0.000000s ]
+[ 2018-08-14T15:10:31+08:00 ][ info ] [ LANG ] F:\phpStudy\WWW\newproject\application\admin\lang/zh-cn.php
+[ 2018-08-14T15:10:31+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'myapp' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:31+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`pid` , `name` , `title` , `icon` , `remark` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (0 , 'myapp' , '我的app' , 'fa fa-circle-o' , '' , 1 , 'normal' , 1534230631 , 1534230631) [ RunTime:0.038000s ]
+[ 2018-08-14T15:10:31+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'myapp/index' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:31+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'myapp/add' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:31+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'myapp/edit' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:31+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'myapp/del' LIMIT 1 [ RunTime:0.002000s ]
+[ 2018-08-14T15:10:31+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'myapp/multi' LIMIT 1 [ RunTime:0.002000s ]
+[ 2018-08-14T15:10:31+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 124 , 'myapp/index' , 'fa fa-circle-o' , '查看' , 0 , 'normal' , 1534230631 , 1534230631) [ RunTime:0.002000s ]
+[ 2018-08-14T15:10:31+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 124 , 'myapp/add' , 'fa fa-circle-o' , '添加' , 0 , 'normal' , 1534230631 , 1534230631) [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:31+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 124 , 'myapp/edit' , 'fa fa-circle-o' , '编辑' , 0 , 'normal' , 1534230631 , 1534230631) [ RunTime:0.000000s ]
+[ 2018-08-14T15:10:31+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 124 , 'myapp/del' , 'fa fa-circle-o' , '删除' , 0 , 'normal' , 1534230631 , 1534230631) [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:31+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 124 , 'myapp/multi' , 'fa fa-circle-o' , '批量更新' , 0 , 'normal' , 1534230631 , 1534230631) [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:31+08:00 ][ info ] [ LANG ] F:\phpStudy\WWW\newproject\application\admin\lang/zh-cn.php
+[ 2018-08-14T15:10:31+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'auth' LIMIT 1 [ RunTime:0.002000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`pid` , `name` , `title` , `icon` , `remark` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (0 , 'auth' , 'auth' , 'fa fa-list' , '' , 1 , 'normal' , 1534230631 , 1534230631) [ RunTime:0.040000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'auth/admin' LIMIT 1 [ RunTime:0.002000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`pid` , `name` , `title` , `icon` , `remark` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (130 , 'auth/admin' , '管理员管理' , 'fa fa-users' , '一个管理员可以有多个角色组,左侧的菜单根据管理员所拥有的权限进行生成' , 1 , 'normal' , 1534230632 , 1534230632) [ RunTime:0.033000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'auth/admin/index' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'auth/admin/add' LIMIT 1 [ RunTime:0.002000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'auth/admin/edit' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'auth/admin/del' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 131 , 'auth/admin/index' , 'fa fa-circle-o' , '查看' , 0 , 'normal' , 1534230632 , 1534230632) [ RunTime:0.002000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 131 , 'auth/admin/add' , 'fa fa-circle-o' , '添加' , 0 , 'normal' , 1534230632 , 1534230632) [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 131 , 'auth/admin/edit' , 'fa fa-circle-o' , '编辑' , 0 , 'normal' , 1534230632 , 1534230632) [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 131 , 'auth/admin/del' , 'fa fa-circle-o' , '删除' , 0 , 'normal' , 1534230632 , 1534230632) [ RunTime:0.000000s ]
+[ 2018-08-14T15:10:32+08:00 ][ info ] [ LANG ] F:\phpStudy\WWW\newproject\application\admin\lang/zh-cn.php
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'auth' LIMIT 1 [ RunTime:0.002000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'auth/adminlog' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`pid` , `name` , `title` , `icon` , `remark` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (130 , 'auth/adminlog' , '管理员日志' , 'fa fa-users' , '管理员可以查看自己所拥有的权限的管理员日志' , 1 , 'normal' , 1534230632 , 1534230632) [ RunTime:0.040000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'auth/adminlog/index' LIMIT 1 [ RunTime:0.002000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'auth/adminlog/detail' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'auth/adminlog/del' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'auth/adminlog/selectpage' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 136 , 'auth/adminlog/index' , 'fa fa-circle-o' , '查看' , 0 , 'normal' , 1534230632 , 1534230632) [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 136 , 'auth/adminlog/detail' , 'fa fa-circle-o' , '详情' , 0 , 'normal' , 1534230632 , 1534230632) [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 136 , 'auth/adminlog/del' , 'fa fa-circle-o' , '删除' , 0 , 'normal' , 1534230632 , 1534230632) [ RunTime:0.000000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 136 , 'auth/adminlog/selectpage' , 'fa fa-circle-o' , 'Selectpage' , 0 , 'normal' , 1534230632 , 1534230632) [ RunTime:0.000000s ]
+[ 2018-08-14T15:10:32+08:00 ][ info ] [ LANG ] F:\phpStudy\WWW\newproject\application\admin\lang/zh-cn.php
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'auth' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'auth/group' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`pid` , `name` , `title` , `icon` , `remark` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (130 , 'auth/group' , '角色组' , 'fa fa-group' , '角色组可以有多个,角色有上下级层级关系,如果子角色有角色组和管理员的权限则可以派生属于自己组别下级的角色组或管理员' , 1 , 'normal' , 1534230632 , 1534230632) [ RunTime:0.036000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'auth/group/index' LIMIT 1 [ RunTime:0.000000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'auth/group/add' LIMIT 1 [ RunTime:0.000000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'auth/group/edit' LIMIT 1 [ RunTime:0.000000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'auth/group/del' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 141 , 'auth/group/index' , 'fa fa-circle-o' , '查看' , 0 , 'normal' , 1534230632 , 1534230632) [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 141 , 'auth/group/add' , 'fa fa-circle-o' , '添加' , 0 , 'normal' , 1534230632 , 1534230632) [ RunTime:0.000000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 141 , 'auth/group/edit' , 'fa fa-circle-o' , '编辑' , 0 , 'normal' , 1534230632 , 1534230632) [ RunTime:0.000000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 141 , 'auth/group/del' , 'fa fa-circle-o' , '删除' , 0 , 'normal' , 1534230632 , 1534230632) [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:32+08:00 ][ info ] [ LANG ] F:\phpStudy\WWW\newproject\application\admin\lang/zh-cn.php
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'auth' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'auth/rule' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`pid` , `name` , `title` , `icon` , `remark` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (130 , 'auth/rule' , '规则管理' , 'fa fa-list' , '规则通常对应一个控制器的方法,同时左侧的菜单栏数据也从规则中体现,通常建议通过控制台进行生成规则节点' , 1 , 'normal' , 1534230632 , 1534230632) [ RunTime:0.038000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'auth/rule/index' LIMIT 1 [ RunTime:0.000000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'auth/rule/add' LIMIT 1 [ RunTime:0.000000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'auth/rule/edit' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'auth/rule/del' LIMIT 1 [ RunTime:0.000000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'auth/rule/multi' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 146 , 'auth/rule/index' , 'fa fa-circle-o' , '查看' , 0 , 'normal' , 1534230632 , 1534230632) [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 146 , 'auth/rule/add' , 'fa fa-circle-o' , '添加' , 0 , 'normal' , 1534230632 , 1534230632) [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 146 , 'auth/rule/edit' , 'fa fa-circle-o' , '编辑' , 0 , 'normal' , 1534230632 , 1534230632) [ RunTime:0.000000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 146 , 'auth/rule/del' , 'fa fa-circle-o' , '删除' , 0 , 'normal' , 1534230632 , 1534230632) [ RunTime:0.000000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 146 , 'auth/rule/multi' , 'fa fa-circle-o' , '批量更新' , 0 , 'normal' , 1534230632 , 1534230632) [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:32+08:00 ][ info ] [ LANG ] F:\phpStudy\WWW\newproject\application\admin\lang/zh-cn.php
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'general' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`pid` , `name` , `title` , `icon` , `remark` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (0 , 'general' , 'general' , 'fa fa-list' , '' , 1 , 'normal' , 1534230632 , 1534230632) [ RunTime:0.040000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'general/attachment' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`pid` , `name` , `title` , `icon` , `remark` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (152 , 'general/attachment' , '附件管理' , 'fa fa-circle-o' , '主要用于管理上传到又拍云的数据或上传至本服务的上传数据' , 1 , 'normal' , 1534230632 , 1534230632) [ RunTime:0.039000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'general/attachment/index' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'general/attachment/select' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'general/attachment/add' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'general/attachment/del' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'general/attachment/edit' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'general/attachment/multi' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 153 , 'general/attachment/index' , 'fa fa-circle-o' , '查看' , 0 , 'normal' , 1534230632 , 1534230632) [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 153 , 'general/attachment/select' , 'fa fa-circle-o' , '选择附件' , 0 , 'normal' , 1534230632 , 1534230632) [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 153 , 'general/attachment/add' , 'fa fa-circle-o' , '添加' , 0 , 'normal' , 1534230632 , 1534230632) [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 153 , 'general/attachment/del' , 'fa fa-circle-o' , '删除附件' , 0 , 'normal' , 1534230632 , 1534230632) [ RunTime:0.000000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 153 , 'general/attachment/edit' , 'fa fa-circle-o' , '编辑' , 0 , 'normal' , 1534230632 , 1534230632) [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 153 , 'general/attachment/multi' , 'fa fa-circle-o' , '批量更新' , 0 , 'normal' , 1534230632 , 1534230632) [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:32+08:00 ][ info ] [ LANG ] F:\phpStudy\WWW\newproject\application\admin\lang/zh-cn.php
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'general' LIMIT 1 [ RunTime:0.002000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'general/config' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`pid` , `name` , `title` , `icon` , `remark` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (152 , 'general/config' , '系统配置' , 'fa fa-cogs' , '可以在此增改系统的变量和分组,也可以自定义分组和变量,如果需要删除请从数据库中删除' , 1 , 'normal' , 1534230632 , 1534230632) [ RunTime:0.045000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'general/config/index' LIMIT 1 [ RunTime:0.002000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'general/config/add' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'general/config/edit' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'general/config/del' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'general/config/multi' LIMIT 1 [ RunTime:0.000000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 160 , 'general/config/index' , 'fa fa-circle-o' , '查看' , 0 , 'normal' , 1534230632 , 1534230632) [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 160 , 'general/config/add' , 'fa fa-circle-o' , '添加' , 0 , 'normal' , 1534230632 , 1534230632) [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 160 , 'general/config/edit' , 'fa fa-circle-o' , '编辑' , 0 , 'normal' , 1534230632 , 1534230632) [ RunTime:0.002000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 160 , 'general/config/del' , 'fa fa-circle-o' , '删除' , 0 , 'normal' , 1534230632 , 1534230632) [ RunTime:0.000000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 160 , 'general/config/multi' , 'fa fa-circle-o' , '批量更新' , 0 , 'normal' , 1534230632 , 1534230632) [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:32+08:00 ][ info ] [ LANG ] F:\phpStudy\WWW\newproject\application\admin\lang/zh-cn.php
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'general' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'general/database' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`pid` , `name` , `title` , `icon` , `remark` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (152 , 'general/database' , '数据库管理' , 'fa fa-database' , '可在线进行一些简单的数据库表优化或修复,查看表结构和数据。也可以进行SQL语句的操作' , 1 , 'normal' , 1534230632 , 1534230632) [ RunTime:0.044000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'general/database/index' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'general/database/query' LIMIT 1 [ RunTime:0.000000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'general/database/backup' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'general/database/add' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'general/database/edit' LIMIT 1 [ RunTime:0.000000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'general/database/del' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'general/database/multi' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 166 , 'general/database/index' , 'fa fa-circle-o' , '查看' , 0 , 'normal' , 1534230632 , 1534230632) [ RunTime:0.000000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 166 , 'general/database/query' , 'fa fa-circle-o' , 'SQL查询' , 0 , 'normal' , 1534230632 , 1534230632) [ RunTime:0.000000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 166 , 'general/database/backup' , 'fa fa-circle-o' , '备份' , 0 , 'normal' , 1534230632 , 1534230632) [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 166 , 'general/database/add' , 'fa fa-circle-o' , '添加' , 0 , 'normal' , 1534230632 , 1534230632) [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 166 , 'general/database/edit' , 'fa fa-circle-o' , '编辑' , 0 , 'normal' , 1534230632 , 1534230632) [ RunTime:0.000000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 166 , 'general/database/del' , 'fa fa-circle-o' , '删除' , 0 , 'normal' , 1534230632 , 1534230632) [ RunTime:0.000000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 166 , 'general/database/multi' , 'fa fa-circle-o' , '批量更新' , 0 , 'normal' , 1534230632 , 1534230632) [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:32+08:00 ][ info ] [ LANG ] F:\phpStudy\WWW\newproject\application\admin\lang/zh-cn.php
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'general' LIMIT 1 [ RunTime:0.002000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'general/profile' LIMIT 1 [ RunTime:0.002000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`pid` , `name` , `title` , `icon` , `remark` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (152 , 'general/profile' , '个人配置' , 'fa fa-user' , '' , 1 , 'normal' , 1534230632 , 1534230632) [ RunTime:0.043000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'general/profile/index' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'general/profile/update' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'general/profile/add' LIMIT 1 [ RunTime:0.000000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'general/profile/edit' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'general/profile/del' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'general/profile/multi' LIMIT 1 [ RunTime:0.000000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 174 , 'general/profile/index' , 'fa fa-circle-o' , '查看' , 0 , 'normal' , 1534230632 , 1534230632) [ RunTime:0.001000s ]
+[ 2018-08-14T15:10:32+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 174 , 'general/profile/update' , 'fa fa-circle-o' , '更新个人信息' , 0 , 'normal' , 1534230632 , 1534230632) [ RunTime:0.000000s ]
+[ 2018-08-14T15:10:33+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 174 , 'general/profile/add' , 'fa fa-circle-o' , '添加' , 0 , 'normal' , 1534230632 , 1534230632) [ RunTime:0.000000s ]
+[ 2018-08-14T15:10:33+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 174 , 'general/profile/edit' , 'fa fa-circle-o' , '编辑' , 0 , 'normal' , 1534230633 , 1534230633) [ RunTime:0.000000s ]
+[ 2018-08-14T15:10:33+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 174 , 'general/profile/del' , 'fa fa-circle-o' , '删除' , 0 , 'normal' , 1534230633 , 1534230633) [ RunTime:0.000000s ]
+[ 2018-08-14T15:10:33+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 174 , 'general/profile/multi' , 'fa fa-circle-o' , '批量更新' , 0 , 'normal' , 1534230633 , 1534230633) [ RunTime:0.001000s ]
+[ 2018-08-14T15:13:54+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ 2018-08-14T15:13:54+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-08-14T15:13:54+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005000s ]
+[ 2018-08-14T15:13:54+08:00 ][ info ] [ DB ] INIT mysql
+[ 2018-08-14T15:13:54+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.006000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2018-08-14T15:13:54+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'store/office' [ RunTime:0.001000s ]
+[ 2018-08-14T15:13:54+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_store/office' [ RunTime:0.001000s ]
+[ 2018-08-14T15:14:29+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001000s ]
+[ info ] [ LOG ] INIT File
+[ 2018-08-14T15:14:29+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-08-14T15:14:29+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004000s ]
+[ 2018-08-14T15:14:29+08:00 ][ info ] [ DB ] INIT mysql
+[ 2018-08-14T15:14:29+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.005000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2018-08-14T15:14:29+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'office' [ RunTime:0.001000s ]
+[ 2018-08-14T15:14:29+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_office' [ RunTime:0.002000s ]
+[ 2018-08-14T15:16:25+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ 2018-08-14T15:16:25+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-08-14T15:16:25+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003000s ]
+[ 2018-08-14T15:16:25+08:00 ][ info ] [ DB ] INIT mysql
+[ 2018-08-14T15:16:25+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.006000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2018-08-14T15:16:25+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'store/office' [ RunTime:0.001000s ]
+[ 2018-08-14T15:16:25+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_store/office' [ RunTime:0.001000s ]
+[ 2018-08-14T15:17:16+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ 2018-08-14T15:17:16+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-08-14T15:17:16+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004000s ]
+[ 2018-08-14T15:17:16+08:00 ][ info ] [ DB ] INIT mysql
+[ 2018-08-14T15:17:16+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.006000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2018-08-14T15:17:16+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'store/office' [ RunTime:0.002000s ]
+[ 2018-08-14T15:17:16+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_store/office' [ RunTime:0.001000s ]
+[ 2018-08-14T15:20:05+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ 2018-08-14T15:20:05+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-08-14T15:20:05+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005000s ]
+[ 2018-08-14T15:20:05+08:00 ][ info ] [ DB ] INIT mysql
+[ 2018-08-14T15:20:05+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.007000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2018-08-14T15:20:05+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'office' [ RunTime:0.002000s ]
+[ 2018-08-14T15:20:05+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_office' [ RunTime:0.002000s ]
+[ 2018-08-14T15:20:05+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'fastadmin' AND table_name = 'fa_office' ORDER BY ORDINAL_POSITION [ RunTime:0.009000s ]
+[ 2018-08-14T15:20:05+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ 2018-08-14T15:20:05+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-08-14T15:20:05+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005000s ]
+[ 2018-08-14T15:20:05+08:00 ][ info ] [ DB ] INIT mysql
+[ 2018-08-14T15:20:05+08:00 ][ info ] [ LANG ] F:\phpStudy\WWW\newproject\application\admin\lang/zh-cn.php
+[ 2018-08-14T15:20:05+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.006000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2018-08-14T15:20:05+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.010000s ]
+[ 2018-08-14T15:20:05+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'office' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T15:20:05+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`pid` , `name` , `title` , `icon` , `remark` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (0 , 'office' , 'Office' , 'fa fa-circle-o' , '' , 1 , 'normal' , 1534231205 , 1534231205) [ RunTime:0.036000s ]
+[ 2018-08-14T15:20:05+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'office/index' LIMIT 1 [ RunTime:0.000000s ]
+[ 2018-08-14T15:20:05+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'office/add' LIMIT 1 [ RunTime:0.000000s ]
+[ 2018-08-14T15:20:05+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'office/edit' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T15:20:05+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'office/del' LIMIT 1 [ RunTime:0.000000s ]
+[ 2018-08-14T15:20:05+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'office/multi' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T15:20:05+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 181 , 'office/index' , 'fa fa-circle-o' , '查看' , 0 , 'normal' , 1534231205 , 1534231205) [ RunTime:0.001000s ]
+[ 2018-08-14T15:20:05+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 181 , 'office/add' , 'fa fa-circle-o' , '添加' , 0 , 'normal' , 1534231205 , 1534231205) [ RunTime:0.000000s ]
+[ 2018-08-14T15:20:05+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 181 , 'office/edit' , 'fa fa-circle-o' , '编辑' , 0 , 'normal' , 1534231205 , 1534231205) [ RunTime:0.000000s ]
+[ 2018-08-14T15:20:05+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 181 , 'office/del' , 'fa fa-circle-o' , '删除' , 0 , 'normal' , 1534231205 , 1534231205) [ RunTime:0.000000s ]
+[ 2018-08-14T15:20:05+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 181 , 'office/multi' , 'fa fa-circle-o' , '批量更新' , 0 , 'normal' , 1534231205 , 1534231205) [ RunTime:0.000000s ]
+[ 2018-08-14T15:23:43+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001000s ]
+[ info ] [ LOG ] INIT File
+[ 2018-08-14T15:23:43+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-08-14T15:23:43+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005000s ]
+[ 2018-08-14T15:23:43+08:00 ][ info ] [ DB ] INIT mysql
+[ 2018-08-14T15:23:43+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.016000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2018-08-14T15:23:43+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'office' [ RunTime:0.001000s ]
+[ 2018-08-14T15:23:43+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_office' [ RunTime:0.001000s ]
+[ 2018-08-14T15:24:57+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ 2018-08-14T15:24:57+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-08-14T15:24:57+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005000s ]
+[ 2018-08-14T15:24:57+08:00 ][ info ] [ DB ] INIT mysql
+[ 2018-08-14T15:24:57+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.006000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2018-08-14T15:24:57+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'office' [ RunTime:0.002000s ]
+[ 2018-08-14T15:24:57+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_office' [ RunTime:0.001000s ]
+[ 2018-08-14T15:35:04+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ 2018-08-14T15:35:04+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-08-14T15:35:04+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005000s ]
+[ 2018-08-14T15:35:04+08:00 ][ info ] [ DB ] INIT mysql
+[ 2018-08-14T15:35:04+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.006000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2018-08-14T15:35:04+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.009000s ]
+[ 2018-08-14T15:35:04+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  (  `name` LIKE 'office%' ) [ RunTime:0.001000s ]
+[ 2018-08-14T15:35:28+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ 2018-08-14T15:35:28+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-08-14T15:35:28+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005000s ]
+[ 2018-08-14T15:35:28+08:00 ][ info ] [ DB ] INIT mysql
+[ 2018-08-14T15:35:28+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.005000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2018-08-14T15:35:28+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'office' [ RunTime:0.001000s ]
+[ 2018-08-14T15:35:28+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_office' [ RunTime:0.003000s ]
+[ 2018-08-14T15:35:28+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'fastadmin' AND table_name = 'fa_office' ORDER BY ORDINAL_POSITION [ RunTime:0.009000s ]
+[ 2018-08-14T15:35:28+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ 2018-08-14T15:35:28+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-08-14T15:35:28+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005000s ]
+[ 2018-08-14T15:35:28+08:00 ][ info ] [ DB ] INIT mysql
+[ 2018-08-14T15:35:28+08:00 ][ info ] [ LANG ] F:\phpStudy\WWW\newproject\application\admin\lang/zh-cn.php
+[ 2018-08-14T15:35:28+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.005000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2018-08-14T15:35:28+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.009000s ]
+[ 2018-08-14T15:35:28+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'office' LIMIT 1 [ RunTime:0.000000s ]
+[ 2018-08-14T15:35:29+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`pid` , `name` , `title` , `icon` , `remark` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (0 , 'office' , '门店管理' , 'fa fa-circle-o' , '' , 1 , 'normal' , 1534232128 , 1534232128) [ RunTime:0.049000s ]
+[ 2018-08-14T15:35:29+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'office/index' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T15:35:29+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'office/add' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T15:35:29+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'office/edit' LIMIT 1 [ RunTime:0.000000s ]
+[ 2018-08-14T15:35:29+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'office/del' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T15:35:29+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'office/multi' LIMIT 1 [ RunTime:0.000000s ]
+[ 2018-08-14T15:35:29+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 187 , 'office/index' , 'fa fa-circle-o' , '查看' , 0 , 'normal' , 1534232129 , 1534232129) [ RunTime:0.000000s ]
+[ 2018-08-14T15:35:29+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 187 , 'office/add' , 'fa fa-circle-o' , '添加' , 0 , 'normal' , 1534232129 , 1534232129) [ RunTime:0.001000s ]
+[ 2018-08-14T15:35:29+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 187 , 'office/edit' , 'fa fa-circle-o' , '编辑' , 0 , 'normal' , 1534232129 , 1534232129) [ RunTime:0.000000s ]
+[ 2018-08-14T15:35:29+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 187 , 'office/del' , 'fa fa-circle-o' , '删除' , 0 , 'normal' , 1534232129 , 1534232129) [ RunTime:0.001000s ]
+[ 2018-08-14T15:35:29+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 187 , 'office/multi' , 'fa fa-circle-o' , '批量更新' , 0 , 'normal' , 1534232129 , 1534232129) [ RunTime:0.000000s ]
+[ 2018-08-14T15:41:25+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ 2018-08-14T15:41:25+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-08-14T15:41:25+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005000s ]
+[ 2018-08-14T15:41:25+08:00 ][ info ] [ DB ] INIT mysql
+[ 2018-08-14T15:41:25+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.005000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2018-08-14T15:41:25+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'office' [ RunTime:0.002000s ]
+[ 2018-08-14T15:41:25+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_office' [ RunTime:0.001000s ]
+[ 2018-08-14T15:41:42+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001000s ]
+[ info ] [ LOG ] INIT File
+[ 2018-08-14T15:41:42+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-08-14T15:41:42+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.006000s ]
+[ 2018-08-14T15:41:42+08:00 ][ info ] [ DB ] INIT mysql
+[ 2018-08-14T15:41:42+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.006000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2018-08-14T15:41:42+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.010000s ]
+[ 2018-08-14T15:41:42+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  (  `name` LIKE 'office%' ) [ RunTime:0.000000s ]
+[ 2018-08-14T15:41:50+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `id` IN (187,189,191,190,188,192) [ RunTime:0.002000s ]
+[ 2018-08-14T15:41:50+08:00 ][ sql ] [ SQL ] DELETE FROM `fa_auth_rule`    WHERE  `id` = 187 [ RunTime:0.086000s ]
+[ 2018-08-14T15:41:50+08:00 ][ sql ] [ SQL ] DELETE FROM `fa_auth_rule`    WHERE  `id` = 188 [ RunTime:0.044000s ]
+[ 2018-08-14T15:41:50+08:00 ][ sql ] [ SQL ] DELETE FROM `fa_auth_rule`    WHERE  `id` = 189 [ RunTime:0.030000s ]
+[ 2018-08-14T15:41:50+08:00 ][ sql ] [ SQL ] DELETE FROM `fa_auth_rule`    WHERE  `id` = 190 [ RunTime:0.030000s ]
+[ 2018-08-14T15:41:50+08:00 ][ sql ] [ SQL ] DELETE FROM `fa_auth_rule`    WHERE  `id` = 191 [ RunTime:0.030000s ]
+[ 2018-08-14T15:41:50+08:00 ][ sql ] [ SQL ] DELETE FROM `fa_auth_rule`    WHERE  `id` = 192 [ RunTime:0.033000s ]
+[ 2018-08-14T15:42:01+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ 2018-08-14T15:42:01+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-08-14T15:42:01+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005000s ]
+[ 2018-08-14T15:42:01+08:00 ][ info ] [ DB ] INIT mysql
+[ 2018-08-14T15:42:01+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.015000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2018-08-14T15:42:01+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'office' [ RunTime:0.001000s ]
+[ 2018-08-14T15:42:01+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_office' [ RunTime:0.001000s ]
+[ 2018-08-14T15:42:01+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'fastadmin' AND table_name = 'fa_office' ORDER BY ORDINAL_POSITION [ RunTime:0.010000s ]
+[ 2018-08-14T15:42:01+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ 2018-08-14T15:42:01+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-08-14T15:42:01+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005000s ]
+[ 2018-08-14T15:42:01+08:00 ][ info ] [ DB ] INIT mysql
+[ 2018-08-14T15:42:01+08:00 ][ info ] [ LANG ] F:\phpStudy\WWW\newproject\application\admin\lang/zh-cn.php
+[ 2018-08-14T15:42:02+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.006000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2018-08-14T15:42:02+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.009000s ]
+[ 2018-08-14T15:42:02+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'office' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T15:42:02+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`pid` , `name` , `title` , `icon` , `remark` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (0 , 'office' , '门店管理' , 'fa fa-circle-o' , '' , 1 , 'normal' , 1534232522 , 1534232522) [ RunTime:0.034000s ]
+[ 2018-08-14T15:42:02+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'office/index' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T15:42:02+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'office/add' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T15:42:02+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'office/edit' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T15:42:02+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'office/del' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T15:42:02+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'office/multi' LIMIT 1 [ RunTime:0.000000s ]
+[ 2018-08-14T15:42:02+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 193 , 'office/index' , 'fa fa-circle-o' , '查看' , 0 , 'normal' , 1534232522 , 1534232522) [ RunTime:0.000000s ]
+[ 2018-08-14T15:42:02+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 193 , 'office/add' , 'fa fa-circle-o' , '添加' , 0 , 'normal' , 1534232522 , 1534232522) [ RunTime:0.000000s ]
+[ 2018-08-14T15:42:02+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 193 , 'office/edit' , 'fa fa-circle-o' , '编辑' , 0 , 'normal' , 1534232522 , 1534232522) [ RunTime:0.001000s ]
+[ 2018-08-14T15:42:02+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 193 , 'office/del' , 'fa fa-circle-o' , '删除' , 0 , 'normal' , 1534232522 , 1534232522) [ RunTime:0.000000s ]
+[ 2018-08-14T15:42:02+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 193 , 'office/multi' , 'fa fa-circle-o' , '批量更新' , 0 , 'normal' , 1534232522 , 1534232522) [ RunTime:0.001000s ]
+[ 2018-08-14T16:04:26+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ 2018-08-14T16:04:26+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-08-14T16:04:26+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005000s ]
+[ 2018-08-14T16:04:26+08:00 ][ info ] [ DB ] INIT mysql
+[ 2018-08-14T16:04:26+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.006000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2018-08-14T16:04:26+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'office' [ RunTime:0.002000s ]
+[ 2018-08-14T16:04:26+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_office' [ RunTime:0.002000s ]
+[ 2018-08-14T16:04:36+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001000s ]
+[ info ] [ LOG ] INIT File
+[ 2018-08-14T16:04:36+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-08-14T16:04:36+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005000s ]
+[ 2018-08-14T16:04:36+08:00 ][ info ] [ DB ] INIT mysql
+[ 2018-08-14T16:04:36+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.006000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2018-08-14T16:04:36+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.009000s ]
+[ 2018-08-14T16:04:36+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  (  `name` LIKE 'office%' ) [ RunTime:0.001000s ]
+[ 2018-08-14T16:04:38+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `id` IN (193,195,197,196,194,198) [ RunTime:0.002000s ]
+[ 2018-08-14T16:04:38+08:00 ][ sql ] [ SQL ] DELETE FROM `fa_auth_rule`    WHERE  `id` = 193 [ RunTime:0.043000s ]
+[ 2018-08-14T16:04:38+08:00 ][ sql ] [ SQL ] DELETE FROM `fa_auth_rule`    WHERE  `id` = 194 [ RunTime:0.031000s ]
+[ 2018-08-14T16:04:38+08:00 ][ sql ] [ SQL ] DELETE FROM `fa_auth_rule`    WHERE  `id` = 195 [ RunTime:0.031000s ]
+[ 2018-08-14T16:04:38+08:00 ][ sql ] [ SQL ] DELETE FROM `fa_auth_rule`    WHERE  `id` = 196 [ RunTime:0.030000s ]
+[ 2018-08-14T16:04:38+08:00 ][ sql ] [ SQL ] DELETE FROM `fa_auth_rule`    WHERE  `id` = 197 [ RunTime:0.031000s ]
+[ 2018-08-14T16:04:38+08:00 ][ sql ] [ SQL ] DELETE FROM `fa_auth_rule`    WHERE  `id` = 198 [ RunTime:0.030000s ]
+[ 2018-08-14T16:13:46+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ 2018-08-14T16:13:46+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-08-14T16:13:46+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.006000s ]
+[ 2018-08-14T16:13:46+08:00 ][ info ] [ DB ] INIT mysql
+[ 2018-08-14T16:13:46+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.005000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2018-08-14T16:13:46+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'office' [ RunTime:0.001000s ]
+[ 2018-08-14T16:13:46+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_office' [ RunTime:0.001000s ]
+[ 2018-08-14T16:13:46+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'fastadmin' AND table_name = 'fa_office' ORDER BY ORDINAL_POSITION [ RunTime:0.010000s ]
+[ 2018-08-14T16:13:47+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ 2018-08-14T16:13:47+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-08-14T16:13:47+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.006000s ]
+[ 2018-08-14T16:13:47+08:00 ][ info ] [ DB ] INIT mysql
+[ 2018-08-14T16:13:47+08:00 ][ info ] [ LANG ] F:\phpStudy\WWW\newproject\application\admin\lang/zh-cn.php
+[ 2018-08-14T16:13:47+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.006000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2018-08-14T16:13:47+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.009000s ]
+[ 2018-08-14T16:13:47+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'office' LIMIT 1 [ RunTime:0.000000s ]
+[ 2018-08-14T16:13:47+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`pid` , `name` , `title` , `icon` , `remark` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (0 , 'office' , '门店管理' , 'fa fa-circle-o' , '' , 1 , 'normal' , 1534234427 , 1534234427) [ RunTime:0.057000s ]
+[ 2018-08-14T16:13:47+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'office/index' LIMIT 1 [ RunTime:0.000000s ]
+[ 2018-08-14T16:13:47+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'office/add' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T16:13:47+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'office/edit' LIMIT 1 [ RunTime:0.000000s ]
+[ 2018-08-14T16:13:47+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'office/del' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T16:13:47+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'office/multi' LIMIT 1 [ RunTime:0.000000s ]
+[ 2018-08-14T16:13:47+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 199 , 'office/index' , 'fa fa-circle-o' , '查看' , 0 , 'normal' , 1534234427 , 1534234427) [ RunTime:0.000000s ]
+[ 2018-08-14T16:13:47+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 199 , 'office/add' , 'fa fa-circle-o' , '添加' , 0 , 'normal' , 1534234427 , 1534234427) [ RunTime:0.000000s ]
+[ 2018-08-14T16:13:47+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 199 , 'office/edit' , 'fa fa-circle-o' , '编辑' , 0 , 'normal' , 1534234427 , 1534234427) [ RunTime:0.001000s ]
+[ 2018-08-14T16:13:47+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 199 , 'office/del' , 'fa fa-circle-o' , '删除' , 0 , 'normal' , 1534234427 , 1534234427) [ RunTime:0.000000s ]
+[ 2018-08-14T16:13:47+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 199 , 'office/multi' , 'fa fa-circle-o' , '批量更新' , 0 , 'normal' , 1534234427 , 1534234427) [ RunTime:0.000000s ]
+[ 2018-08-14T16:58:37+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ 2018-08-14T16:58:37+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-08-14T16:58:37+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.006000s ]
+[ 2018-08-14T16:58:37+08:00 ][ info ] [ DB ] INIT mysql
+[ 2018-08-14T16:58:37+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2018-08-14T16:58:37+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'office' [ RunTime:0.001000s ]
+[ 2018-08-14T16:58:37+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_office' [ RunTime:0.001000s ]
+[ 2018-08-14T16:59:07+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ 2018-08-14T16:59:07+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-08-14T16:59:07+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004000s ]
+[ 2018-08-14T16:59:07+08:00 ][ info ] [ DB ] INIT mysql
+[ 2018-08-14T16:59:07+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.005000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2018-08-14T16:59:07+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.010000s ]
+[ 2018-08-14T16:59:07+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  (  `name` LIKE 'office%' ) [ RunTime:0.001000s ]
+[ 2018-08-14T16:59:09+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `id` IN (199,201,203,202,200,204) [ RunTime:0.001000s ]
+[ 2018-08-14T16:59:09+08:00 ][ sql ] [ SQL ] DELETE FROM `fa_auth_rule`    WHERE  `id` = 199 [ RunTime:0.032000s ]
+[ 2018-08-14T16:59:09+08:00 ][ sql ] [ SQL ] DELETE FROM `fa_auth_rule`    WHERE  `id` = 200 [ RunTime:0.032000s ]
+[ 2018-08-14T16:59:09+08:00 ][ sql ] [ SQL ] DELETE FROM `fa_auth_rule`    WHERE  `id` = 201 [ RunTime:0.031000s ]
+[ 2018-08-14T16:59:09+08:00 ][ sql ] [ SQL ] DELETE FROM `fa_auth_rule`    WHERE  `id` = 202 [ RunTime:0.032000s ]
+[ 2018-08-14T16:59:09+08:00 ][ sql ] [ SQL ] DELETE FROM `fa_auth_rule`    WHERE  `id` = 203 [ RunTime:0.030000s ]
+[ 2018-08-14T16:59:09+08:00 ][ sql ] [ SQL ] DELETE FROM `fa_auth_rule`    WHERE  `id` = 204 [ RunTime:0.031000s ]
+[ 2018-08-14T16:59:33+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ 2018-08-14T16:59:33+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-08-14T16:59:33+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.006000s ]
+[ 2018-08-14T16:59:33+08:00 ][ info ] [ DB ] INIT mysql
+[ 2018-08-14T16:59:33+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.005000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2018-08-14T16:59:33+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'office' [ RunTime:0.001000s ]
+[ 2018-08-14T16:59:33+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_office' [ RunTime:0.001000s ]
+[ 2018-08-14T16:59:33+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'fastadmin' AND table_name = 'fa_office' ORDER BY ORDINAL_POSITION [ RunTime:0.009000s ]
+[ 2018-08-14T16:59:34+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ 2018-08-14T16:59:34+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-08-14T16:59:34+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005000s ]
+[ 2018-08-14T16:59:34+08:00 ][ info ] [ DB ] INIT mysql
+[ 2018-08-14T16:59:34+08:00 ][ info ] [ LANG ] F:\phpStudy\WWW\newproject\application\admin\lang/zh-cn.php
+[ 2018-08-14T16:59:34+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2018-08-14T16:59:34+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.009000s ]
+[ 2018-08-14T16:59:34+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'office' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T16:59:34+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`pid` , `name` , `title` , `icon` , `remark` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (0 , 'office' , '门店管理' , 'fa fa-circle-o' , '' , 1 , 'normal' , 1534237174 , 1534237174) [ RunTime:0.048000s ]
+[ 2018-08-14T16:59:34+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'office/index' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T16:59:34+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'office/add' LIMIT 1 [ RunTime:0.002000s ]
+[ 2018-08-14T16:59:34+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'office/edit' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T16:59:34+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'office/del' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T16:59:34+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'office/multi' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T16:59:34+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 205 , 'office/index' , 'fa fa-circle-o' , '查看' , 0 , 'normal' , 1534237174 , 1534237174) [ RunTime:0.001000s ]
+[ 2018-08-14T16:59:34+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 205 , 'office/add' , 'fa fa-circle-o' , '添加' , 0 , 'normal' , 1534237174 , 1534237174) [ RunTime:0.001000s ]
+[ 2018-08-14T16:59:34+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 205 , 'office/edit' , 'fa fa-circle-o' , '编辑' , 0 , 'normal' , 1534237174 , 1534237174) [ RunTime:0.001000s ]
+[ 2018-08-14T16:59:34+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 205 , 'office/del' , 'fa fa-circle-o' , '删除' , 0 , 'normal' , 1534237174 , 1534237174) [ RunTime:0.001000s ]
+[ 2018-08-14T16:59:34+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 205 , 'office/multi' , 'fa fa-circle-o' , '批量更新' , 0 , 'normal' , 1534237174 , 1534237174) [ RunTime:0.000000s ]
+[ 2018-08-14T17:14:54+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ 2018-08-14T17:14:54+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-08-14T17:14:54+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005000s ]
+[ 2018-08-14T17:14:54+08:00 ][ info ] [ DB ] INIT mysql
+[ 2018-08-14T17:14:54+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.006000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2018-08-14T17:14:54+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.010000s ]
+[ 2018-08-14T17:14:54+08:00 ][ sql ] [ SQL ] DELETE FROM `fa_auth_rule`    WHERE  `id` > 0 [ RunTime:0.032000s ]
+[ 2018-08-14T17:14:54+08:00 ][ info ] [ LANG ] F:\phpStudy\WWW\newproject\application\admin\lang/zh-cn.php
+[ 2018-08-14T17:14:54+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'addon' LIMIT 1 [ RunTime:0.000000s ]
+[ 2018-08-14T17:14:54+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`pid` , `name` , `title` , `icon` , `remark` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (0 , 'addon' , '插件管理' , 'fa fa-circle-o' , '可在线安装、卸载、禁用、启用插件，同时支持添加本地插件。FastAdmin已上线插件商店 ，你可以发布你的免费或付费插件：<a href=\"https://www.fastadmin.net/store.html\" target=\"_blank\">https://www.fastadmin.net/store.html</a>' , 1 , 'normal' , 1534238094 , 1534238094) [ RunTime:0.032000s ]
+[ 2018-08-14T17:14:54+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'addon/index' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:54+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'addon/config' LIMIT 1 [ RunTime:0.000000s ]
+[ 2018-08-14T17:14:54+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'addon/install' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:54+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'addon/uninstall' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:54+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'addon/state' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:54+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'addon/local' LIMIT 1 [ RunTime:0.000000s ]
+[ 2018-08-14T17:14:54+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'addon/upgrade' LIMIT 1 [ RunTime:0.000000s ]
+[ 2018-08-14T17:14:54+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'addon/downloaded' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:54+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'addon/add' LIMIT 1 [ RunTime:0.000000s ]
+[ 2018-08-14T17:14:54+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'addon/edit' LIMIT 1 [ RunTime:0.000000s ]
+[ 2018-08-14T17:14:54+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'addon/del' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:54+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'addon/multi' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:54+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 211 , 'addon/index' , 'fa fa-circle-o' , '查看' , 0 , 'normal' , 1534238094 , 1534238094) [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:54+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 211 , 'addon/config' , 'fa fa-circle-o' , '配置' , 0 , 'normal' , 1534238094 , 1534238094) [ RunTime:0.000000s ]
+[ 2018-08-14T17:14:54+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 211 , 'addon/install' , 'fa fa-circle-o' , '安装' , 0 , 'normal' , 1534238094 , 1534238094) [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:54+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 211 , 'addon/uninstall' , 'fa fa-circle-o' , '卸载' , 0 , 'normal' , 1534238094 , 1534238094) [ RunTime:0.000000s ]
+[ 2018-08-14T17:14:54+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 211 , 'addon/state' , 'fa fa-circle-o' , '禁用启用' , 0 , 'normal' , 1534238094 , 1534238094) [ RunTime:0.000000s ]
+[ 2018-08-14T17:14:54+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 211 , 'addon/local' , 'fa fa-circle-o' , '本地上传' , 0 , 'normal' , 1534238094 , 1534238094) [ RunTime:0.000000s ]
+[ 2018-08-14T17:14:54+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 211 , 'addon/upgrade' , 'fa fa-circle-o' , '更新插件' , 0 , 'normal' , 1534238094 , 1534238094) [ RunTime:0.000000s ]
+[ 2018-08-14T17:14:54+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 211 , 'addon/downloaded' , 'fa fa-circle-o' , '已装插件' , 0 , 'normal' , 1534238094 , 1534238094) [ RunTime:0.000000s ]
+[ 2018-08-14T17:14:54+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 211 , 'addon/add' , 'fa fa-circle-o' , '添加' , 0 , 'normal' , 1534238094 , 1534238094) [ RunTime:0.000000s ]
+[ 2018-08-14T17:14:54+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 211 , 'addon/edit' , 'fa fa-circle-o' , '编辑' , 0 , 'normal' , 1534238094 , 1534238094) [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:54+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 211 , 'addon/del' , 'fa fa-circle-o' , '删除' , 0 , 'normal' , 1534238094 , 1534238094) [ RunTime:0.000000s ]
+[ 2018-08-14T17:14:54+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 211 , 'addon/multi' , 'fa fa-circle-o' , '批量更新' , 0 , 'normal' , 1534238094 , 1534238094) [ RunTime:0.000000s ]
+[ 2018-08-14T17:14:54+08:00 ][ info ] [ LANG ] F:\phpStudy\WWW\newproject\application\admin\lang/zh-cn.php
+[ 2018-08-14T17:14:54+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'category' LIMIT 1 [ RunTime:0.000000s ]
+[ 2018-08-14T17:14:54+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`pid` , `name` , `title` , `icon` , `remark` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (0 , 'category' , '分类管理' , 'fa fa-list' , '用于统一管理网站的所有分类,分类可进行无限级分类' , 1 , 'normal' , 1534238094 , 1534238094) [ RunTime:0.032000s ]
+[ 2018-08-14T17:14:54+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'category/index' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:54+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'category/add' LIMIT 1 [ RunTime:0.000000s ]
+[ 2018-08-14T17:14:54+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'category/edit' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:54+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'category/del' LIMIT 1 [ RunTime:0.000000s ]
+[ 2018-08-14T17:14:54+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'category/multi' LIMIT 1 [ RunTime:0.000000s ]
+[ 2018-08-14T17:14:54+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 224 , 'category/index' , 'fa fa-circle-o' , '查看' , 0 , 'normal' , 1534238094 , 1534238094) [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:54+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 224 , 'category/add' , 'fa fa-circle-o' , '添加' , 0 , 'normal' , 1534238094 , 1534238094) [ RunTime:0.000000s ]
+[ 2018-08-14T17:14:54+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 224 , 'category/edit' , 'fa fa-circle-o' , '编辑' , 0 , 'normal' , 1534238094 , 1534238094) [ RunTime:0.000000s ]
+[ 2018-08-14T17:14:54+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 224 , 'category/del' , 'fa fa-circle-o' , '删除' , 0 , 'normal' , 1534238094 , 1534238094) [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:54+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 224 , 'category/multi' , 'fa fa-circle-o' , '批量更新' , 0 , 'normal' , 1534238094 , 1534238094) [ RunTime:0.000000s ]
+[ 2018-08-14T17:14:54+08:00 ][ info ] [ LANG ] F:\phpStudy\WWW\newproject\application\admin\lang/zh-cn.php
+[ 2018-08-14T17:14:54+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'dashboard' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:54+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`pid` , `name` , `title` , `icon` , `remark` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (0 , 'dashboard' , '控制台' , 'fa fa-dashboard' , '用于展示当前系统中的统计数据、统计报表及重要实时数据' , 1 , 'normal' , 1534238094 , 1534238094) [ RunTime:0.028000s ]
+[ 2018-08-14T17:14:54+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'dashboard/index' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:54+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'dashboard/add' LIMIT 1 [ RunTime:0.000000s ]
+[ 2018-08-14T17:14:54+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'dashboard/edit' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:54+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'dashboard/del' LIMIT 1 [ RunTime:0.000000s ]
+[ 2018-08-14T17:14:54+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'dashboard/multi' LIMIT 1 [ RunTime:0.000000s ]
+[ 2018-08-14T17:14:54+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 230 , 'dashboard/index' , 'fa fa-circle-o' , '查看' , 0 , 'normal' , 1534238094 , 1534238094) [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:54+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 230 , 'dashboard/add' , 'fa fa-circle-o' , '添加' , 0 , 'normal' , 1534238094 , 1534238094) [ RunTime:0.000000s ]
+[ 2018-08-14T17:14:54+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 230 , 'dashboard/edit' , 'fa fa-circle-o' , '编辑' , 0 , 'normal' , 1534238094 , 1534238094) [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:54+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 230 , 'dashboard/del' , 'fa fa-circle-o' , '删除' , 0 , 'normal' , 1534238094 , 1534238094) [ RunTime:0.000000s ]
+[ 2018-08-14T17:14:54+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 230 , 'dashboard/multi' , 'fa fa-circle-o' , '批量更新' , 0 , 'normal' , 1534238094 , 1534238094) [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:54+08:00 ][ info ] [ LANG ] F:\phpStudy\WWW\newproject\application\admin\lang/zh-cn.php
+[ 2018-08-14T17:14:54+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'myapp' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:54+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`pid` , `name` , `title` , `icon` , `remark` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (0 , 'myapp' , '我的app' , 'fa fa-circle-o' , '' , 1 , 'normal' , 1534238094 , 1534238094) [ RunTime:0.032000s ]
+[ 2018-08-14T17:14:54+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'myapp/index' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:54+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'myapp/add' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:54+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'myapp/edit' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:54+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'myapp/del' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:54+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'myapp/multi' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:54+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 236 , 'myapp/index' , 'fa fa-circle-o' , '查看' , 0 , 'normal' , 1534238094 , 1534238094) [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:54+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 236 , 'myapp/add' , 'fa fa-circle-o' , '添加' , 0 , 'normal' , 1534238094 , 1534238094) [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:54+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 236 , 'myapp/edit' , 'fa fa-circle-o' , '编辑' , 0 , 'normal' , 1534238094 , 1534238094) [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:54+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 236 , 'myapp/del' , 'fa fa-circle-o' , '删除' , 0 , 'normal' , 1534238094 , 1534238094) [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:54+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 236 , 'myapp/multi' , 'fa fa-circle-o' , '批量更新' , 0 , 'normal' , 1534238094 , 1534238094) [ RunTime:0.000000s ]
+[ 2018-08-14T17:14:54+08:00 ][ info ] [ LANG ] F:\phpStudy\WWW\newproject\application\admin\lang/zh-cn.php
+[ 2018-08-14T17:14:54+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'office' LIMIT 1 [ RunTime:0.000000s ]
+[ 2018-08-14T17:14:54+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`pid` , `name` , `title` , `icon` , `remark` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (0 , 'office' , '门店管理' , 'fa fa-circle-o' , '' , 1 , 'normal' , 1534238094 , 1534238094) [ RunTime:0.029000s ]
+[ 2018-08-14T17:14:54+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'office/index' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:54+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'office/add' LIMIT 1 [ RunTime:0.000000s ]
+[ 2018-08-14T17:14:54+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'office/edit' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:54+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'office/del' LIMIT 1 [ RunTime:0.000000s ]
+[ 2018-08-14T17:14:54+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'office/multi' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:54+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 242 , 'office/index' , 'fa fa-circle-o' , '查看' , 0 , 'normal' , 1534238094 , 1534238094) [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:54+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 242 , 'office/add' , 'fa fa-circle-o' , '添加' , 0 , 'normal' , 1534238094 , 1534238094) [ RunTime:0.000000s ]
+[ 2018-08-14T17:14:54+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 242 , 'office/edit' , 'fa fa-circle-o' , '编辑' , 0 , 'normal' , 1534238094 , 1534238094) [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:54+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 242 , 'office/del' , 'fa fa-circle-o' , '删除' , 0 , 'normal' , 1534238094 , 1534238094) [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:54+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 242 , 'office/multi' , 'fa fa-circle-o' , '批量更新' , 0 , 'normal' , 1534238094 , 1534238094) [ RunTime:0.000000s ]
+[ 2018-08-14T17:14:54+08:00 ][ info ] [ LANG ] F:\phpStudy\WWW\newproject\application\admin\lang/zh-cn.php
+[ 2018-08-14T17:14:54+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'auth' LIMIT 1 [ RunTime:0.000000s ]
+[ 2018-08-14T17:14:54+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`pid` , `name` , `title` , `icon` , `remark` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (0 , 'auth' , 'auth' , 'fa fa-list' , '' , 1 , 'normal' , 1534238094 , 1534238094) [ RunTime:0.026000s ]
+[ 2018-08-14T17:14:54+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'auth/admin' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:55+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`pid` , `name` , `title` , `icon` , `remark` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (248 , 'auth/admin' , '管理员管理' , 'fa fa-users' , '一个管理员可以有多个角色组,左侧的菜单根据管理员所拥有的权限进行生成' , 1 , 'normal' , 1534238094 , 1534238094) [ RunTime:0.024000s ]
+[ 2018-08-14T17:14:55+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'auth/admin/index' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:55+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'auth/admin/add' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:55+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'auth/admin/edit' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:55+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'auth/admin/del' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:55+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 249 , 'auth/admin/index' , 'fa fa-circle-o' , '查看' , 0 , 'normal' , 1534238095 , 1534238095) [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:55+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 249 , 'auth/admin/add' , 'fa fa-circle-o' , '添加' , 0 , 'normal' , 1534238095 , 1534238095) [ RunTime:0.000000s ]
+[ 2018-08-14T17:14:55+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 249 , 'auth/admin/edit' , 'fa fa-circle-o' , '编辑' , 0 , 'normal' , 1534238095 , 1534238095) [ RunTime:0.000000s ]
+[ 2018-08-14T17:14:55+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 249 , 'auth/admin/del' , 'fa fa-circle-o' , '删除' , 0 , 'normal' , 1534238095 , 1534238095) [ RunTime:0.000000s ]
+[ 2018-08-14T17:14:55+08:00 ][ info ] [ LANG ] F:\phpStudy\WWW\newproject\application\admin\lang/zh-cn.php
+[ 2018-08-14T17:14:55+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'auth' LIMIT 1 [ RunTime:0.002000s ]
+[ 2018-08-14T17:14:55+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'auth/adminlog' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:55+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`pid` , `name` , `title` , `icon` , `remark` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (248 , 'auth/adminlog' , '管理员日志' , 'fa fa-users' , '管理员可以查看自己所拥有的权限的管理员日志' , 1 , 'normal' , 1534238095 , 1534238095) [ RunTime:0.027000s ]
+[ 2018-08-14T17:14:55+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'auth/adminlog/index' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:55+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'auth/adminlog/detail' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:55+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'auth/adminlog/del' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:55+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'auth/adminlog/selectpage' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:55+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 254 , 'auth/adminlog/index' , 'fa fa-circle-o' , '查看' , 0 , 'normal' , 1534238095 , 1534238095) [ RunTime:0.000000s ]
+[ 2018-08-14T17:14:55+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 254 , 'auth/adminlog/detail' , 'fa fa-circle-o' , '详情' , 0 , 'normal' , 1534238095 , 1534238095) [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:55+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 254 , 'auth/adminlog/del' , 'fa fa-circle-o' , '删除' , 0 , 'normal' , 1534238095 , 1534238095) [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:55+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 254 , 'auth/adminlog/selectpage' , 'fa fa-circle-o' , 'Selectpage' , 0 , 'normal' , 1534238095 , 1534238095) [ RunTime:0.000000s ]
+[ 2018-08-14T17:14:55+08:00 ][ info ] [ LANG ] F:\phpStudy\WWW\newproject\application\admin\lang/zh-cn.php
+[ 2018-08-14T17:14:55+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'auth' LIMIT 1 [ RunTime:0.002000s ]
+[ 2018-08-14T17:14:55+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'auth/group' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:55+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`pid` , `name` , `title` , `icon` , `remark` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (248 , 'auth/group' , '角色组' , 'fa fa-group' , '角色组可以有多个,角色有上下级层级关系,如果子角色有角色组和管理员的权限则可以派生属于自己组别下级的角色组或管理员' , 1 , 'normal' , 1534238095 , 1534238095) [ RunTime:0.029000s ]
+[ 2018-08-14T17:14:55+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'auth/group/index' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:55+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'auth/group/add' LIMIT 1 [ RunTime:0.000000s ]
+[ 2018-08-14T17:14:55+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'auth/group/edit' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:55+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'auth/group/del' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:55+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 259 , 'auth/group/index' , 'fa fa-circle-o' , '查看' , 0 , 'normal' , 1534238095 , 1534238095) [ RunTime:0.000000s ]
+[ 2018-08-14T17:14:55+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 259 , 'auth/group/add' , 'fa fa-circle-o' , '添加' , 0 , 'normal' , 1534238095 , 1534238095) [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:55+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 259 , 'auth/group/edit' , 'fa fa-circle-o' , '编辑' , 0 , 'normal' , 1534238095 , 1534238095) [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:55+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 259 , 'auth/group/del' , 'fa fa-circle-o' , '删除' , 0 , 'normal' , 1534238095 , 1534238095) [ RunTime:0.000000s ]
+[ 2018-08-14T17:14:55+08:00 ][ info ] [ LANG ] F:\phpStudy\WWW\newproject\application\admin\lang/zh-cn.php
+[ 2018-08-14T17:14:55+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'auth' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:55+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'auth/rule' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:55+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`pid` , `name` , `title` , `icon` , `remark` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (248 , 'auth/rule' , '规则管理' , 'fa fa-list' , '规则通常对应一个控制器的方法,同时左侧的菜单栏数据也从规则中体现,通常建议通过控制台进行生成规则节点' , 1 , 'normal' , 1534238095 , 1534238095) [ RunTime:0.031000s ]
+[ 2018-08-14T17:14:55+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'auth/rule/index' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:55+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'auth/rule/add' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:55+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'auth/rule/edit' LIMIT 1 [ RunTime:0.000000s ]
+[ 2018-08-14T17:14:55+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'auth/rule/del' LIMIT 1 [ RunTime:0.000000s ]
+[ 2018-08-14T17:14:55+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'auth/rule/multi' LIMIT 1 [ RunTime:0.000000s ]
+[ 2018-08-14T17:14:55+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 264 , 'auth/rule/index' , 'fa fa-circle-o' , '查看' , 0 , 'normal' , 1534238095 , 1534238095) [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:55+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 264 , 'auth/rule/add' , 'fa fa-circle-o' , '添加' , 0 , 'normal' , 1534238095 , 1534238095) [ RunTime:0.000000s ]
+[ 2018-08-14T17:14:55+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 264 , 'auth/rule/edit' , 'fa fa-circle-o' , '编辑' , 0 , 'normal' , 1534238095 , 1534238095) [ RunTime:0.000000s ]
+[ 2018-08-14T17:14:55+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 264 , 'auth/rule/del' , 'fa fa-circle-o' , '删除' , 0 , 'normal' , 1534238095 , 1534238095) [ RunTime:0.000000s ]
+[ 2018-08-14T17:14:55+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 264 , 'auth/rule/multi' , 'fa fa-circle-o' , '批量更新' , 0 , 'normal' , 1534238095 , 1534238095) [ RunTime:0.000000s ]
+[ 2018-08-14T17:14:55+08:00 ][ info ] [ LANG ] F:\phpStudy\WWW\newproject\application\admin\lang/zh-cn.php
+[ 2018-08-14T17:14:55+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'general' LIMIT 1 [ RunTime:0.002000s ]
+[ 2018-08-14T17:14:55+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`pid` , `name` , `title` , `icon` , `remark` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (0 , 'general' , 'general' , 'fa fa-list' , '' , 1 , 'normal' , 1534238095 , 1534238095) [ RunTime:0.096000s ]
+[ 2018-08-14T17:14:55+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'general/attachment' LIMIT 1 [ RunTime:0.002000s ]
+[ 2018-08-14T17:14:55+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`pid` , `name` , `title` , `icon` , `remark` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (270 , 'general/attachment' , '附件管理' , 'fa fa-circle-o' , '主要用于管理上传到又拍云的数据或上传至本服务的上传数据' , 1 , 'normal' , 1534238095 , 1534238095) [ RunTime:0.075000s ]
+[ 2018-08-14T17:14:55+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'general/attachment/index' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:55+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'general/attachment/select' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:55+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'general/attachment/add' LIMIT 1 [ RunTime:0.002000s ]
+[ 2018-08-14T17:14:55+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'general/attachment/del' LIMIT 1 [ RunTime:0.002000s ]
+[ 2018-08-14T17:14:55+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'general/attachment/edit' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:55+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'general/attachment/multi' LIMIT 1 [ RunTime:0.002000s ]
+[ 2018-08-14T17:14:55+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 271 , 'general/attachment/index' , 'fa fa-circle-o' , '查看' , 0 , 'normal' , 1534238095 , 1534238095) [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:55+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 271 , 'general/attachment/select' , 'fa fa-circle-o' , '选择附件' , 0 , 'normal' , 1534238095 , 1534238095) [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:55+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 271 , 'general/attachment/add' , 'fa fa-circle-o' , '添加' , 0 , 'normal' , 1534238095 , 1534238095) [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:55+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 271 , 'general/attachment/del' , 'fa fa-circle-o' , '删除附件' , 0 , 'normal' , 1534238095 , 1534238095) [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:55+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 271 , 'general/attachment/edit' , 'fa fa-circle-o' , '编辑' , 0 , 'normal' , 1534238095 , 1534238095) [ RunTime:0.000000s ]
+[ 2018-08-14T17:14:55+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 271 , 'general/attachment/multi' , 'fa fa-circle-o' , '批量更新' , 0 , 'normal' , 1534238095 , 1534238095) [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:55+08:00 ][ info ] [ LANG ] F:\phpStudy\WWW\newproject\application\admin\lang/zh-cn.php
+[ 2018-08-14T17:14:55+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'general' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:55+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'general/config' LIMIT 1 [ RunTime:0.000000s ]
+[ 2018-08-14T17:14:55+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`pid` , `name` , `title` , `icon` , `remark` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (270 , 'general/config' , '系统配置' , 'fa fa-cogs' , '可以在此增改系统的变量和分组,也可以自定义分组和变量,如果需要删除请从数据库中删除' , 1 , 'normal' , 1534238095 , 1534238095) [ RunTime:0.032000s ]
+[ 2018-08-14T17:14:55+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'general/config/index' LIMIT 1 [ RunTime:0.000000s ]
+[ 2018-08-14T17:14:55+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'general/config/add' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:55+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'general/config/edit' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:55+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'general/config/del' LIMIT 1 [ RunTime:0.000000s ]
+[ 2018-08-14T17:14:55+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'general/config/multi' LIMIT 1 [ RunTime:0.000000s ]
+[ 2018-08-14T17:14:55+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 278 , 'general/config/index' , 'fa fa-circle-o' , '查看' , 0 , 'normal' , 1534238095 , 1534238095) [ RunTime:0.000000s ]
+[ 2018-08-14T17:14:55+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 278 , 'general/config/add' , 'fa fa-circle-o' , '添加' , 0 , 'normal' , 1534238095 , 1534238095) [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:55+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 278 , 'general/config/edit' , 'fa fa-circle-o' , '编辑' , 0 , 'normal' , 1534238095 , 1534238095) [ RunTime:0.000000s ]
+[ 2018-08-14T17:14:55+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 278 , 'general/config/del' , 'fa fa-circle-o' , '删除' , 0 , 'normal' , 1534238095 , 1534238095) [ RunTime:0.000000s ]
+[ 2018-08-14T17:14:55+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 278 , 'general/config/multi' , 'fa fa-circle-o' , '批量更新' , 0 , 'normal' , 1534238095 , 1534238095) [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:55+08:00 ][ info ] [ LANG ] F:\phpStudy\WWW\newproject\application\admin\lang/zh-cn.php
+[ 2018-08-14T17:14:55+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'general' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:55+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'general/database' LIMIT 1 [ RunTime:0.000000s ]
+[ 2018-08-14T17:14:55+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`pid` , `name` , `title` , `icon` , `remark` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (270 , 'general/database' , '数据库管理' , 'fa fa-database' , '可在线进行一些简单的数据库表优化或修复,查看表结构和数据。也可以进行SQL语句的操作' , 1 , 'normal' , 1534238095 , 1534238095) [ RunTime:0.050000s ]
+[ 2018-08-14T17:14:55+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'general/database/index' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:55+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'general/database/query' LIMIT 1 [ RunTime:0.000000s ]
+[ 2018-08-14T17:14:55+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'general/database/backup' LIMIT 1 [ RunTime:0.000000s ]
+[ 2018-08-14T17:14:55+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'general/database/add' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:55+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'general/database/edit' LIMIT 1 [ RunTime:0.000000s ]
+[ 2018-08-14T17:14:55+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'general/database/del' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:55+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'general/database/multi' LIMIT 1 [ RunTime:0.000000s ]
+[ 2018-08-14T17:14:55+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 284 , 'general/database/index' , 'fa fa-circle-o' , '查看' , 0 , 'normal' , 1534238095 , 1534238095) [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:55+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 284 , 'general/database/query' , 'fa fa-circle-o' , 'SQL查询' , 0 , 'normal' , 1534238095 , 1534238095) [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:55+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 284 , 'general/database/backup' , 'fa fa-circle-o' , '备份' , 0 , 'normal' , 1534238095 , 1534238095) [ RunTime:0.000000s ]
+[ 2018-08-14T17:14:55+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 284 , 'general/database/add' , 'fa fa-circle-o' , '添加' , 0 , 'normal' , 1534238095 , 1534238095) [ RunTime:0.000000s ]
+[ 2018-08-14T17:14:55+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 284 , 'general/database/edit' , 'fa fa-circle-o' , '编辑' , 0 , 'normal' , 1534238095 , 1534238095) [ RunTime:0.000000s ]
+[ 2018-08-14T17:14:55+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 284 , 'general/database/del' , 'fa fa-circle-o' , '删除' , 0 , 'normal' , 1534238095 , 1534238095) [ RunTime:0.000000s ]
+[ 2018-08-14T17:14:55+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 284 , 'general/database/multi' , 'fa fa-circle-o' , '批量更新' , 0 , 'normal' , 1534238095 , 1534238095) [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:55+08:00 ][ info ] [ LANG ] F:\phpStudy\WWW\newproject\application\admin\lang/zh-cn.php
+[ 2018-08-14T17:14:55+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'general' LIMIT 1 [ RunTime:0.000000s ]
+[ 2018-08-14T17:14:55+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'general/profile' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:56+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`pid` , `name` , `title` , `icon` , `remark` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (270 , 'general/profile' , '个人配置' , 'fa fa-user' , '' , 1 , 'normal' , 1534238095 , 1534238095) [ RunTime:0.036000s ]
+[ 2018-08-14T17:14:56+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'general/profile/index' LIMIT 1 [ RunTime:0.000000s ]
+[ 2018-08-14T17:14:56+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'general/profile/update' LIMIT 1 [ RunTime:0.000000s ]
+[ 2018-08-14T17:14:56+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'general/profile/add' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:56+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'general/profile/edit' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:56+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'general/profile/del' LIMIT 1 [ RunTime:0.000000s ]
+[ 2018-08-14T17:14:56+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'general/profile/multi' LIMIT 1 [ RunTime:0.000000s ]
+[ 2018-08-14T17:14:56+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 292 , 'general/profile/index' , 'fa fa-circle-o' , '查看' , 0 , 'normal' , 1534238096 , 1534238096) [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:56+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 292 , 'general/profile/update' , 'fa fa-circle-o' , '更新个人信息' , 0 , 'normal' , 1534238096 , 1534238096) [ RunTime:0.000000s ]
+[ 2018-08-14T17:14:56+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 292 , 'general/profile/add' , 'fa fa-circle-o' , '添加' , 0 , 'normal' , 1534238096 , 1534238096) [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:56+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 292 , 'general/profile/edit' , 'fa fa-circle-o' , '编辑' , 0 , 'normal' , 1534238096 , 1534238096) [ RunTime:0.000000s ]
+[ 2018-08-14T17:14:56+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 292 , 'general/profile/del' , 'fa fa-circle-o' , '删除' , 0 , 'normal' , 1534238096 , 1534238096) [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:56+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 292 , 'general/profile/multi' , 'fa fa-circle-o' , '批量更新' , 0 , 'normal' , 1534238096 , 1534238096) [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:56+08:00 ][ info ] [ LANG ] F:\phpStudy\WWW\newproject\application\admin\lang/zh-cn.php
+[ 2018-08-14T17:14:56+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'user' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:56+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`pid` , `name` , `title` , `icon` , `remark` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (0 , 'user' , 'user' , 'fa fa-list' , '' , 1 , 'normal' , 1534238096 , 1534238096) [ RunTime:0.036000s ]
+[ 2018-08-14T17:14:56+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'user/group' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:56+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`pid` , `name` , `title` , `icon` , `remark` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (299 , 'user/group' , '会员组管理' , 'fa fa-users' , '' , 1 , 'normal' , 1534238096 , 1534238096) [ RunTime:0.037000s ]
+[ 2018-08-14T17:14:56+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'user/group/add' LIMIT 1 [ RunTime:0.000000s ]
+[ 2018-08-14T17:14:56+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'user/group/edit' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:56+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'user/group/index' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:56+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'user/group/del' LIMIT 1 [ RunTime:0.000000s ]
+[ 2018-08-14T17:14:56+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'user/group/multi' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:56+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 300 , 'user/group/add' , 'fa fa-circle-o' , 'Add' , 0 , 'normal' , 1534238096 , 1534238096) [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:56+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 300 , 'user/group/edit' , 'fa fa-circle-o' , 'Edit' , 0 , 'normal' , 1534238096 , 1534238096) [ RunTime:0.000000s ]
+[ 2018-08-14T17:14:56+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 300 , 'user/group/index' , 'fa fa-circle-o' , '查看' , 0 , 'normal' , 1534238096 , 1534238096) [ RunTime:0.000000s ]
+[ 2018-08-14T17:14:56+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 300 , 'user/group/del' , 'fa fa-circle-o' , '删除' , 0 , 'normal' , 1534238096 , 1534238096) [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:56+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 300 , 'user/group/multi' , 'fa fa-circle-o' , '批量更新' , 0 , 'normal' , 1534238096 , 1534238096) [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:56+08:00 ][ info ] [ LANG ] F:\phpStudy\WWW\newproject\application\admin\lang/zh-cn.php
+[ 2018-08-14T17:14:56+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'user' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:56+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'user/rule' LIMIT 1 [ RunTime:0.000000s ]
+[ 2018-08-14T17:14:56+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`pid` , `name` , `title` , `icon` , `remark` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (299 , 'user/rule' , '会员规则管理' , 'fa fa-circle-o' , '' , 1 , 'normal' , 1534238096 , 1534238096) [ RunTime:0.040000s ]
+[ 2018-08-14T17:14:56+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'user/rule/index' LIMIT 1 [ RunTime:0.000000s ]
+[ 2018-08-14T17:14:56+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'user/rule/del' LIMIT 1 [ RunTime:0.000000s ]
+[ 2018-08-14T17:14:56+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'user/rule/add' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:56+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'user/rule/edit' LIMIT 1 [ RunTime:0.000000s ]
+[ 2018-08-14T17:14:56+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'user/rule/multi' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:56+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 306 , 'user/rule/index' , 'fa fa-circle-o' , '查看' , 0 , 'normal' , 1534238096 , 1534238096) [ RunTime:0.000000s ]
+[ 2018-08-14T17:14:56+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 306 , 'user/rule/del' , 'fa fa-circle-o' , '删除' , 0 , 'normal' , 1534238096 , 1534238096) [ RunTime:0.000000s ]
+[ 2018-08-14T17:14:56+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 306 , 'user/rule/add' , 'fa fa-circle-o' , '添加' , 0 , 'normal' , 1534238096 , 1534238096) [ RunTime:0.000000s ]
+[ 2018-08-14T17:14:56+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 306 , 'user/rule/edit' , 'fa fa-circle-o' , '编辑' , 0 , 'normal' , 1534238096 , 1534238096) [ RunTime:0.000000s ]
+[ 2018-08-14T17:14:56+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 306 , 'user/rule/multi' , 'fa fa-circle-o' , '批量更新' , 0 , 'normal' , 1534238096 , 1534238096) [ RunTime:0.000000s ]
+[ 2018-08-14T17:14:56+08:00 ][ info ] [ LANG ] F:\phpStudy\WWW\newproject\application\admin\lang/zh-cn.php
+[ 2018-08-14T17:14:56+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'user' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:56+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'user/user' LIMIT 1 [ RunTime:0.000000s ]
+[ 2018-08-14T17:14:56+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`pid` , `name` , `title` , `icon` , `remark` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (299 , 'user/user' , '会员管理' , 'fa fa-user' , '' , 1 , 'normal' , 1534238096 , 1534238096) [ RunTime:0.040000s ]
+[ 2018-08-14T17:14:56+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'user/user/index' LIMIT 1 [ RunTime:0.000000s ]
+[ 2018-08-14T17:14:56+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'user/user/edit' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:56+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'user/user/add' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:56+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'user/user/del' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:56+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'user/user/multi' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:56+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 312 , 'user/user/index' , 'fa fa-circle-o' , '查看' , 0 , 'normal' , 1534238096 , 1534238096) [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:56+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 312 , 'user/user/edit' , 'fa fa-circle-o' , '编辑' , 0 , 'normal' , 1534238096 , 1534238096) [ RunTime:0.000000s ]
+[ 2018-08-14T17:14:56+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 312 , 'user/user/add' , 'fa fa-circle-o' , '添加' , 0 , 'normal' , 1534238096 , 1534238096) [ RunTime:0.000000s ]
+[ 2018-08-14T17:14:56+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 312 , 'user/user/del' , 'fa fa-circle-o' , '删除' , 0 , 'normal' , 1534238096 , 1534238096) [ RunTime:0.001000s ]
+[ 2018-08-14T17:14:56+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 312 , 'user/user/multi' , 'fa fa-circle-o' , '批量更新' , 0 , 'normal' , 1534238096 , 1534238096) [ RunTime:0.000000s ]

@@ -1,0 +1,16 @@
+[ 2018-08-08T15:05:45+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ 2018-08-08T15:05:45+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-08-08T15:05:45+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004000s ]
+[ 2018-08-08T15:05:45+08:00 ][ info ] [ DB ] INIT mysql
+[ 2018-08-08T15:05:45+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.005000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2018-08-08T15:05:45+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'office' [ RunTime:0.001000s ]
+[ 2018-08-08T15:05:45+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_office' [ RunTime:0.001000s ]
+[ 2018-08-08T15:11:41+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ 2018-08-08T15:11:41+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-08-08T15:11:41+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004000s ]
+[ 2018-08-08T15:11:41+08:00 ][ info ] [ DB ] INIT mysql
+[ 2018-08-08T15:11:41+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.005000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2018-08-08T15:11:41+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'myapp' [ RunTime:0.001000s ]
+[ 2018-08-08T15:11:41+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'fastadmin' AND table_name = 'myapp' ORDER BY ORDINAL_POSITION [ RunTime:0.009000s ]

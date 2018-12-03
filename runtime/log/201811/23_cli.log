@@ -1,0 +1,86 @@
+[ 2018-11-23T09:06:44+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ 2018-11-23T09:06:44+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-11-23T09:06:44+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004000s ]
+[ 2018-11-23T09:06:44+08:00 ][ info ] [ DB ] INIT mysql
+[ 2018-11-23T09:06:44+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2018-11-23T09:06:44+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'festival_holiday' [ RunTime:0.001000s ]
+[ 2018-11-23T09:06:44+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_festival_holiday' [ RunTime:0.001000s ]
+[ 2018-11-23T09:06:44+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'admin' [ RunTime:0.001000s ]
+[ 2018-11-23T09:06:44+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_admin' [ RunTime:0.021000s ]
+[ 2018-11-23T09:06:44+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'fastadmin' AND table_name = 'fa_festival_holiday' ORDER BY ORDINAL_POSITION [ RunTime:0.008000s ]
+[ 2018-11-23T09:06:44+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'fastadmin' AND table_name = 'fa_admin' ORDER BY ORDINAL_POSITION [ RunTime:0.009000s ]
+[ 2018-11-23T09:12:19+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ 2018-11-23T09:12:19+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-11-23T09:12:19+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004000s ]
+[ 2018-11-23T09:12:19+08:00 ][ info ] [ DB ] INIT mysql
+[ 2018-11-23T09:12:19+08:00 ][ info ] [ LANG ] F:\phpStudy\WWW\newproject\application\admin\lang/zh-cn.php
+[ 2018-11-23T09:12:19+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2018-11-23T09:12:19+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.008000s ]
+[ 2018-11-23T09:12:19+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'festival' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-11-23T09:12:19+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`pid` , `name` , `title` , `icon` , `remark` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (0 , 'festival' , '节假日日期设置' , 'fa fa-circle-o' , '' , 1 , 'normal' , 1542935539 , 1542935539) [ RunTime:0.051000s ]
+[ 2018-11-23T09:12:19+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'festival/index' LIMIT 1 [ RunTime:0.002000s ]
+[ 2018-11-23T09:12:19+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'festival/add' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-11-23T09:12:19+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'festival/edit' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-11-23T09:12:19+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'festival/del' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-11-23T09:12:19+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'festival/multi' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-11-23T09:12:19+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 367 , 'festival/index' , 'fa fa-circle-o' , '查看' , 0 , 'normal' , 1542935539 , 1542935539) [ RunTime:0.001000s ]
+[ 2018-11-23T09:12:19+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 367 , 'festival/add' , 'fa fa-circle-o' , '添加' , 0 , 'normal' , 1542935539 , 1542935539) [ RunTime:0.001000s ]
+[ 2018-11-23T09:12:19+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 367 , 'festival/edit' , 'fa fa-circle-o' , '编辑' , 0 , 'normal' , 1542935539 , 1542935539) [ RunTime:0.001000s ]
+[ 2018-11-23T09:12:19+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 367 , 'festival/del' , 'fa fa-circle-o' , '删除' , 0 , 'normal' , 1542935539 , 1542935539) [ RunTime:0.000000s ]
+[ 2018-11-23T09:12:19+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 367 , 'festival/multi' , 'fa fa-circle-o' , '批量更新' , 0 , 'normal' , 1542935539 , 1542935539) [ RunTime:0.000000s ]
+[ 2018-11-23T09:18:24+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ 2018-11-23T09:18:24+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-11-23T09:18:24+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004000s ]
+[ 2018-11-23T09:18:24+08:00 ][ info ] [ DB ] INIT mysql
+[ 2018-11-23T09:18:24+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2018-11-23T09:18:24+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.009000s ]
+[ 2018-11-23T09:18:24+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  (  `name` LIKE 'festival%' ) [ RunTime:0.001000s ]
+[ 2018-11-23T09:18:28+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `id` IN (369,371,370,368,372) [ RunTime:0.002000s ]
+[ 2018-11-23T09:18:28+08:00 ][ sql ] [ SQL ] DELETE FROM `fa_auth_rule`    WHERE  `id` = 368 [ RunTime:0.038000s ]
+[ 2018-11-23T09:18:28+08:00 ][ sql ] [ SQL ] DELETE FROM `fa_auth_rule`    WHERE  `id` = 369 [ RunTime:0.033000s ]
+[ 2018-11-23T09:18:28+08:00 ][ sql ] [ SQL ] DELETE FROM `fa_auth_rule`    WHERE  `id` = 370 [ RunTime:0.029000s ]
+[ 2018-11-23T09:18:28+08:00 ][ sql ] [ SQL ] DELETE FROM `fa_auth_rule`    WHERE  `id` = 371 [ RunTime:0.031000s ]
+[ 2018-11-23T09:18:28+08:00 ][ sql ] [ SQL ] DELETE FROM `fa_auth_rule`    WHERE  `id` = 372 [ RunTime:0.031000s ]
+[ 2018-11-23T09:19:45+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ 2018-11-23T09:19:45+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-11-23T09:19:45+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004000s ]
+[ 2018-11-23T09:19:45+08:00 ][ info ] [ DB ] INIT mysql
+[ 2018-11-23T09:19:45+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2018-11-23T09:19:45+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'festival_holiday' [ RunTime:0.001000s ]
+[ 2018-11-23T09:19:45+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_festival_holiday' [ RunTime:0.001000s ]
+[ 2018-11-23T09:20:57+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001000s ]
+[ info ] [ LOG ] INIT File
+[ 2018-11-23T09:20:57+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-11-23T09:20:57+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004000s ]
+[ 2018-11-23T09:20:57+08:00 ][ info ] [ DB ] INIT mysql
+[ 2018-11-23T09:20:57+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2018-11-23T09:20:57+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'festival_holiday' [ RunTime:0.001000s ]
+[ 2018-11-23T09:20:57+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_festival_holiday' [ RunTime:0.001000s ]
+[ 2018-11-23T09:20:57+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'admin' [ RunTime:0.001000s ]
+[ 2018-11-23T09:20:57+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_admin' [ RunTime:0.001000s ]
+[ 2018-11-23T09:20:57+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'fastadmin' AND table_name = 'fa_festival_holiday' ORDER BY ORDINAL_POSITION [ RunTime:0.009000s ]
+[ 2018-11-23T09:20:57+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'fastadmin' AND table_name = 'fa_admin' ORDER BY ORDINAL_POSITION [ RunTime:0.008000s ]
+[ 2018-11-23T09:21:22+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001000s ]
+[ info ] [ LOG ] INIT File
+[ 2018-11-23T09:21:22+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-11-23T09:21:22+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004000s ]
+[ 2018-11-23T09:21:22+08:00 ][ info ] [ DB ] INIT mysql
+[ 2018-11-23T09:21:22+08:00 ][ info ] [ LANG ] F:\phpStudy\WWW\newproject\application\admin\lang/zh-cn.php
+[ 2018-11-23T09:21:22+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2018-11-23T09:21:22+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.009000s ]
+[ 2018-11-23T09:21:22+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'general' LIMIT 1 [ RunTime:0.000000s ]
+[ 2018-11-23T09:21:22+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'general/festival' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-11-23T09:21:22+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'general/festival/index' LIMIT 1 [ RunTime:0.000000s ]
+[ 2018-11-23T09:21:22+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'general/festival/add' LIMIT 1 [ RunTime:0.000000s ]
+[ 2018-11-23T09:21:22+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'general/festival/edit' LIMIT 1 [ RunTime:0.000000s ]
+[ 2018-11-23T09:21:22+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'general/festival/del' LIMIT 1 [ RunTime:0.000000s ]
+[ 2018-11-23T09:21:22+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'general/festival/multi' LIMIT 1 [ RunTime:0.000000s ]
+[ 2018-11-23T09:21:22+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 367 , 'general/festival/index' , 'fa fa-circle-o' , '查看' , 0 , 'normal' , 1542936082 , 1542936082) [ RunTime:0.000000s ]
+[ 2018-11-23T09:21:22+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 367 , 'general/festival/add' , 'fa fa-circle-o' , '添加' , 0 , 'normal' , 1542936082 , 1542936082) [ RunTime:0.000000s ]
+[ 2018-11-23T09:21:22+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 367 , 'general/festival/edit' , 'fa fa-circle-o' , '编辑' , 0 , 'normal' , 1542936082 , 1542936082) [ RunTime:0.000000s ]
+[ 2018-11-23T09:21:22+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 367 , 'general/festival/del' , 'fa fa-circle-o' , '删除' , 0 , 'normal' , 1542936082 , 1542936082) [ RunTime:0.000000s ]
+[ 2018-11-23T09:21:22+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 367 , 'general/festival/multi' , 'fa fa-circle-o' , '批量更新' , 0 , 'normal' , 1542936082 , 1542936082) [ RunTime:0.000000s ]
