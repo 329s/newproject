@@ -95,8 +95,8 @@ class Member extends Backend
      */
     public function add()
     {
-        var_dump(config('site.HashidsKey'),config('site.invite_code_length'));
-        die;
+        /*var_dump(config('site.HashidsKey'),config('site.invite_code_length'));
+        die;*/
         if ($this->request->isPost()) {
             $params = $this->request->post("row/a");
             if ($params) {
