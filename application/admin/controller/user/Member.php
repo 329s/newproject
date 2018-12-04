@@ -19,12 +19,15 @@ use think\Lang;
  */
 class Member extends Backend
 {
-    
+
     /**
      * UserMember模型对象
      * @var \app\common\model\UserMember
      */
     protected $model = null;
+
+    protected $modelValidate = true; //是否开启Validate验证，默认是false关闭状态
+    protected $modelSceneValidate = true; //是否开启模型场景验证，默认是false关闭状态
 
     public function _initialize()
     {
@@ -95,8 +98,6 @@ class Member extends Backend
      */
     public function add()
     {
-        /*var_dump(config('site.HashidsKey'),config('site.invite_code_length'));
-        die;*/
         if ($this->request->isPost()) {
             $params = $this->request->post("row/a");
             if ($params) {
@@ -111,11 +112,8 @@ class Member extends Backend
                         $this->model->validate($validate);
                     }
 
-                    // 先注册账号
-                    $params['user_id'] = \app\admin\model\User::addMemberRegister($params['telephone']);
-                    // 自动生成邀请码
-                    $hashids = new Hashids(config('site.HashidsKey'),config('site.invite_code_length'));
-                    $params['invite_code'] = $hashids->encode($params['user_id']);
+                    // 先判断是否有账号绑定,然后根据身份证算出生日,生成邀请码
+                    $params = $this->model->beforeMemberUpdate($params);
 
                     $result = $this->model->allowField(true)->save($params);
                     if ($result !== false) {
@@ -156,6 +154,8 @@ class Member extends Backend
                         $validate = is_bool($this->modelValidate) ? ($this->modelSceneValidate ? $name . '.edit' : true) : $this->modelValidate;
                         $row->validate($validate);
                     }
+                    // 先判断是否有账号绑定,然后根据身份证算出生日,生成邀请码
+                    $params = $this->model->beforeMemberUpdate($params);
                     $result = $row->allowField(true)->save($params);
                     if ($result !== false) {
                         $this->success();

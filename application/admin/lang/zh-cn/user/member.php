@@ -52,7 +52,7 @@ return [
     'Company_address'  =>  '单位地址',
     'Company_telephone'  =>  '单位电话',
     'Unfreeze_time'  =>  '解冻日期',
-    'Admin_id'  =>  '后台编辑者',
+    'Admin_id'  =>  '编辑者',
     'Office_id'  =>  '所属门店',
     'Updatetime'  =>  '更新时间',
     'Createtime'  =>  '创建时间',

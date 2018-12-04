@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:81:"F:\phpStudy\WWW\newproject\public/../application/admin\view\user\member\edit.html";i:1543827774;s:69:"F:\phpStudy\WWW\newproject\application\admin\view\layout\default.html";i:1532420613;s:66:"F:\phpStudy\WWW\newproject\application\admin\view\common\meta.html";i:1529292885;s:68:"F:\phpStudy\WWW\newproject\application\admin\view\common\script.html";i:1529292885;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:81:"F:\phpStudy\WWW\newproject\public/../application/admin\view\user\member\edit.html";i:1543909563;s:69:"F:\phpStudy\WWW\newproject\application\admin\view\layout\default.html";i:1532420613;s:66:"F:\phpStudy\WWW\newproject\application\admin\view\common\meta.html";i:1529292885;s:68:"F:\phpStudy\WWW\newproject\application\admin\view\common\script.html";i:1529292885;}*/ ?>
 <!DOCTYPE html>
 <html lang="<?php echo $config['language']; ?>">
     <head>
@@ -105,7 +105,7 @@
     <div class="form-group">
         <label class="control-label col-xs-12 col-sm-2"><?php echo __('Telephone'); ?>:</label>
         <div class="col-xs-12 col-sm-8">
-            <input id="c-telephone" data-rule="required" class="form-control" name="row[telephone]" type="text" value="<?php echo $row['telephone']; ?>">
+            <input id="c-telephone" data-rule="required;mobile" class="form-control" name="row[telephone]" type="text" value="<?php echo $row['telephone']; ?>">
         </div>
     </div>
     <!-- <div class="form-group">

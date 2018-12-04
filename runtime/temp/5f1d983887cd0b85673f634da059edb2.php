@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:80:"F:\phpStudy\WWW\newproject\public/../application/admin\view\user\member\add.html";i:1543827746;s:69:"F:\phpStudy\WWW\newproject\application\admin\view\layout\default.html";i:1532420613;s:66:"F:\phpStudy\WWW\newproject\application\admin\view\common\meta.html";i:1529292885;s:68:"F:\phpStudy\WWW\newproject\application\admin\view\common\script.html";i:1529292885;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:80:"F:\phpStudy\WWW\newproject\public/../application/admin\view\user\member\add.html";i:1543903999;s:69:"F:\phpStudy\WWW\newproject\application\admin\view\layout\default.html";i:1532420613;s:66:"F:\phpStudy\WWW\newproject\application\admin\view\common\meta.html";i:1529292885;s:68:"F:\phpStudy\WWW\newproject\application\admin\view\common\script.html";i:1529292885;}*/ ?>
 <!DOCTYPE html>
 <html lang="<?php echo $config['language']; ?>">
     <head>
@@ -306,7 +306,7 @@
     <div class="form-group">
         <label class="control-label col-xs-12 col-sm-2"><?php echo __('Office_id'); ?>:</label>
         <div class="col-xs-12 col-sm-8">
-            <input id="c-office_id" data-rule="required" data-source="office/index" data-field="shortname" data-params='{"custom[parentid]":"1","custom[status]":"0"}' data-pagination="true" data-page-size="5" data-order-by="id asc,areaid"  class="form-control selectpage" name="row[office_id]" type="text" value="">
+            <input id="c-office_id" data-source="office/index" data-field="fullname" data-params='{"custom[parentid]":"1","custom[status]":"0"}' data-pagination="true" data-page-size="5" data-order-by="id asc,areaid"  class="form-control selectpage" name="row[office_id]" type="text" value="">
         </div>
     </div>
     <div class="form-group layer-footer">

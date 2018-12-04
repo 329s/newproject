@@ -24,6 +24,7 @@ class User extends Model
     ];
 
 
+
     protected static function init()
     {
         self::beforeUpdate(function ($row) {
@@ -92,7 +93,7 @@ class User extends Model
     /*用户账号自动添加*/
     public static function addMemberRegister($mobile)
     {
-            if(empty($mobile)){
+            if(!empty($mobile)){
                 //判断是否存在
                 $result = self::where('mobile', $mobile)->find();
                 if(empty($result)){
@@ -100,6 +101,7 @@ class User extends Model
                     $password = config('site.password');
                     $email = '';
                     $mobile = $mobile;
+                    $auth = new Auth;
                     $auth->register($username, $password, $email, $mobile);
                     $result = self::where('mobile', $mobile)->find();
                 }

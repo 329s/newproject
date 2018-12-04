@@ -3,6 +3,9 @@
 namespace app\common\model;
 
 use think\Model;
+use app\admin\model\User;
+use Hashids\Hashids;
+// use think\config;
 
 class UserMember extends Model
 {
@@ -194,5 +197,28 @@ class UserMember extends Model
         if(empty($code[3]))
             $code = str_pad($code,4,'0',STR_PAD_LEFT);
         return $code;
+    }
+    /**
+    *编辑客户信息保存前处理
+    */
+    public function beforeMemberUpdate($params){
+        // 会员生日处理
+        // 先判断是否有生日，没有则生成
+        if (empty($params['birthday']) && $params['identity_type'] == '1' && $params['identity_id']) {
+            $params['birthday'] = substr($params['identity_id'], 6,4).'-'.substr($params['identity_id'], 10,2).'-'.substr($params['identity_id'], 12,2);
+        }
+        // 判断是否关联账号
+        if(empty($params['user_id'])){
+            $user_id = \app\admin\model\User::addMemberRegister($params['telephone']);
+            $params['user_id']  = $user_id;
+
+        }
+        if(empty($params['invite_code']) && !empty($params['user_id'])){
+            // 自动生成邀请码
+            $hashids = new Hashids(config('site.HashidsKey'),config('site.invite_code_length'));
+            $params['invite_code'] = $hashids->encode($params['user_id']);
+        }
+
+        return $params;
     }
 }

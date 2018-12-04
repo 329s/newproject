@@ -9,7 +9,7 @@
     <div class="form-group">
         <label class="control-label col-xs-12 col-sm-2">{:__('Gender')}:</label>
         <div class="col-xs-12 col-sm-8">
-                        
+
             <select  id="c-gender" data-rule="required" class="form-control selectpicker" name="row[gender]">
                 {foreach name="genderList" item="vo"}
                     <option value="{$key}" {in name="key" value="0"}selected{/in}>{$vo}</option>
@@ -21,7 +21,7 @@
     <div class="form-group">
         <label class="control-label col-xs-12 col-sm-2">{:__('Identity_type')}:</label>
         <div class="col-xs-12 col-sm-8">
-                        
+
             <select  id="c-identity_type" data-rule="required" class="form-control selectpicker" name="row[identity_type]">
                 {foreach name="identityTypeList" item="vo"}
                     <option value="{$key}" {in name="key" value="1"}selected{/in}>{$vo}</option>
@@ -33,7 +33,7 @@
     <div class="form-group">
         <label class="control-label col-xs-12 col-sm-2">{:__('Identity_id')}:</label>
         <div class="col-xs-12 col-sm-8">
-            <input id="c-identity_id" data-rule="required"  class="form-control" name="row[identity_id]" type="text" value="">
+            <input id="c-identity_id" data-rule="required;max"  class="form-control" name="row[identity_id]" type="text" value="">
         </div>
     </div>
     <div class="form-group">
@@ -53,7 +53,7 @@
     <div class="form-group">
         <label class="control-label col-xs-12 col-sm-2">{:__('Telephone')}:</label>
         <div class="col-xs-12 col-sm-8">
-            <input id="c-telephone" data-rule="required" class="form-control" name="row[telephone]" type="text" value="">
+            <input id="c-telephone" data-rule="required|mobile" class="form-control" name="row[telephone]" type="text" value="">
         </div>
     </div>
     <!-- <div class="form-group">
@@ -254,7 +254,7 @@
     <div class="form-group">
         <label class="control-label col-xs-12 col-sm-2">{:__('Office_id')}:</label>
         <div class="col-xs-12 col-sm-8">
-            <input id="c-office_id" data-rule="required" data-source="office/index" data-field="fullname" data-params='{"custom[parentid]":"1","custom[status]":"0"}' data-pagination="true" data-page-size="5" data-order-by="id asc,areaid"  class="form-control selectpage" name="row[office_id]" type="text" value="">
+            <input id="c-office_id" data-source="office/index" data-field="fullname" data-params='{"custom[parentid]":"1","custom[status]":"0"}' data-pagination="true" data-page-size="5" data-order-by="id asc,areaid"  class="form-control selectpage" name="row[office_id]" type="text" value="">
         </div>
     </div>
     <div class="form-group layer-footer">
