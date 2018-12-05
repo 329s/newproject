@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:82:"F:\phpStudy\WWW\newproject\public/../application/admin\view\user\member\index.html";i:1543913166;s:69:"F:\phpStudy\WWW\newproject\application\admin\view\layout\default.html";i:1532420613;s:66:"F:\phpStudy\WWW\newproject\application\admin\view\common\meta.html";i:1529292885;s:68:"F:\phpStudy\WWW\newproject\application\admin\view\common\script.html";i:1529292885;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:82:"F:\phpStudy\WWW\newproject\public/../application/admin\view\user\member\index.html";i:1543988520;s:69:"F:\phpStudy\WWW\newproject\application\admin\view\layout\default.html";i:1532420613;s:66:"F:\phpStudy\WWW\newproject\application\admin\view\common\meta.html";i:1529292885;s:68:"F:\phpStudy\WWW\newproject\application\admin\view\common\script.html";i:1529292885;}*/ ?>
 <!DOCTYPE html>
 <html lang="<?php echo $config['language']; ?>">
     <head>
@@ -51,7 +51,16 @@
                             <?php endif; ?>
                             <div class="content">
                                 <div class="panel panel-default panel-intro">
-    <?php echo build_heading(); ?>
+    <div class="panel-heading">
+        <?php echo build_heading(null,FALSE); ?>
+        <ul class="nav nav-tabs" data-field="isblack">
+            <li class="active"><a href="#all" data-value="" data-toggle="tab"><?php echo __('All'); ?></a></li>
+            <?php if(is_array($isblackList) || $isblackList instanceof \think\Collection || $isblackList instanceof \think\Paginator): if( count($isblackList)==0 ) : echo "" ;else: foreach($isblackList as $key=>$vo): ?>
+            <li><a href="#<?php echo $key; ?>" data-value="<?php echo $key; ?>" data-toggle="tab"><?php echo $vo; ?></a></li>
+            <?php endforeach; endif; else: echo "" ;endif; ?>
+        </ul>
+
+    </div>
 
     <div class="panel-body">
         <div id="myTabContent" class="tab-content">
@@ -66,8 +75,8 @@
                         <div class="dropdown btn-group <?php echo $auth->check('user/member/multi')?'':'hide'; ?>">
                             <a class="btn btn-primary btn-more dropdown-toggle btn-disabled disabled" data-toggle="dropdown"><i class="fa fa-cog"></i> <?php echo __('More'); ?></a>
                             <ul class="dropdown-menu text-left" role="menu">
-                                <li><a class="btn btn-link btn-multi btn-disabled disabled" href="javascript:;" data-params="status=normal"><i class="fa fa-eye"></i> <?php echo __('Set to normal'); ?></a></li>
-                                <li><a class="btn btn-link btn-multi btn-disabled disabled" href="javascript:;" data-params="status=hidden"><i class="fa fa-eye-slash"></i> <?php echo __('Set to hidden'); ?></a></li>
+                                <li><a class="btn btn-link btn-multi btn-disabled disabled" href="javascript:;" data-params="isblack=0"><i class="fa fa-eye"></i> <?php echo __('Set to white'); ?></a></li>
+                                <li><a class="btn btn-link btn-multi btn-disabled disabled" href="javascript:;" data-params="isblack=1"><i class="fa fa-eye-slash"></i> <?php echo __('Set to black'); ?></a></li>
                             </ul>
                         </div>
                     </div>

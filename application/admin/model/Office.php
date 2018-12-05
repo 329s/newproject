@@ -77,6 +77,29 @@ class Office extends Model
     {
         return $value && !is_numeric($value) ? strtotime($value) : $value;
     }*/
+
+    // 后台编辑者
+    public function admin()
+    {
+        return $this->belongsTo('Admin', 'edit_userid')->setEagerlyType(0);
+    }
+    // 所属城市
+    public function cityarea()
+    {
+        return $this->belongsTo('app\common\model\Cityarea', 'cityid')->setEagerlyType(0);
+    }
+    //上级门店
+    public function officeParentName()
+    {
+        return $this->belongsTo('Office', 'parentid')->setEagerlyType(0);
+    }
+
+    /*所属区域*/
+    public function area()
+    {
+        return $this->belongsTo('app\common\model\Cityarea','areaid')->setEagerlyType(0);
+    }
+
     // 上级门店
     public function getParentOffice($parentid = NULL, $status = NULL)
     {
@@ -94,22 +117,23 @@ class Office extends Model
         $list = array_merge($array,$list);
         return $list;
     }
-
-    // 后台编辑者
-    public function admin()
-    {
-        return $this->belongsTo('Admin', 'edit_userid')->setEagerlyType(0);
+    /**
+    *搜索功能门店选择，不包含便利点
+    *@param status   门店状态 0=正常营业,1=临时关闭,2=永久关闭
+    *@param parentid 上级门店 1 总部  即所有的门店
+    */
+    public function getOffice($parentid = '1',$status = NULL){
+        $list = collection(self::where(function($query) use($parentid,$status){
+                if (!is_null($parentid))
+                {
+                    $query->where('parentid', '=', $parentid);
+                }
+                if(!is_null($status))
+                {
+                    $query->where('status','=',$status);
+                }
+            })->order('id','asc')->select())->toArray();
+        return $list;
     }
-    // 所属测试
-    public function cityarea()
-    {
-        return $this->belongsTo('app\common\model\Cityarea', 'cityid')->setEagerlyType(0);
-    }
-    // 
-    public function officeParentName()
-    {
-        return $this->belongsTo('Office', 'parentid')->setEagerlyType(0);
-    }
-
 
 }

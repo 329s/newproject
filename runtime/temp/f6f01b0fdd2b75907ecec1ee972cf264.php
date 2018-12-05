@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:75:"F:\phpStudy\WWW\newproject\public/../application/admin\view\office\add.html";i:1537492741;s:69:"F:\phpStudy\WWW\newproject\application\admin\view\layout\default.html";i:1532420613;s:66:"F:\phpStudy\WWW\newproject\application\admin\view\common\meta.html";i:1529292885;s:68:"F:\phpStudy\WWW\newproject\application\admin\view\common\script.html";i:1529292885;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:75:"F:\phpStudy\WWW\newproject\public/../application/admin\view\office\add.html";i:1543993209;s:69:"F:\phpStudy\WWW\newproject\application\admin\view\layout\default.html";i:1532420613;s:66:"F:\phpStudy\WWW\newproject\application\admin\view\common\meta.html";i:1529292885;s:68:"F:\phpStudy\WWW\newproject\application\admin\view\common\script.html";i:1529292885;}*/ ?>
 <!DOCTYPE html>
 <html lang="<?php echo $config['language']; ?>">
     <head>
@@ -86,7 +86,7 @@
         <label class="control-label col-xs-12 col-sm-2"><?php echo __('Cityid'); ?>:</label>
         <div class="col-xs-12 col-sm-8">
             <input id="c-cityid" data-rule="required" class="form-control" name="row[cityid]" type="hidden" value="" >
-            <input id="c-cityidname"  class="form-control"  type="text" value="" data-toggle="city-picker" >
+            <input id="c-cityidname"  class="form-control"  type="text" value="" data-toggle="city-picker" data-level="city" placeholder="请选择省/市">
         </div>
     </div>
 
@@ -97,12 +97,7 @@
             <input id="c-areaidname"  class="form-control"  type="text" value=""   data-toggle="city-picker">
         </div>
     </div>
-    <!-- <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Areaid'); ?>:</label>
-        <div class="col-xs-12 col-sm-8">
-            <input id="c-areaid" data-rule="required" class="form-control" name="row[areaid]" type="number" value="0">
-        </div>
-    </div> -->
+
     <div class="form-group">
         <label class="control-label col-xs-12 col-sm-2"><?php echo __('Open_time'); ?>:</label>
         <div class="col-xs-12 col-sm-8">

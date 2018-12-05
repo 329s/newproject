@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:77:"F:\phpStudy\WWW\newproject\public/../application/admin\view\office\index.html";i:1534237173;s:69:"F:\phpStudy\WWW\newproject\application\admin\view\layout\default.html";i:1532420613;s:66:"F:\phpStudy\WWW\newproject\application\admin\view\common\meta.html";i:1529292885;s:68:"F:\phpStudy\WWW\newproject\application\admin\view\common\script.html";i:1529292885;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:77:"F:\phpStudy\WWW\newproject\public/../application/admin\view\office\index.html";i:1543991392;s:69:"F:\phpStudy\WWW\newproject\application\admin\view\layout\default.html";i:1532420613;s:66:"F:\phpStudy\WWW\newproject\application\admin\view\common\meta.html";i:1529292885;s:68:"F:\phpStudy\WWW\newproject\application\admin\view\common\script.html";i:1529292885;}*/ ?>
 <!DOCTYPE html>
 <html lang="<?php echo $config['language']; ?>">
     <head>
@@ -51,7 +51,16 @@
                             <?php endif; ?>
                             <div class="content">
                                 <div class="panel panel-default panel-intro">
-    <?php echo build_heading(); ?>
+    <div class="panel-heading">
+        <?php echo build_heading(null,FALSE); ?>
+        <ul class="nav nav-tabs" data-field="status">
+            <li class="active"><a href="#all" data-value="" data-toggle="tab"><?php echo __('All'); ?></a></li>
+            <?php if(is_array($statusList) || $statusList instanceof \think\Collection || $statusList instanceof \think\Paginator): if( count($statusList)==0 ) : echo "" ;else: foreach($statusList as $key=>$vo): ?>
+            <li><a href="#<?php echo $key; ?>" data-value="<?php echo $key; ?>" data-toggle="tab"><?php echo $vo; ?></a></li>
+            <?php endforeach; endif; else: echo "" ;endif; ?>
+        </ul>
+
+    </div>
 
     <div class="panel-body">
         <div id="myTabContent" class="tab-content">

@@ -5,7 +5,6 @@ namespace app\common\model;
 use think\Model;
 use app\admin\model\User;
 use Hashids\Hashids;
-// use think\config;
 
 class UserMember extends Model
 {

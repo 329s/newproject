@@ -51,13 +51,13 @@ class Office extends Backend
             }
             list($where, $sort, $order, $offset, $limit) = $this->buildparams();
             $total = $this->model
-                ->with(['admin','cityarea','officeParentName'])
+                ->with(['admin','cityarea','officeParentName','area'])
                 ->where($where)
                 ->order($sort, $order)
                 ->count();
 
             $list = $this->model
-                ->with(['admin','cityarea','officeParentName'])
+                ->with(['admin','cityarea','officeParentName','area'])
                 ->where($where)
                 ->order($sort, $order)
                 ->limit($offset, $limit)
@@ -69,9 +69,6 @@ class Office extends Backend
                 $list[$key]['cityid'] = $address;
                 $list[$key]['areaid'] = Cityarea::getCityByCode($value['areaid']);
             }*/
-        // echo "<pre>";
-        // print_r($list);
-        // echo "</pre>";die;
             $result = array("total" => $total, "rows" => $list);
 
             return json($result);
@@ -178,6 +175,32 @@ class Office extends Backend
             }
         }
         return ($arr);
+    }
+
+    /**
+    *搜索功能,门店选择
+    */
+    public function selectOffice(){
+        $parentid = $this->request->get('parentid');
+        $status    = $this->request->get('status');
+
+        if(!$parentid){
+            $parentid = '1';//1为总部，所有门店的上级
+        }
+
+        if(!$status){
+            $list = $this->model->getOffice($parentid);
+        }else{
+            $list = $this->model->getOffice($parentid,$status);
+        }
+
+
+        $array = array();
+        foreach ($list as $key => $value) {
+            $array[$value['id']] = $value['fullname'];
+        }
+
+        return $array;
     }
 
 

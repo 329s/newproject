@@ -28,6 +28,9 @@ class Member extends Backend
 
     protected $modelValidate = true; //是否开启Validate验证，默认是false关闭状态
     protected $modelSceneValidate = true; //是否开启模型场景验证，默认是false关闭状态
+    //搜索默认字段
+    protected $searchFields = 'name,telephone,identity_id,invite_code';
+    protected $multiFields = "isblack";
 
     public function _initialize()
     {
@@ -41,7 +44,7 @@ class Member extends Backend
         $this->view->assign("isblackList", $this->model->getIsblackList());
         $this->view->assign("accidentList", $this->model->getAccidentList());
     }
-    
+
     /**
      * 默认生成的控制器所继承的父类中有index/add/edit/del/multi五个基础方法、destroy/restore/recyclebin三个回收站方法
      * 因此在当前控制器中可不用编写增删改查的代码,除非需要自己控制这部分逻辑
@@ -113,6 +116,7 @@ class Member extends Backend
                     }
 
                     // 先判断是否有账号绑定,然后根据身份证算出生日,生成邀请码
+                    $params['admin_id'] = $this->auth->id;
                     $params = $this->model->beforeMemberUpdate($params);
 
                     $result = $this->model->allowField(true)->save($params);
@@ -155,6 +159,7 @@ class Member extends Backend
                         $row->validate($validate);
                     }
                     // 先判断是否有账号绑定,然后根据身份证算出生日,生成邀请码
+                    $params['admin_id'] = $this->auth->id;
                     $params = $this->model->beforeMemberUpdate($params);
                     $result = $row->allowField(true)->save($params);
                     if ($result !== false) {
@@ -171,4 +176,6 @@ class Member extends Backend
         $this->view->assign("row", $row);
         return $this->view->fetch();
     }
+
+
 }

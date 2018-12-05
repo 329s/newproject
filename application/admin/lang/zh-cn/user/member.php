@@ -41,8 +41,8 @@ return [
     'Invite_code'  =>  '我的邀请码',
     'Invited_code'  =>  '被邀请码',
     'Max_renting_cars'  =>  '最大租车数量',
-    'Isblack'  =>  '状态',
-    'Isblack 0'  =>  '正常',
+    'Isblack'  =>  '会员状态',
+    'Isblack 0'  =>  '白名单',
     'Isblack 1'  =>  '黑名单',
     'Black_reason'  =>  '黑名单原因',
     'Violation_score'  =>  '违章分数',
@@ -60,5 +60,8 @@ return [
     'User.mobile'  =>  '手机号',
     'User.token'  =>  'Token',
     'Admin.username'  =>  '用户名',
-    'Office.shortname'  =>  '门店简称'
+    'Office.shortname'  =>  '所属门店',
+    'All'  =>  '全部',
+    'Set to white'  =>  '设为白名单',
+    'Set to black'  =>  '设为黑名单',
 ];
