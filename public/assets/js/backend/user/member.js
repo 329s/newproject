@@ -25,6 +25,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                 sortName: 'id',
                 showToggle:false,
                 showColumns:false,
+                showRefresh:true,//刷新按钮
                 columns: [
                     [
                         {checkbox: true},
@@ -44,8 +45,8 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                         // {field: 'invited_code', title: __('Invited_code')},
                         // {field: 'max_renting_cars', title: __('Max_renting_cars'), visible:false, searchList: {"4) unsigne":__('4) unsigne')}},
                         // {field: 'max_renting_cars_text', title: __('Max_renting_cars'), operate:false},
-                        {field: 'isblack', title: __('Isblack'), visible:false, searchList: {"0":__('Isblack 0'),"1":__('Isblack 1')}},
-                        {field: 'isblack_text', title: __('Isblack'), operate:false},
+                        {field: 'isblack', title: __('Isblack'),visible:false ,operate:false, searchList: {"0":__('Isblack 0'),"1":__('Isblack 1')}},
+                        {field: 'isblack_text', title: __('Isblack'), operate:false,formatter:Controller.api.formatter.isblack,custom: {黑名单:'danger',白名单:'success'}},
                         // {field: 'admin_id', title: __('Admin_id')},
                         {field: 'admin.username', title: __('Admin_id'),operate:false},
                         {field: 'office_id', title: __('Office_id'),visible:false,searchList:$.getJSON("office/selectOffice/?parentid=1")},
@@ -86,6 +87,26 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
         api: {
             bindevent: function () {
                 Form.api.bindevent($("form[role=form]"));
+            },
+
+            formatter:{
+                isblack:function(value,row,index){
+                    //颜色状态数组,可使用red/yellow/aqua/blue/navy/teal/olive/lime/fuchsia/purple/maroon
+                    var colorArr = {normal: 'success', hidden: 'grey', deleted: 'danger', locked: 'info'};
+                    //如果字段列有定义custom
+                    if (typeof this.custom !== 'undefined') {
+                        colorArr = $.extend(colorArr, this.custom);
+                    }
+                    value = value === null ? '' : value.toString();
+                    var color = value && typeof colorArr[value] !== 'undefined' ? colorArr[value] : 'primary';
+                    var newValue = value.charAt(0).toUpperCase() + value.slice(1);
+                    //渲染状态
+                    var html = '<span class="text-' + color + '"><i class="fa fa-circle"></i> ' + __(newValue) + '</span>';
+                    if (this.operate != false) {
+                        html = '<a href="javascript:;" class="searchit" data-toggle="tooltip" title="' + __('Click to search %s', __(newValue)) + '" data-field="' + this.field + '" data-value="' + value + '">' + html + '</a>';
+                    }
+                    return html;
+                }
             }
         }
     };

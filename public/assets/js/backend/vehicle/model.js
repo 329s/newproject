@@ -3,16 +3,23 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
     var Controller = {
         index: function () {
             // 初始化表格参数配置
-            Table.api.init({
-                extend: {
-                    index_url: 'vehicle/model/index',
-                    add_url: 'vehicle/model/add',
-                    edit_url: 'vehicle/model/edit',
-                    del_url: 'vehicle/model/del',
-                    multi_url: 'vehicle/model/multi',
-                    table: 'vehicle_model',
-                }
-            });
+            Table.api.init(
+                {
+                    extend: {
+                        index_url: 'vehicle/model/index',
+                        add_url: 'vehicle/model/add',
+                        edit_url: 'vehicle/model/edit',
+                        del_url: 'vehicle/model/del',
+                        multi_url: 'vehicle/model/multi',
+                        table: 'vehicle_model',
+                    }
+                },
+
+                // // 设置颜色
+                // {
+                //     custom: {'0':'success','1':'gray','2':'danger'}
+                // }
+            );
 
             var table = $("#table");
             //搜索文本框默认显示内容

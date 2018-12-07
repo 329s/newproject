@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:94:"F:\phpStudy\WWW\newproject\public/../application/admin\view\example\bootstraptable\detail.html";i:1543029991;s:69:"F:\phpStudy\WWW\newproject\application\admin\view\layout\default.html";i:1532420613;s:66:"F:\phpStudy\WWW\newproject\application\admin\view\common\meta.html";i:1529292885;s:68:"F:\phpStudy\WWW\newproject\application\admin\view\common\script.html";i:1529292885;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:79:"F:\phpStudy\WWW\newproject\public/../application/admin\view\command\detail.html";i:1543029982;s:69:"F:\phpStudy\WWW\newproject\application\admin\view\layout\default.html";i:1532420613;s:66:"F:\phpStudy\WWW\newproject\application\admin\view\common\meta.html";i:1529292885;s:68:"F:\phpStudy\WWW\newproject\application\admin\view\common\script.html";i:1529292885;}*/ ?>
 <!DOCTYPE html>
 <html lang="<?php echo $config['language']; ?>">
     <head>
@@ -52,28 +52,38 @@
                             <div class="content">
                                 <table class="table table-striped">
     <thead>
-        <tr>
-            <th><?php echo __('Title'); ?></th>
-            <th><?php echo __('Content'); ?></th>
-        </tr>
+    <tr>
+        <th><?php echo __('Title'); ?></th>
+        <th><?php echo __('Content'); ?></th>
+    </tr>
     </thead>
     <tbody>
-        <?php if(is_array($row) || $row instanceof \think\Collection || $row instanceof \think\Paginator): $i = 0; $__LIST__ = $row;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
-        <tr>
-            <td><?php echo $key; ?></td>
-            <td><?php echo $vo; ?></td>
-        </tr>
-        <?php endforeach; endif; else: echo "" ;endif; if(\think\Request::instance()->get('dialog')): ?>
-        <tr>
-            <td>回传数据</td>
-            <td>
-                <div class="input-group">
-                    <input name="callback" class="form-control" value="test" />
-                    <span class="input-group-btn"><a href="javascript:;" class="btn btn-success btn-callback" >回传数据</a></span>
-                </div>
-            </td>
-        </tr>
-        <?php endif; ?>
+    <tr>
+        <td><?php echo __('Type'); ?></td>
+        <td><?php echo $row['type']; ?>(<?php echo $row['type_text']; ?>)</td>
+    </tr>
+    <tr>
+        <td><?php echo __('Params'); ?></td>
+        <td><?php echo $row['params']; ?></td>
+    </tr>
+    <tr>
+        <td><?php echo __('Command'); ?></td>
+        <td><?php echo $row['command']; ?></td>
+    </tr>
+    <tr>
+        <td><?php echo __('Content'); ?></td>
+        <td>
+            <textarea class="form-control" name="" id="" cols="60" rows="10"><?php echo $row['content']; ?></textarea>
+        </td>
+    </tr>
+    <tr>
+        <td><?php echo __('Executetime'); ?></td>
+        <td><?php echo datetime($row['executetime']); ?></td>
+    </tr>
+    <tr>
+        <td><?php echo __('Status'); ?></td>
+        <td><?php echo $row['status_text']; ?></td>
+    </tr>
     </tbody>
 </table>
 <div class="hide layer-footer">

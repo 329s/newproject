@@ -53,8 +53,8 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                         {field: 'areaid', title: __('Areaid'),visible:false,data:"data-toggle='city-picker' style='width:60%'"},
                         {field: 'office_parent_name.shortname', title: __('Parentid'),operate:false},
                         {field: 'admin.username', title: __('Edit_userid'), operate: false},
-                        {field: 'createtime', title: __('Createtime'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
-                        {field: 'updatetime', title: __('Updatetime'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
+                        {field: 'createtime', title: __('Createtime'), operate:'RANGE',sortable:true, addclass:'datetimerange', formatter: Table.api.formatter.datetime},
+                        {field: 'updatetime', title: __('Updatetime'), operate:'RANGE',sortable:true, addclass:'datetimerange', formatter: Table.api.formatter.datetime},
                         {field: 'operate', title: __('Operate'), table: table, events: Table.api.events.operate, formatter: Table.api.formatter.operate}
                     ]
                 ],
