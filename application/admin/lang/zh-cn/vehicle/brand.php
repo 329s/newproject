@@ -9,4 +9,7 @@ return [
     'Status 0'  		=>  '开启',
     'Status 1'  		=>  '临时关闭',
     'Status 2'  		=>  '永久关闭',
+    'Type'  	      	=>  '类型',
+    'Type 0'  	     	=>  '品牌',
+    'Type 1'  		    =>  '车系',
 ];

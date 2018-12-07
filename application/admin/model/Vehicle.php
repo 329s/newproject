@@ -34,7 +34,7 @@ class Vehicle extends Model
     
     public function getStatusList()
     {
-        return [' 0' => __('Status  0'),'1' => __('Status 1'),'2' => __('Status 2'),'3' => __('Status 3'),'4' => __('Status 4')];
+        return ['0' => __('Status  0'),'1' => __('Status 1'),'2' => __('Status 2'),'3' => __('Status 3'),'4' => __('Status 4')];
     }     
 
     public function getColorList()
@@ -173,5 +173,10 @@ class Vehicle extends Model
     public function stopoffice()
     {
         return $this->belongsTo('Office', 'stop_office_id', 'id', [], 'LEFT')->setEagerlyType(0);
+    }
+
+    public function admin()
+    {
+        return $this->belongsTo('admin','admin_id','id',[],'LEFT')->setEagerlyType(0);
     }
 }

@@ -20,6 +20,10 @@ return array (
     array (
       0 => 'loginbg',
     ),
+    'response_send' => 
+    array (
+      0 => 'loginvideo',
+    ),
     'upload_after' => 
     array (
       0 => 'thumb',

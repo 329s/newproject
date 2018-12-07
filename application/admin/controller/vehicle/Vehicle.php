@@ -17,6 +17,7 @@ class Vehicle extends Backend
      * @var \app\admin\model\Vehicle
      */
     protected $model = null;
+    protected $searchFields = 'plate_number';
 
     public function _initialize()
     {
@@ -54,13 +55,13 @@ class Vehicle extends Backend
             }
             list($where, $sort, $order, $offset, $limit) = $this->buildparams();
             $total = $this->model
-                    ->with(['vehiclemodel','belongoffice','stopoffice'])
+                    ->with(['vehiclemodel','belongoffice','stopoffice','admin'])
                     ->where($where)
                     ->order($sort, $order)
                     ->count();
 
             $list = $this->model
-                    ->with(['vehiclemodel','belongoffice','stopoffice'])
+                    ->with(['vehiclemodel','belongoffice','stopoffice','admin'])
                     ->where($where)
                     ->order($sort, $order)
                     ->limit($offset, $limit)

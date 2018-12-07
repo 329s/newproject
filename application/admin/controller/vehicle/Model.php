@@ -17,6 +17,7 @@ class Model extends Backend
      * @var \app\admin\model\VehicleModel
      */
     protected $model = null;
+    protected $searchFields = 'vehiclebrand.name,vehicleseries.name,vehicle_model';
 
     public function _initialize()
     {
