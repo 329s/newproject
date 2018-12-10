@@ -69,7 +69,14 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                         {field: 'createtime', title: __('Createtime'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
                         {field: 'operate', title: __('Operate'), table: table, events: Table.api.events.operate, formatter: Table.api.formatter.operate}
                     ]
-                ]
+                ],
+                rowStyle:function(row,index){
+                    if (index % 2 !== 0) {
+                        var style = {css:{'background':'#d8e0e6'}};
+                        return style;
+                    }
+                    return {};
+                },
             });
 
             // 为表格绑定事件

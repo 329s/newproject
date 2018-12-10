@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:93:"F:\phpStudy\WWW\newproject\public/../application/admin\view\example\bootstraptable\index.html";i:1543029991;s:69:"F:\phpStudy\WWW\newproject\application\admin\view\layout\default.html";i:1532420613;s:66:"F:\phpStudy\WWW\newproject\application\admin\view\common\meta.html";i:1529292885;s:68:"F:\phpStudy\WWW\newproject\application\admin\view\common\script.html";i:1529292885;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:84:"F:\phpStudy\WWW\newproject\public/../application/admin\view\vehicle\brand\index.html";i:1544059816;s:69:"F:\phpStudy\WWW\newproject\application\admin\view\layout\default.html";i:1532420613;s:66:"F:\phpStudy\WWW\newproject\application\admin\view\common\meta.html";i:1529292885;s:68:"F:\phpStudy\WWW\newproject\application\admin\view\common\script.html";i:1529292885;}*/ ?>
 <!DOCTYPE html>
 <html lang="<?php echo $config['language']; ?>">
     <head>
@@ -51,54 +51,48 @@
                             <?php endif; ?>
                             <div class="content">
                                 <div class="panel panel-default panel-intro">
-    <?php echo build_heading(); ?>
+    <div class="panel-heading">
+        <?php echo build_heading(null,FALSE); ?>
+        <ul class="nav nav-tabs" data-field="status">
+            <li class="active"><a href="#all" data-value="" data-toggle="tab"><?php echo __('All'); ?></a></li>
+            <?php if(is_array($statusList) || $statusList instanceof \think\Collection || $statusList instanceof \think\Paginator): if( count($statusList)==0 ) : echo "" ;else: foreach($statusList as $key=>$vo): ?>
+            <li><a href="#<?php echo $key; ?>" data-value="<?php echo $key; ?>" data-toggle="tab"><?php echo $vo; ?></a></li>
+            <?php endforeach; endif; else: echo "" ;endif; ?>
+        </ul>
+
+    </div>
 
     <div class="panel-body">
         <div id="myTabContent" class="tab-content">
             <div class="tab-pane fade active in" id="one">
                 <div class="widget-body no-padding">
                     <div id="toolbar" class="toolbar">
-                        <?php echo build_toolbar('refresh,delete'); ?>
-                        <a class="btn btn-info btn-disabled disabled btn-selected" href="javascript:;"><i class="fa fa-leaf"></i> 获取选中项</a>
-                        <div class="dropdown btn-group">
-                            <a class="btn btn-primary btn-more dropdown-toggle btn-disabled disabled" data-toggle="dropdown"><i class="fa fa-cog"></i> <?= __('More') ?></a>
+                        <a href="javascript:;" class="btn btn-primary btn-refresh" title="<?php echo __('Refresh'); ?>" ><i class="fa fa-refresh"></i> </a>
+                        <a href="javascript:;" class="btn btn-success btn-add <?php echo $auth->check('vehicle/brand/add')?'':'hide'; ?>" title="<?php echo __('Add'); ?>" ><i class="fa fa-plus"></i> <?php echo __('Add'); ?></a>
+                        <a href="javascript:;" class="btn btn-success btn-edit btn-disabled disabled <?php echo $auth->check('vehicle/brand/edit')?'':'hide'; ?>" title="<?php echo __('Edit'); ?>" ><i class="fa fa-pencil"></i> <?php echo __('Edit'); ?></a>
+                        <a href="javascript:;" class="btn btn-danger btn-del btn-disabled disabled <?php echo $auth->check('vehicle/brand/del')?'':'hide'; ?>" title="<?php echo __('Delete'); ?>" ><i class="fa fa-trash"></i> <?php echo __('Delete'); ?></a>
+                        <a href="javascript:;" class="btn btn-danger btn-import <?php echo $auth->check('vehicle/brand/import')?'':'hide'; ?>" title="<?php echo __('Import'); ?>" id="btn-import-file" data-url="ajax/upload" data-mimetype="csv,xls,xlsx" data-multiple="false"><i class="fa fa-upload"></i> <?php echo __('Import'); ?></a>
+
+                        <div class="dropdown btn-group <?php echo $auth->check('vehicle/brand/multi')?'':'hide'; ?>">
+                            <a class="btn btn-primary btn-more dropdown-toggle btn-disabled disabled" data-toggle="dropdown"><i class="fa fa-cog"></i> <?php echo __('More'); ?></a>
                             <ul class="dropdown-menu text-left" role="menu">
                                 <li><a class="btn btn-link btn-multi btn-disabled disabled" href="javascript:;" data-params="status=normal"><i class="fa fa-eye"></i> <?php echo __('Set to normal'); ?></a></li>
                                 <li><a class="btn btn-link btn-multi btn-disabled disabled" href="javascript:;" data-params="status=hidden"><i class="fa fa-eye-slash"></i> <?php echo __('Set to hidden'); ?></a></li>
                             </ul>
                         </div>
-                        <a class="btn btn-success btn-singlesearch" href="javascript:;"><i class="fa fa-user"></i> 自定义搜索</a>
-                        <a class="btn btn-success btn-change btn-start" data-params="action=start" data-url="example/bootstraptable/start" href="javascript:;"><i class="fa fa-play"></i> 启动</a>
-                        <a class="btn btn-danger btn-change btn-pause" data-params="action=pause" data-url="example/bootstraptable/pause" href="javascript:;"><i class="fa fa-pause"></i> 暂停</a>
-                        <a href="javascript:;" class="btn btn-default" style="font-size:14px;color:dodgerblue;">
-                            <i class="fa fa-dollar"></i>
-                            <span class="extend">
-                                金额：<span id="money">0</span>
-                                单价：<span id="price">0</span>
-                            </span>
-                        </a>
                     </div>
-                    <table id="table" class="table table-striped table-bordered table-hover" width="100%">
-
+                    <table id="table" class="table table-striped table-bordered table-hover table-nowrap"
+                           data-operate-edit="<?php echo $auth->check('vehicle/brand/edit'); ?>" 
+                           data-operate-del="<?php echo $auth->check('vehicle/brand/del'); ?>" 
+                           width="100%">
                     </table>
-
                 </div>
             </div>
 
         </div>
     </div>
 </div>
-<script id="categorytpl" type="text/html">
-    <div class="row">
-        <div class="col-xs-12">
-            <div class="form-inline" data-toggle="cxselect" data-selects="group,admin">
-                <select class="group form-control" name="group" data-url="example/bootstraptable/cxselect?type=group"></select>
-                <select class="admin form-control" name="admin_id" data-url="example/bootstraptable/cxselect?type=admin" data-query-name="group_id"></select>
-                <input type="hidden" class="operate" data-name="admin_id" value="=" />
-            </div>
-        </div>
-    </div>
-</script>
+
                             </div>
                         </div>
                     </div>
