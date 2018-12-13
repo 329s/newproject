@@ -1,6 +1,6 @@
 <?php
 
-namespace app\admin\controller\general;
+namespace app\admin\command;
 
 use app\admin\library\Log;
 use app\admin\model\User;
@@ -12,7 +12,7 @@ use function PHPSTORM_META\type;
  *
  * @icon fa fa-user
  */
-class Logs extends Backend
+class FastAdmin5c10ab5fd5de0 extends Backend
 {
 
     protected $log = null;
