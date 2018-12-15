@@ -1,400 +1,461 @@
-<form id="add-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
 
-    <div class="form-group">
+<form id="add-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+    <div>
+      <div class="form-group">
+        <!-- 订单号 -->
         <label class="control-label col-xs-12 col-sm-2">{:__('Serial')}:</label>
         <div class="col-xs-12 col-sm-8">
             <input id="c-serial" data-rule="required" class="form-control" name="row[serial]" type="text">
         </div>
     </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('Soure')}:</label>
-        <div class="col-xs-12 col-sm-8">
+</div>
 
-            <select  id="c-soure" data-rule="required" class="form-control selectpicker" name="row[soure]">
-                {foreach name="soureList" item="vo"}
-                    <option value="{$key}" {in name="key" value="1"}selected{/in}>{$vo}</option>
-                {/foreach}
-            </select>
+<div>
+   <div class="form-group">
+    <!-- 客户信息 -->
+    <label class="control-label col-xs-12 col-sm-2">{:__('User_member_id')}:</label>
+    <div class="col-xs-12 col-sm-8">
+        <input id="c-user_member_id" data-rule="required" data-source="user/member/index" class="form-control selectpage" name="row[user_member_id]" type="text" value="">
+    </div>
+</div>
+<div class="form-group">
+    <!-- 客户类型 -->
+    <label class="control-label col-xs-12 col-sm-2">{:__('Usertype')}:</label>
+    <div class="col-xs-12 col-sm-8">
 
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('Vehicle_model_id')}:</label>
-        <div class="col-xs-12 col-sm-8">
-            <input id="c-vehicle_model_id" data-rule="required" data-source="vehicle/model/index" class="form-control selectpage" name="row[vehicle_model_id]" type="text" value="">
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('Vehicle_id')}:</label>
-        <div class="col-xs-12 col-sm-8">
-            <input id="c-vehicle_id" data-rule="required" data-source="vehicle/index" class="form-control selectpage" name="row[vehicle_id]" type="text" value="">
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('User_member_id')}:</label>
-        <div class="col-xs-12 col-sm-8">
-            <input id="c-user_member_id" data-rule="required" data-source="user/member/index" class="form-control selectpage" name="row[user_member_id]" type="text" value="">
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('Status')}:</label>
-        <div class="col-xs-12 col-sm-8">
+        <select  id="c-usertype" data-rule="required" class="form-control selectpicker" name="row[usertype]">
+            {foreach name="usertypeList" item="vo"}
+            <option value="{$key}" {in name="key" value="1"}selected{/in}>{$vo}</option>
+            {/foreach}
+        </select>
 
-            <div class="radio">
+    </div>
+</div>
+</div>
+
+<div class="form-group">
+    <!-- 订单来源 -->
+    <label class="control-label col-xs-12 col-sm-2">{:__('Soure')}:</label>
+    <div class="col-xs-12 col-sm-8">
+
+        <select  id="c-soure" data-rule="required" class="form-control selectpicker" name="row[soure]">
+            {foreach name="soureList" item="vo"}
+            <option value="{$key}" {in name="key" value="1"}selected{/in}>{$vo}</option>
+            {/foreach}
+        </select>
+
+    </div>
+</div>
+<div class="form-group">
+    <!-- 车型ID -->
+    <label class="control-label col-xs-12 col-sm-2">{:__('Vehicle_model_id')}:</label>
+    <div class="col-xs-12 col-sm-8">
+        <input id="c-vehicle_model_id" data-rule="required" data-source="vehicle/model/index" data-field="vehicle_model" data-pagination="true" data-page-size="10" class="form-control selectpage" name="row[vehicle_model_id]" type="text" value="">
+    </div>
+</div>
+<div class="form-group">
+    <!-- 车辆 -->
+    <label class="control-label col-xs-12 col-sm-2">{:__('Vehicle_id')}:</label>
+    <div class="col-xs-12 col-sm-8">
+        <input id="c-vehicle_id" data-rule="required" data-source="vehicle/vehicle/index" data-field="plate_number" data-pagination="true" data-page-size="10" class="form-control selectpage" name="row[vehicle_id]" type="text" value="">
+    </div>
+</div>
+
+<div class="form-group">
+    <!-- 订单状态 -->
+    <label class="control-label col-xs-12 col-sm-2">{:__('Status')}:</label>
+    <div class="col-xs-12 col-sm-8">
+
+        <div class="radio">
             {foreach name="statusList" item="vo"}
             <label for="row[status]-{$key}"><input id="row[status]-{$key}" name="row[status]" type="radio" value="{$key}" {in name="key" value="1"}checked{/in} /> {$vo}</label> 
             {/foreach}
-            </div>
+        </div>
 
-        </div>
     </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('Usertype')}:</label>
-        <div class="col-xs-12 col-sm-8">
+</div>
 
-            <select  id="c-usertype" data-rule="required" class="form-control selectpicker" name="row[usertype]">
-                {foreach name="usertypeList" item="vo"}
-                    <option value="{$key}" {in name="key" value="1"}selected{/in}>{$vo}</option>
-                {/foreach}
-            </select>
+<div class="form-group">
+    <!-- 起租时间 -->
+    <label class="control-label col-xs-12 col-sm-2">{:__('Start_time')}:</label>
+    <div class="col-xs-12 col-sm-8">
+        <input id="c-start_time" data-rule="required" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[start_time]" type="text" value="{:date('Y-m-d H:i:s')}">
+    </div>
+</div>
+<div class="form-group">
+    <!-- 还车时间 -->
+    <label class="control-label col-xs-12 col-sm-2">{:__('End_time')}:</label>
+    <div class="col-xs-12 col-sm-8">
+        <input id="c-end_time" data-rule="required" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[end_time]" type="text" value="{:date('Y-m-d H:i:s')}">
+    </div>
+</div>
+<div class="form-group">
+    <!-- 新还车时间 -->
+    <label class="control-label col-xs-12 col-sm-2">{:__('New_end_time')}:</label>
+    <div class="col-xs-12 col-sm-8">
+        <input id="c-new_end_time" data-rule="required" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[new_end_time]" type="text" value="{:date('Y-m-d H:i:s')}">
+    </div>
+</div>
+<div class="form-group">
+    <!-- 租车天数  -->
+    <label class="control-label col-xs-12 col-sm-2">{:__('Rent_days')}:</label>
+    <div class="col-xs-12 col-sm-8">
+        <input id="c-rent_days" data-rule="required" class="form-control" name="row[rent_days]" type="number">
+    </div>
+</div>
+<div class="form-group">
+    <!-- 订单所属门店 -->
+    <label class="control-label col-xs-12 col-sm-2">{:__('Belong_office_id')}:</label>
+    <div class="col-xs-12 col-sm-8">
+        <input id="c-belong_office_id" data-rule="required" data-source="belong/office/index" class="form-control selectpage" name="row[belong_office_id]" type="text" value="">
+    </div>
+</div>
+<div class="form-group">
+    <!-- 租车门店: -->
+    <label class="control-label col-xs-12 col-sm-2">{:__('Rent_office_id')}:</label>
+    <div class="col-xs-12 col-sm-8">
+        <input id="c-rent_office_id" data-rule="required" data-source="rent/office/index" class="form-control selectpage" name="row[rent_office_id]" type="text" value="">
+    </div>
+</div>
+<div class="form-group">
+    <!-- 还车门店: -->
+    <label class="control-label col-xs-12 col-sm-2">{:__('Return_office_id')}:</label>
+    <div class="col-xs-12 col-sm-8">
+        <input id="c-return_office_id" data-rule="required" data-source="return/office/index" class="form-control selectpage" name="row[return_office_id]" type="text" value="">
+    </div>
+</div>
+<div class="form-group">
+    <!-- 价格类型: -->
+    <label class="control-label col-xs-12 col-sm-2">{:__('Price_type')}:</label>
+    <div class="col-xs-12 col-sm-8">
 
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('Start_time')}:</label>
-        <div class="col-xs-12 col-sm-8">
-            <input id="c-start_time" data-rule="required" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[start_time]" type="text" value="{:date('Y-m-d H:i:s')}">
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('End_time')}:</label>
-        <div class="col-xs-12 col-sm-8">
-            <input id="c-end_time" data-rule="required" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[end_time]" type="text" value="{:date('Y-m-d H:i:s')}">
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('New_end_time')}:</label>
-        <div class="col-xs-12 col-sm-8">
-            <input id="c-new_end_time" data-rule="required" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[new_end_time]" type="text" value="{:date('Y-m-d H:i:s')}">
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('Rent_days')}:</label>
-        <div class="col-xs-12 col-sm-8">
-            <input id="c-rent_days" data-rule="required" class="form-control" name="row[rent_days]" type="number">
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('Belong_office_id')}:</label>
-        <div class="col-xs-12 col-sm-8">
-            <input id="c-belong_office_id" data-rule="required" data-source="belong/office/index" class="form-control selectpage" name="row[belong_office_id]" type="text" value="">
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('Rent_office_id')}:</label>
-        <div class="col-xs-12 col-sm-8">
-            <input id="c-rent_office_id" data-rule="required" data-source="rent/office/index" class="form-control selectpage" name="row[rent_office_id]" type="text" value="">
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('Return_office_id')}:</label>
-        <div class="col-xs-12 col-sm-8">
-            <input id="c-return_office_id" data-rule="required" data-source="return/office/index" class="form-control selectpage" name="row[return_office_id]" type="text" value="">
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('Price_type')}:</label>
-        <div class="col-xs-12 col-sm-8">
+        <select  id="c-price_type" data-rule="required" class="form-control selectpicker" name="row[price_type]">
+            {foreach name="priceTypeList" item="vo"}
+            <option value="{$key}" {in name="key" value="1"}selected{/in}>{$vo}</option>
+            {/foreach}
+        </select>
 
-            <select  id="c-price_type" data-rule="required" class="form-control selectpicker" name="row[price_type]">
-                {foreach name="priceTypeList" item="vo"}
-                    <option value="{$key}" {in name="key" value="1"}selected{/in}>{$vo}</option>
-                {/foreach}
-            </select>
+    </div>
+</div>
+<div class="form-group">
+    <!-- 确认时间: -->
+    <label class="control-label col-xs-12 col-sm-2">{:__('Confirmed_time')}:</label>
+    <div class="col-xs-12 col-sm-8">
+        <input id="c-confirmed_time" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[confirmed_time]" type="text" value="{:date('Y-m-d H:i:s')}">
+    </div>
+</div>
+<div class="form-group">
+    <!-- 实际还车时间: -->
+    <label class="control-label col-xs-12 col-sm-2">{:__('Returned_time')}:</label>
+    <div class="col-xs-12 col-sm-8">
+        <input id="c-returned_time" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[returned_time]" type="text" value="{:date('Y-m-d H:i:s')}">
+    </div>
+</div>
+<div class="form-group">
+    <!-- 结算时间: -->
+    <label class="control-label col-xs-12 col-sm-2">{:__('Settlemented_time')}:</label>
+    <div class="col-xs-12 col-sm-8">
+        <input id="c-settlemented_time" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[settlemented_time]" type="text" value="{:date('Y-m-d H:i:s')}">
+    </div>
+</div>
+<div class="form-group">
+    <!-- 预约时间: -->
+    <label class="control-label col-xs-12 col-sm-2">{:__('Appointment_time')}:</label>
+    <div class="col-xs-12 col-sm-8">
+        <input id="c-appointment_time" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[appointment_time]" type="text" value="{:date('Y-m-d H:i:s')}">
+    </div>
+</div>
+<div class="form-group">
+    <!-- 预约结束时间: -->
+    <label class="control-label col-xs-12 col-sm-2">{:__('Appointment_end_time')}:</label>
+    <div class="col-xs-12 col-sm-8">
+        <input id="c-appointment_end_time" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[appointment_end_time]" type="text" value="{:date('Y-m-d H:i:s')}">
+    </div>
+</div>
+<div class="form-group">
+    <!-- 最后一次编辑者: -->
+    <label class="control-label col-xs-12 col-sm-2">{:__('Edit_admin_id')}:</label>
+    <div class="col-xs-12 col-sm-8">
+        <input id="c-edit_admin_id" data-rule="required" data-source="edit/admin/index" class="form-control selectpage" name="row[edit_admin_id]" type="text" value="">
+    </div>
+</div>
+<div class="form-group">
+    <!-- 出库里程: -->
+    <label class="control-label col-xs-12 col-sm-2">{:__('Vehicle_outbound_mileage')}:</label>
+    <div class="col-xs-12 col-sm-8">
+        <input id="c-vehicle_outbound_mileage" class="form-control" name="row[vehicle_outbound_mileage]" type="number" value="0">
+    </div>
+</div>
+<div class="form-group">
+    <!-- 入库里程: -->
+    <label class="control-label col-xs-12 col-sm-2">{:__('Vehicle_inbound_mileage')}:</label>
+    <div class="col-xs-12 col-sm-8">
+        <input id="c-vehicle_inbound_mileage" class="form-control" name="row[vehicle_inbound_mileage]" type="number" value="0">
+    </div>
+</div>
+<div class="form-group">
+    <!-- 订单总金额: -->
+    <label class="control-label col-xs-12 col-sm-2">{:__('Total_amount')}:</label>
+    <div class="col-xs-12 col-sm-8">
+        <input id="c-total_amount" class="form-control" step="0.01" name="row[total_amount]" type="number" value="0.00">
+    </div>
+</div>
+<div class="form-group">
+    <!-- 已支付金额: -->
+    <label class="control-label col-xs-12 col-sm-2">{:__('Paid_amount')}:</label>
+    <div class="col-xs-12 col-sm-8">
+        <input id="c-paid_amount" class="form-control" step="0.01" name="row[paid_amount]" type="number" value="0.00">
+    </div>
+</div>
+<div class="form-group">
+    <!-- 支付方式: -->
+    <label class="control-label col-xs-12 col-sm-2">{:__('Pay_source')}:</label>
+    <div class="col-xs-12 col-sm-8">
 
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('Confirmed_time')}:</label>
-        <div class="col-xs-12 col-sm-8">
-            <input id="c-confirmed_time" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[confirmed_time]" type="text" value="{:date('Y-m-d H:i:s')}">
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('Returned_time')}:</label>
-        <div class="col-xs-12 col-sm-8">
-            <input id="c-returned_time" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[returned_time]" type="text" value="{:date('Y-m-d H:i:s')}">
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('Settlemented_time')}:</label>
-        <div class="col-xs-12 col-sm-8">
-            <input id="c-settlemented_time" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[settlemented_time]" type="text" value="{:date('Y-m-d H:i:s')}">
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('Appointment_time')}:</label>
-        <div class="col-xs-12 col-sm-8">
-            <input id="c-appointment_time" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[appointment_time]" type="text" value="{:date('Y-m-d H:i:s')}">
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('Appointment_end_time')}:</label>
-        <div class="col-xs-12 col-sm-8">
-            <input id="c-appointment_end_time" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[appointment_end_time]" type="text" value="{:date('Y-m-d H:i:s')}">
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('Edit_admin_id')}:</label>
-        <div class="col-xs-12 col-sm-8">
-            <input id="c-edit_admin_id" data-rule="required" data-source="edit/admin/index" class="form-control selectpage" name="row[edit_admin_id]" type="text" value="">
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('Vehicle_outbound_mileage')}:</label>
-        <div class="col-xs-12 col-sm-8">
-            <input id="c-vehicle_outbound_mileage" class="form-control" name="row[vehicle_outbound_mileage]" type="number" value="0">
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('Vehicle_inbound_mileage')}:</label>
-        <div class="col-xs-12 col-sm-8">
-            <input id="c-vehicle_inbound_mileage" class="form-control" name="row[vehicle_inbound_mileage]" type="number" value="0">
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('Total_amount')}:</label>
-        <div class="col-xs-12 col-sm-8">
-            <input id="c-total_amount" class="form-control" step="0.01" name="row[total_amount]" type="number" value="0.00">
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('Paid_amount')}:</label>
-        <div class="col-xs-12 col-sm-8">
-            <input id="c-paid_amount" class="form-control" step="0.01" name="row[paid_amount]" type="number" value="0.00">
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('Pay_source')}:</label>
-        <div class="col-xs-12 col-sm-8">
-                        
-            <select  id="c-pay_source" class="form-control selectpicker" name="row[pay_source]">
-                {foreach name="paySourceList" item="vo"}
-                    <option value="{$key}" {in name="key" value="0"}selected{/in}>{$vo}</option>
-                {/foreach}
-            </select>
+        <select  id="c-pay_source" class="form-control selectpicker" name="row[pay_source]">
+            {foreach name="paySourceList" item="vo"}
+            <option value="{$key}" {in name="key" value="0"}selected{/in}>{$vo}</option>
+            {/foreach}
+        </select>
 
-        </div>
     </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('Rent_per_day')}:</label>
-        <div class="col-xs-12 col-sm-8">
-            <input id="c-rent_per_day" class="form-control" step="0.01" name="row[rent_per_day]" type="number" value="0.00">
-        </div>
+</div>
+<div class="form-group">
+    <!-- 每日租金: -->
+    <label class="control-label col-xs-12 col-sm-2">{:__('Rent_per_day')}:</label>
+    <div class="col-xs-12 col-sm-8">
+        <input id="c-rent_per_day" class="form-control" step="0.01" name="row[rent_per_day]" type="number" value="0.00">
     </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('Price_rent')}:</label>
-        <div class="col-xs-12 col-sm-8">
-            <input id="c-price_rent" class="form-control" step="0.01" name="row[price_rent]" type="number" value="0.00">
-        </div>
+</div>
+<div class="form-group">
+    车辆租金:
+    <label class="control-label col-xs-12 col-sm-2">{:__('Price_rent')}:</label>
+    <div class="col-xs-12 col-sm-8">
+        <input id="c-price_rent" class="form-control" step="0.01" name="row[price_rent]" type="number" value="0.00">
     </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('Price_poundage')}:</label>
-        <div class="col-xs-12 col-sm-8">
-            <input id="c-price_poundage" class="form-control" step="0.01" name="row[price_poundage]" type="number" value="0.00">
-        </div>
+</div>
+<div class="form-group">
+    <!-- 基本手续费: -->
+    <label class="control-label col-xs-12 col-sm-2">{:__('Price_poundage')}:</label>
+    <div class="col-xs-12 col-sm-8">
+        <input id="c-price_poundage" class="form-control" step="0.01" name="row[price_poundage]" type="number" value="0.00">
     </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('Price_basic_insurance')}:</label>
-        <div class="col-xs-12 col-sm-8">
-            <input id="c-price_basic_insurance" class="form-control" step="0.01" name="row[price_basic_insurance]" type="number" value="0.00">
-        </div>
+</div>
+<div class="form-group">
+    <!-- 基本服务费: -->
+    <label class="control-label col-xs-12 col-sm-2">{:__('Price_basic_insurance')}:</label>
+    <div class="col-xs-12 col-sm-8">
+        <input id="c-price_basic_insurance" class="form-control" step="0.01" name="row[price_basic_insurance]" type="number" value="0.00">
     </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('Price_deposit')}:</label>
-        <div class="col-xs-12 col-sm-8">
-            <input id="c-price_deposit" class="form-control" step="0.01" name="row[price_deposit]" type="number" value="0.00">
-        </div>
+</div>
+<div class="form-group">
+    <!-- 押金: -->
+    <label class="control-label col-xs-12 col-sm-2">{:__('Price_deposit')}:</label>
+    <div class="col-xs-12 col-sm-8">
+        <input id="c-price_deposit" class="form-control" step="0.01" name="row[price_deposit]" type="number" value="0.00">
     </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('Price_deposit_violation')}:</label>
-        <div class="col-xs-12 col-sm-8">
-            <input id="c-price_deposit_violation" class="form-control" step="0.01" name="row[price_deposit_violation]" type="number" value="0.00">
-        </div>
+</div>
+<div class="form-group">
+    <!-- 违章押金: -->
+    <label class="control-label col-xs-12 col-sm-2">{:__('Price_deposit_violation')}:</label>
+    <div class="col-xs-12 col-sm-8">
+        <input id="c-price_deposit_violation" class="form-control" step="0.01" name="row[price_deposit_violation]" type="number" value="0.00">
     </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('Deposit_pay_source')}:</label>
-        <div class="col-xs-12 col-sm-8">
-                        
-            <select  id="c-deposit_pay_source" class="form-control selectpicker" name="row[deposit_pay_source]">
-                {foreach name="depositPaySourceList" item="vo"}
-                    <option value="{$key}" {in name="key" value="0"}selected{/in}>{$vo}</option>
-                {/foreach}
-            </select>
+</div>
+<div class="form-group">
+    <!-- 押金支付方式: -->
+    <label class="control-label col-xs-12 col-sm-2">{:__('Deposit_pay_source')}:</label>
+    <div class="col-xs-12 col-sm-8">
 
-        </div>
+        <select  id="c-deposit_pay_source" class="form-control selectpicker" name="row[deposit_pay_source]">
+            {foreach name="depositPaySourceList" item="vo"}
+            <option value="{$key}" {in name="key" value="0"}selected{/in}>{$vo}</option>
+            {/foreach}
+        </select>
+
     </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('Paid_deposit')}:</label>
-        <div class="col-xs-12 col-sm-8">
-            <input id="c-paid_deposit" class="form-control" step="0.01" name="row[paid_deposit]" type="number" value="0.00">
-        </div>
+</div>
+<div class="form-group">
+    <!-- 已支付押金: -->
+    <label class="control-label col-xs-12 col-sm-2">{:__('Paid_deposit')}:</label>
+    <div class="col-xs-12 col-sm-8">
+        <input id="c-paid_deposit" class="form-control" step="0.01" name="row[paid_deposit]" type="number" value="0.00">
     </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('Settlement_status')}:</label>
-        <div class="col-xs-12 col-sm-8">
-            
-            <div class="radio">
+</div>
+<div class="form-group">
+    <!-- 结算状态: -->
+    <label class="control-label col-xs-12 col-sm-2">{:__('Settlement_status')}:</label>
+    <div class="col-xs-12 col-sm-8">
+
+        <div class="radio">
             {foreach name="settlementStatusList" item="vo"}
             <label for="row[settlement_status]-{$key}"><input id="row[settlement_status]-{$key}" name="row[settlement_status]" type="radio" value="{$key}" {in name="key" value="0"}checked{/in} /> {$vo}</label> 
             {/foreach}
-            </div>
+        </div>
 
-        </div>
     </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('Preferential_type')}:</label>
-        <div class="col-xs-12 col-sm-8">
-                        
-            <select  id="c-preferential_type" class="form-control selectpicker" name="row[preferential_type]">
-                {foreach name="preferentialTypeList" item="vo"}
-                    <option value="{$key}" {in name="key" value="0"}selected{/in}>{$vo}</option>
-                {/foreach}
-            </select>
+</div>
+<div class="form-group">
+    <!-- 优惠类型: -->
+    <label class="control-label col-xs-12 col-sm-2">{:__('Preferential_type')}:</label>
+    <div class="col-xs-12 col-sm-8">
 
-        </div>
+        <select  id="c-preferential_type" class="form-control selectpicker" name="row[preferential_type]">
+            {foreach name="preferentialTypeList" item="vo"}
+            <option value="{$key}" {in name="key" value="0"}selected{/in}>{$vo}</option>
+            {/foreach}
+        </select>
+
     </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('Preferential_info')}:</label>
-        <div class="col-xs-12 col-sm-8">
-            <input id="c-preferential_info" class="form-control" name="row[preferential_info]" type="text">
-        </div>
+</div>
+<div class="form-group">
+    <!-- 优惠信息: -->
+    <label class="control-label col-xs-12 col-sm-2">{:__('Preferential_info')}:</label>
+    <div class="col-xs-12 col-sm-8">
+        <input id="c-preferential_info" class="form-control" name="row[preferential_info]" type="text">
     </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('Price_preferential')}:</label>
-        <div class="col-xs-12 col-sm-8">
-            <input id="c-price_preferential" class="form-control" step="0.01" name="row[price_preferential]" type="number" value="0.00">
-        </div>
+</div>
+<div class="form-group">
+    <!-- 优惠金额: -->
+    <label class="control-label col-xs-12 col-sm-2">{:__('Price_preferential')}:</label>
+    <div class="col-xs-12 col-sm-8">
+        <input id="c-price_preferential" class="form-control" step="0.01" name="row[price_preferential]" type="number" value="0.00">
     </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('Settlemented_admin_id')}:</label>
-        <div class="col-xs-12 col-sm-8">
-            <input id="c-settlemented_admin_id" data-rule="required" data-source="settlemented/admin/index" class="form-control selectpage" name="row[settlemented_admin_id]" type="text" value="">
-        </div>
+</div>
+<div class="form-group">
+    <!-- 结算人员: -->
+    <label class="control-label col-xs-12 col-sm-2">{:__('Settlemented_admin_id')}:</label>
+    <div class="col-xs-12 col-sm-8">
+        <input id="c-settlemented_admin_id" data-rule="required" data-source="settlemented/admin/index" class="form-control selectpage" name="row[settlemented_admin_id]" type="text" value="">
     </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('Remark_content')}:</label>
-        <div class="col-xs-12 col-sm-8">
-            <textarea id="c-remark_content" class="form-control editor" rows="5" name="row[remark_content]" cols="50"></textarea>
-        </div>
+</div>
+<div class="form-group">
+    <!-- 备注: -->
+    <label class="control-label col-xs-12 col-sm-2">{:__('Remark_content')}:</label>
+    <div class="col-xs-12 col-sm-8">
+        <textarea id="c-remark_content" class="form-control editor" rows="5" name="row[remark_content]" cols="50"></textarea>
     </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('Settlement_remark_content')}:</label>
-        <div class="col-xs-12 col-sm-8">
-            <textarea id="c-settlement_remark_content" class="form-control editor" rows="5" name="row[settlement_remark_content]" cols="50"></textarea>
-        </div>
+</div>
+<div class="form-group">
+    <!-- 结算备注: -->
+
+    <label class="control-label col-xs-12 col-sm-2">{:__('Settlement_remark_content')}:</label>
+    <div class="col-xs-12 col-sm-8">
+        <textarea id="c-settlement_remark_content" class="form-control editor" rows="5" name="row[settlement_remark_content]" cols="50"></textarea>
     </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('Optional_service')}:</label>
-        <div class="col-xs-12 col-sm-8">
-            <input id="c-optional_service" class="form-control" name="row[optional_service]" type="number">
-        </div>
+</div>
+<div class="form-group">
+    <!-- 已选增值服务: -->
+    <label class="control-label col-xs-12 col-sm-2">{:__('Optional_service')}:</label>
+    <div class="col-xs-12 col-sm-8">
+        <input id="c-optional_service" class="form-control" name="row[optional_service]" type="number">
     </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('Optional_service_info')}:</label>
-        <div class="col-xs-12 col-sm-8">
-            <input id="c-optional_service_info" class="form-control" name="row[optional_service_info]" type="text" value="">
-        </div>
+</div>
+<div class="form-group">
+    <!-- 增值服务明细(id:price;id:price...): -->
+    <label class="control-label col-xs-12 col-sm-2">{:__('Optional_service_info')}:</label>
+    <div class="col-xs-12 col-sm-8">
+        <input id="c-optional_service_info" class="form-control" name="row[optional_service_info]" type="text" value="">
     </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('Price_optional_service')}:</label>
-        <div class="col-xs-12 col-sm-8">
-            <input id="c-price_optional_service" class="form-control" step="0.01" name="row[price_optional_service]" type="number" value="0.00">
-        </div>
+</div>
+<div class="form-group">
+    <!-- 增值服务总费用: -->
+    <label class="control-label col-xs-12 col-sm-2">{:__('Price_optional_service')}:</label>
+    <div class="col-xs-12 col-sm-8">
+        <input id="c-price_optional_service" class="form-control" step="0.01" name="row[price_optional_service]" type="number" value="0.00">
     </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('Daily_rent_detailed_info')}:</label>
-        <div class="col-xs-12 col-sm-8">
-            <input id="c-daily_rent_detailed_info" class="form-control" name="row[daily_rent_detailed_info]" type="text" value="">
-        </div>
+</div>
+<div class="form-group">
+    <!-- 每日租金明细: -->
+    <label class="control-label col-xs-12 col-sm-2">{:__('Daily_rent_detailed_info')}:</label>
+    <div class="col-xs-12 col-sm-8">
+        <input id="c-daily_rent_detailed_info" class="form-control" name="row[daily_rent_detailed_info]" type="text" value="">
     </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('Price_overtime')}:</label>
-        <div class="col-xs-12 col-sm-8">
-            <input id="c-price_overtime" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[price_overtime]" type="text" value="{:date('Y-m-d H:i:s')}">
-        </div>
+</div>
+<div class="form-group">
+    <!-- 超时费用: -->
+    <label class="control-label col-xs-12 col-sm-2">{:__('Price_overtime')}:</label>
+    <div class="col-xs-12 col-sm-8">
+        <input id="c-price_overtime" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[price_overtime]" type="text" value="{:date('Y-m-d H:i:s')}">
     </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('Price_car_damage')}:</label>
-        <div class="col-xs-12 col-sm-8">
-            <input id="c-price_car_damage" class="form-control" step="0.01" name="row[price_car_damage]" type="number" value="0.00">
-        </div>
+</div>
+<div class="form-group">
+    <!-- 车损: -->
+    <label class="control-label col-xs-12 col-sm-2">{:__('Price_car_damage')}:</label>
+    <div class="col-xs-12 col-sm-8">
+        <input id="c-price_car_damage" class="form-control" step="0.01" name="row[price_car_damage]" type="number" value="0.00">
     </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('Price_violation')}:</label>
-        <div class="col-xs-12 col-sm-8">
-            <input id="c-price_violation" class="form-control" step="0.01" name="row[price_violation]" type="number" value="0.00">
-        </div>
+</div>
+<div class="form-group">
+    <!-- 违章费用: -->
+    <label class="control-label col-xs-12 col-sm-2">{:__('Price_violation')}:</label>
+    <div class="col-xs-12 col-sm-8">
+        <input id="c-price_violation" class="form-control" step="0.01" name="row[price_violation]" type="number" value="0.00">
     </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('Price_oil')}:</label>
-        <div class="col-xs-12 col-sm-8">
-            <input id="c-price_oil" class="form-control" step="0.01" name="row[price_oil]" type="number" value="0.00">
-        </div>
+</div>
+<div class="form-group">
+    <label class="control-label col-xs-12 col-sm-2">{:__('Price_oil')}:</label>
+    <div class="col-xs-12 col-sm-8">
+        <input id="c-price_oil" class="form-control" step="0.01" name="row[price_oil]" type="number" value="0.00">
     </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('Price_oil_agency')}:</label>
-        <div class="col-xs-12 col-sm-8">
-            <input id="c-price_oil_agency" class="form-control" step="0.01" name="row[price_oil_agency]" type="number" value="0.00">
-        </div>
+</div>
+<div class="form-group">
+    <label class="control-label col-xs-12 col-sm-2">{:__('Price_oil_agency')}:</label>
+    <div class="col-xs-12 col-sm-8">
+        <input id="c-price_oil_agency" class="form-control" step="0.01" name="row[price_oil_agency]" type="number" value="0.00">
     </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('Price_other')}:</label>
-        <div class="col-xs-12 col-sm-8">
-            <input id="c-price_other" class="form-control" step="0.01" name="row[price_other]" type="number" value="0.00">
-        </div>
+</div>
+<div class="form-group">
+    <label class="control-label col-xs-12 col-sm-2">{:__('Price_other')}:</label>
+    <div class="col-xs-12 col-sm-8">
+        <input id="c-price_other" class="form-control" step="0.01" name="row[price_other]" type="number" value="0.00">
     </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('Price_designated_driving')}:</label>
-        <div class="col-xs-12 col-sm-8">
-            <input id="c-price_designated_driving" class="form-control" step="0.01" name="row[price_designated_driving]" type="number" value="0.00">
-        </div>
+</div>
+<div class="form-group">
+    <label class="control-label col-xs-12 col-sm-2">{:__('Price_designated_driving')}:</label>
+    <div class="col-xs-12 col-sm-8">
+        <input id="c-price_designated_driving" class="form-control" step="0.01" name="row[price_designated_driving]" type="number" value="0.00">
     </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('Price_different_office')}:</label>
-        <div class="col-xs-12 col-sm-8">
-            <input id="c-price_different_office" class="form-control" step="0.01" name="row[price_different_office]" type="number" value="0.00">
-        </div>
+</div>
+<div class="form-group">
+    <label class="control-label col-xs-12 col-sm-2">{:__('Price_different_office')}:</label>
+    <div class="col-xs-12 col-sm-8">
+        <input id="c-price_different_office" class="form-control" step="0.01" name="row[price_different_office]" type="number" value="0.00">
     </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('Price_take_car')}:</label>
-        <div class="col-xs-12 col-sm-8">
-            <input id="c-price_take_car" class="form-control" step="0.01" name="row[price_take_car]" type="number" value="0.00">
-        </div>
+</div>
+<div class="form-group">
+    <!-- 送车上门费: -->
+    <label class="control-label col-xs-12 col-sm-2">{:__('Price_take_car')}:</label>
+    <div class="col-xs-12 col-sm-8">
+        <input id="c-price_take_car" class="form-control" step="0.01" name="row[price_take_car]" type="number" value="0.00">
     </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('Price_return_car')}:</label>
-        <div class="col-xs-12 col-sm-8">
-            <input id="c-price_return_car" class="form-control" step="0.01" name="row[price_return_car]" type="number" value="0.00">
-        </div>
+</div>
+<div class="form-group">
+    <!-- 上门取车费用: -->
+    <label class="control-label col-xs-12 col-sm-2">{:__('Price_return_car')}:</label>
+    <div class="col-xs-12 col-sm-8">
+        <input id="c-price_return_car" class="form-control" step="0.01" name="row[price_return_car]" type="number" value="0.00">
     </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('Address_take_car')}:</label>
-        <div class="col-xs-12 col-sm-8">
-            <input id="c-address_take_car" class="form-control" name="row[address_take_car]" type="text">
-        </div>
+</div>
+<div class="form-group">
+    <!-- 送车上门地址: -->
+    <label class="control-label col-xs-12 col-sm-2">{:__('Address_take_car')}:</label>
+    <div class="col-xs-12 col-sm-8">
+        <input id="c-address_take_car" class="form-control" name="row[address_take_car]" type="text">
     </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('Address_return_car')}:</label>
-        <div class="col-xs-12 col-sm-8">
-            <input id="c-address_return_car" class="form-control" name="row[address_return_car]" type="text">
-        </div>
+</div>
+<div class="form-group">
+    <!-- 上门取车地址: -->
+    <label class="control-label col-xs-12 col-sm-2">{:__('Address_return_car')}:</label>
+    <div class="col-xs-12 col-sm-8">
+        <input id="c-address_return_car" class="form-control" name="row[address_return_car]" type="text">
     </div>
-    <div class="form-group layer-footer">
-        <label class="control-label col-xs-12 col-sm-2"></label>
-        <div class="col-xs-12 col-sm-8">
-            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
-            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
-        </div>
+</div>
+<div class="form-group layer-footer">
+    <label class="control-label col-xs-12 col-sm-2"></label>
+    <div class="col-xs-12 col-sm-8">
+        <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
+        <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
     </div>
+</div>
 </form>

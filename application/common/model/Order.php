@@ -43,17 +43,17 @@ class Order extends Model
     public function getSoureList()
     {
         return ['1' => __('Soure 1'),'2' => __('Soure 2'),'3' => __('Soure 3'),'4' => __('Soure 4'),'5' => __('Soure 5'),'6' => __('Soure 6'),'7' => __('Soure 7'),'8' => __('Soure 8'),'9' => __('Soure 9')];
-    }     
+    }
 
     public function getStatusList()
     {
-        return ['0' => __('Status 0')];
-    }     
+        return ['0' => __('Status 0'),'1' => __('Status 1'),'2' => __('Status 2'),'3' => __('Status 3'),'4' => __('Status 4'),'5' => __('Status 5'),'400' => __('Status 400')];
+    }
 
     public function getUsertypeList()
     {
         return ['1' => __('Usertype 1'),'2' => __('Usertype 2')];
-    }     
+    }
 
     public function getPriceTypeList()
     {
