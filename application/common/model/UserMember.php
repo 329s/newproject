@@ -220,4 +220,12 @@ class UserMember extends Model
 
         return $params;
     }
+
+    /**
+    *生成订单前
+    */
+    public static function addMember($value='')
+    {
+        # code...
+    }
 }

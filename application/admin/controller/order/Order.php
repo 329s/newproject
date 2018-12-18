@@ -32,6 +32,7 @@ class Order extends Backend
         $this->view->assign("depositPaySourceList", $this->model->getDepositPaySourceList());
         $this->view->assign("settlementStatusList", $this->model->getSettlementStatusList());
         $this->view->assign("preferentialTypeList", $this->model->getPreferentialTypeList());
+        $this->view->assign("CustomerIdentityTypeList", $this->model->getCustomerIdentityTypeList());
     }
 
     /**
@@ -94,7 +95,7 @@ class Order extends Backend
      */
     public function add()
     {
-        $params = array(
+        /*$params = array(
             'customer_name' => '文伯龙',
             'customer_telephone' => '15267314456',
             'customer_identity_type' => '1',//证件类型:1=身份证,2=港澳通行证,3=护照
@@ -114,12 +115,9 @@ class Order extends Backend
         echo "<pre>";
         $p = \app\admin\components\OrderServer::orderAddBefore($params);
         print_r($p);
-        echo "</pre>";die;
+        echo "</pre>";die;*/
         if ($this->request->isPost()) {
             $params = $this->request->post("row/a");
-            echo "<pre>";
-            print_r($params);
-            echo "</pre>";die;
             if ($params) {
                 if ($this->dataLimit && $this->dataLimitFieldAutoFill) {
                     $params[$this->dataLimitField] = $this->auth->id;

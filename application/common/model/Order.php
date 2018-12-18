@@ -35,7 +35,8 @@ class Order extends Model
         'deposit_pay_source_text',
         'settlement_status_text',
         'preferential_type_text',
-        'price_overtime_text'
+        'price_overtime_text',
+        'customer_identity_type_text',
     ];
     
 
@@ -78,7 +79,19 @@ class Order extends Model
     public function getPreferentialTypeList()
     {
         return ['4) unsigne' => __('4) unsigne')];
-    }     
+    }
+
+    public function getCustomerIdentityTypeList()
+    {
+        return ['1' => __('Customer_identity_type 1'),'2' => __('Customer_identity_type 2'),'3' => __('Customer_identity_type 3')];
+    }
+
+    public function getCustomerIdentityTypeTextAttr($value, $data)
+    {        
+        $value = $value ? $value : $data['customer_identity_type'];
+        $list = $this->getCustomerIdentityTypeList();
+        return isset($list[$value]) ? $list[$value] : '';
+    }
 
 
     public function getSoureTextAttr($value, $data)

@@ -15,7 +15,7 @@ return [
     'Soure 9'  =>  '同行订单',
     'Vehicle_model_id'  =>  '车型ID',
     'Vehicle_id'  =>  '车辆',
-    'User_member_id'  =>  '客户信息',
+    'User_member_id'  =>  '姓名',
     'Status'  =>  '订单状态',//订单状态:0=取消订单,1=待确认订单/未排车,2=预定车辆列表3=在租车辆或者历史结算列表,4=待查违章,5=完成订单,400=取消订单
     'Status 0'  =>  '删除订单',
     'Status 1'  =>  '未排车订单',
@@ -119,5 +119,12 @@ return [
     'Admin.createtime'  =>  '创建时间',
     'Admin.updatetime'  =>  '更新时间',
     'Admin.token'  =>  'Session标识',
-    'Admin.status'  =>  '状态'
+    'Admin.status'  =>  '状态',
+    'Customer_identity_type'  =>  '证件类型',
+    'Customer_identity_type 1'  =>  '身份证',
+    'Customer_identity_type 2'  =>  '港澳通行证',
+    'Customer_identity_type 3'  =>  '护照',
+    'Customer_identity_id'  =>  '证件号码',
+    'Customer_name'  =>  '承租人',
+    'Customer_telephone'  =>  '联系电话',
 ];
