@@ -52,8 +52,9 @@ class Order extends Backend
         // echo "<pre>";
         // echo "</pre>";
         // die;
+        return $this->view->fetch();
 
-        //当前是否为关联查询
+        /*//当前是否为关联查询
         $this->relationSearch = true;
         //设置过滤方法
         $this->request->filter(['strip_tags']);
@@ -87,7 +88,7 @@ class Order extends Backend
 
             return json($result);
         }
-        return $this->view->fetch();
+        return $this->view->fetch();*/
     }
 
     /**
@@ -95,6 +96,8 @@ class Order extends Backend
      */
     public function add()
     {
+
+        die;
         /*$params = array(
             'customer_name' => '文伯龙',
             'customer_telephone' => '15267314456',

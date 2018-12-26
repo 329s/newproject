@@ -4,6 +4,18 @@ return array (
   'autoload' => false,
   'hooks' => 
   array (
+    'sms_send' => 
+    array (
+      0 => 'alisms',
+    ),
+    'sms_notice' => 
+    array (
+      0 => 'alisms',
+    ),
+    'sms_check' => 
+    array (
+      0 => 'alisms',
+    ),
     'action_begin' => 
     array (
       0 => 'geetest',
