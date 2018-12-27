@@ -29,8 +29,12 @@ class OrderServer extends Controller
 				break;
 			}
 
-			// 创建账号,添加客户
-			/*$arrResult['a'] = \app\common\components\Common::getHashids(1);*/
+			// 判断账号是否创建
+			$user_id = \app\admin\model\User::addMemberRegister($params['customer_telephone']);
+			$arrResult['user_id']=$user_id;
+			$member_id = \app\common\model\UserMember::addMember($params['customer_telephone'],$params['customer_name'],$params['customer_identity_type'],$params['customer_identity_id']);
+			$arrResult['member_id']=$member_id;
+			
 
 		}while (0);
 		return $arrResult;

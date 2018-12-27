@@ -52,9 +52,9 @@ class Order extends Backend
         // echo "<pre>";
         // echo "</pre>";
         // die;
-        return $this->view->fetch();
+        //return $this->view->fetch();
 
-        /*//当前是否为关联查询
+        //当前是否为关联查询
         $this->relationSearch = true;
         //设置过滤方法
         $this->request->filter(['strip_tags']);
@@ -88,7 +88,7 @@ class Order extends Backend
 
             return json($result);
         }
-        return $this->view->fetch();*/
+        return $this->view->fetch();
     }
 
     /**
@@ -97,8 +97,7 @@ class Order extends Backend
     public function add()
     {
 
-        die;
-        /*$params = array(
+        $params = array(
             'customer_name' => '文伯龙',
             'customer_telephone' => '15267314456',
             'customer_identity_type' => '1',//证件类型:1=身份证,2=港澳通行证,3=护照
@@ -118,7 +117,7 @@ class Order extends Backend
         echo "<pre>";
         $p = \app\admin\components\OrderServer::orderAddBefore($params);
         print_r($p);
-        echo "</pre>";die;*/
+        echo "</pre>";die;
         if ($this->request->isPost()) {
             $params = $this->request->post("row/a");
             if ($params) {

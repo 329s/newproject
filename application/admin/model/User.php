@@ -108,9 +108,6 @@ class User extends Model
             }
             return ($result->id ? $result->id : 0);
 
-        //保存或者更新
-        // 返回存在的或新注册的id
-
 
     }
 

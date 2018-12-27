@@ -22,4 +22,14 @@ class Common extends Controller
         $code = $hashids->encode($param);
         return $code;
 	}
+
+	/**
+	*@desc客户证件号码验证
+	*@param $identity_type
+	*@param $identity_id
+	*/
+	public static function FunctionName($value='')
+	{
+		# code...
+	}
 }

@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:82:"F:\phpStudy\WWW\newproject\public/../application/admin\view\order\order\index.html";i:1545356222;s:69:"F:\phpStudy\WWW\newproject\application\admin\view\layout\default.html";i:1532420613;s:66:"F:\phpStudy\WWW\newproject\application\admin\view\common\meta.html";i:1529292885;s:68:"F:\phpStudy\WWW\newproject\application\admin\view\common\script.html";i:1529292885;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:82:"F:\phpStudy\WWW\newproject\public/../application/admin\view\order\order\index.html";i:1545875944;s:69:"F:\phpStudy\WWW\newproject\application\admin\view\layout\default.html";i:1532420613;s:66:"F:\phpStudy\WWW\newproject\application\admin\view\common\meta.html";i:1529292885;s:68:"F:\phpStudy\WWW\newproject\application\admin\view\common\script.html";i:1529292885;}*/ ?>
 <!DOCTYPE html>
 <html lang="<?php echo $config['language']; ?>">
     <head>
@@ -50,69 +50,40 @@
                             <!-- END RIBBON -->
                             <?php endif; ?>
                             <div class="content">
-                                <!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
-        <title>Alisms短信发送示例</title>
-        <link href="//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-        <link href="//cdn.fastadmin.net/assets/css/frontend.min.css" rel="stylesheet">
+                                <div class="panel panel-default panel-intro">
+    <?php echo build_heading(); ?>
 
-        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!--[if lt IE 9]>
-          <script src="//cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-          <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
-    </head>
-    <body>
-        <div class="container">
-            <div class="well" style="margin-top:30px;">
-                <form class="form-horizontal" action="<?php echo addon_url('alisms/index/send'); ?>" method="post">
-                    <fieldset>
-                        <legend>阿里大于短信发送</legend>
-                        <div class="form-group">
-                            <label class="col-lg-2 control-label">手机号</label>
-                            <div class="col-lg-10">
-                                <input type="text" class="form-control" name="mobile" placeholder="手机号">
-                            </div>
+    <div class="panel-body">
+        <div id="myTabContent" class="tab-content">
+            <div class="tab-pane fade active in" id="one">
+                <div class="widget-body no-padding">
+                    <div id="toolbar" class="toolbar">
+                        <a href="javascript:;" class="btn btn-primary btn-refresh" title="<?php echo __('Refresh'); ?>" ><i class="fa fa-refresh"></i> </a>
+                        <a href="javascript:;" class="btn btn-success btn-add <?php echo $auth->check('order/order/add')?'':'hide'; ?>" title="<?php echo __('Add'); ?>" ><i class="fa fa-plus"></i> <?php echo __('Add'); ?></a>
+                        <a href="javascript:;" class="btn btn-success btn-edit btn-disabled disabled <?php echo $auth->check('order/order/edit')?'':'hide'; ?>" title="<?php echo __('Edit'); ?>" ><i class="fa fa-pencil"></i> <?php echo __('Edit'); ?></a>
+                        <a href="javascript:;" class="btn btn-danger btn-del btn-disabled disabled <?php echo $auth->check('order/order/del')?'':'hide'; ?>" title="<?php echo __('Delete'); ?>" ><i class="fa fa-trash"></i> <?php echo __('Delete'); ?></a>
+                        <a href="javascript:;" class="btn btn-danger btn-import <?php echo $auth->check('order/order/import')?'':'hide'; ?>" title="<?php echo __('Import'); ?>" id="btn-import-file" data-url="ajax/upload" data-mimetype="csv,xls,xlsx" data-multiple="false"><i class="fa fa-upload"></i> <?php echo __('Import'); ?></a>
+
+                        <div class="dropdown btn-group <?php echo $auth->check('order/order/multi')?'':'hide'; ?>">
+                            <a class="btn btn-primary btn-more dropdown-toggle btn-disabled disabled" data-toggle="dropdown"><i class="fa fa-cog"></i> <?php echo __('More'); ?></a>
+                            <ul class="dropdown-menu text-left" role="menu">
+                                <li><a class="btn btn-link btn-multi btn-disabled disabled" href="javascript:;" data-params="status=normal"><i class="fa fa-eye"></i> <?php echo __('Set to normal'); ?></a></li>
+                                <li><a class="btn btn-link btn-multi btn-disabled disabled" href="javascript:;" data-params="status=hidden"><i class="fa fa-eye-slash"></i> <?php echo __('Set to hidden'); ?></a></li>
+                            </ul>
                         </div>
-                        <div class="form-group">
-                            <label class="col-lg-2 control-label">消息模板</label>
-                            <div class="col-lg-10">
-                                <input type="text" class="form-control" name="template" placeholder="消息模板">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-lg-2 control-label">签名</label>
-                            <div class="col-lg-10">
-                                <input type="text" class="form-control" name="sign" placeholder="消息模板(可以留空)">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-lg-2 control-label">消息参数</label>
-                            <div class="col-lg-10">
-                                <textarea name="param" class="form-control" cols="30" rows="10" placeholder="必须是JSON字符串"></textarea>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-lg-10 col-lg-offset-2">
-                                <button type="submit" class="btn btn-primary">发送</button>
-                                <button type="reset" class="btn btn-default">重置</button>
-                            </div>
-                        </div>
-                    </fieldset>
-                </form>
+                    </div>
+                    <table id="table" class="table table-striped table-bordered table-hover table-nowrap"
+                           data-operate-edit="<?php echo $auth->check('order/order/edit'); ?>" 
+                           data-operate-del="<?php echo $auth->check('order/order/del'); ?>" 
+                           width="100%">
+                    </table>
+                </div>
             </div>
-        </div>
-        <script src="//cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
-        <script src="//cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <script type="text/javascript">
-            $(function () {
 
-            });
-        </script>
-    </body>
-</html>
+        </div>
+    </div>
+</div>
+
                             </div>
                         </div>
                     </div>

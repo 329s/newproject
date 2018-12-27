@@ -223,9 +223,23 @@ class UserMember extends Model
 
     /**
     *生成订单前
+    *@param $mobile
+    *@param $name
+    *@param $identity_type
+    *@param $identity_id
     */
-    public static function addMember($value='')
+    public static function addMember($mobile='',$name='',$identity_type='1',$identity_id='')
     {
-        # code...
+        if (!empty($identity_id)) {
+            $result = self::where('identity_id', $identity_id)->find();
+            if(!$result){
+                $data = array(
+                    'telephone'     => $mobile,
+                    'name'          => $name,
+                    'identity_type' => $identity_type,
+                    'identity_id'   => $identity_id
+                );
+            }
+        }
     }
 }
