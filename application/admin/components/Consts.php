@@ -6,10 +6,8 @@ namespace app\admin\components;
 class Consts
 {
 	/*接口等返回结果*/
-	const RESULT_ERROR  	  = '1';
-	const RESULT_SUCCESS 	  = '0';
-	// const RESULT_SUCCESS_DESC = '成功';
-	// const RESULT_ERROR_DESC   = '失败';
+	const RESULT_ERROR  	  = 1;
+	const RESULT_SUCCESS 	  = 0;
 
 	/*订单状态*/
 	const ORDER_STATUS_DEl              = '0';	//删除订单
@@ -25,6 +23,11 @@ class Consts
 	const MEMBER_TYPE_HK_MACAO          = 2;  //港澳通行证
 	const MEMBER_TYPE_TAIWAN            = 3;  //台湾台胞证
 	const MEMBER_TYPE_PASSPORT          = 4;  //护照
+	//客户来源source
+	const MEMBER_SOURCE_TYPE_BACK_ADD   = 1;  //后台添加
+	const MEMBER_SOURCE_TYPE_BACK_AUTO  = 2;  //后台下单自动生成
+	const MEMBER_SOURCE_TYPE_MOBILE_ADD = 3;  //移动端信息完善
+	const MEMBER_SOURCE_TYPE_OTHER      = 4;  //其他
 
 
 

@@ -131,6 +131,10 @@ class Order extends Backend
                         $validate = is_bool($this->modelValidate) ? ($this->modelSceneValidate ? $name . '.add' : true) : $this->modelValidate;
                         $this->model->validate($validate);
                     }
+
+                    // 添加订单时操作
+                    $res    = \app\admin\components\OrderServer::orderAddBefore($params);
+                    
                     $result = $this->model->allowField(true)->save($params);
                     if ($result !== false) {
                         $this->success();

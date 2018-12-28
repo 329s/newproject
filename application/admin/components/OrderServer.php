@@ -1,6 +1,7 @@
 <?php
 namespace app\admin\components;
 use think\Controller;
+use app\admin\components\Consts;
 
 /**
 * 订单后台下单等操作
@@ -31,10 +32,16 @@ class OrderServer extends Controller
 
 			// 判断账号是否创建
 			$user_id = \app\admin\model\User::addMemberRegister($params['customer_telephone']);
-			$arrResult['user_id']=$user_id;
-			$member_id = \app\common\model\UserMember::addMember($params['customer_telephone'],$params['customer_name'],$params['customer_identity_type'],$params['customer_identity_id']);
-			$arrResult['member_id']=$member_id;
-			
+			$arrResult['result']['user_id']=$user_id;
+			$memberResult = \app\common\model\UserMember::addMember($params['customer_telephone'],$params['customer_name'],$params['customer_identity_type'],$params['customer_identity_id'],$user_id);
+			if($memberResult['error'] == Consts::RESULT_ERROR){
+				$arrResult['error'] = $memberResult['error'];
+				$arrResult['desc']  = $memberResult['desc'];
+				break;
+			}
+			$arrResult['result']['member_id'] = $memberResult['member_id'];
+
+
 
 		}while (0);
 		return $arrResult;

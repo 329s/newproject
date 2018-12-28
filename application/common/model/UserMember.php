@@ -5,6 +5,7 @@ namespace app\common\model;
 use think\Model;
 use app\admin\model\User;
 use Hashids\Hashids;
+use app\admin\components\Consts;
 
 class UserMember extends Model
 {
@@ -228,18 +229,58 @@ class UserMember extends Model
     *@param $identity_type
     *@param $identity_id
     */
-    public static function addMember($mobile='',$name='',$identity_type='1',$identity_id='')
+    public static function addMember($mobile='',$name='',$identity_type='1',$identity_id='',$user_id='0')
     {
-        if (!empty($identity_id)) {
-            $result = self::where('identity_id', $identity_id)->find();
-            if(!$result){
-                $data = array(
-                    'telephone'     => $mobile,
-                    'name'          => $name,
-                    'identity_type' => $identity_type,
-                    'identity_id'   => $identity_id
-                );
+        $arrResult = ['error' => Consts::RESULT_SUCCESS, 'desc' => __('Success')];
+        do{
+            if (!empty($identity_id)) {
+                $result = self::where('identity_id', $identity_id)->find();
+                if(!$result){
+                    $identityResult = \app\common\components\MemberModule::validateIdentity($identity_type,$identity_id);
+                    if($identityResult['error'] == Consts::RESULT_ERROR){//  判断身份证是否合法
+                        $arrResult['error'] = Consts::RESULT_ERROR;
+                        $arrResult['desc']  = $identityResult['desc'];
+                        break;
+                    }
+                    // 添加客户
+                    $time = time();
+                    $data = array(
+                        'telephone'     => $mobile,
+                        'name'          => $name,
+                        'source'        => Consts::MEMBER_SOURCE_TYPE_BACK_AUTO,
+                        'identity_type' => $identity_type,
+                        'identity_id'   => $identity_id,
+                        'admin_id'      => $_SESSION['think']['admin']['id'],
+                        'updatetime'    => $time,
+                        'createtime'    => $time,
+                    );
+                    if($identity_type=='1'){
+                        $birthday                  = substr($identity_id, 6,4).'-'.substr($identity_id, 10,2).'-'.substr($identity_id, 12,2);
+                        $data['birthday']          = $birthday;
+                        $data['residence_address'] = $identityResult['result']->area;
+                        if($identityResult['result']->sex == '男'){
+                            $data['gender']        = 1;
+                        }elseif ($identityResult['result']->sex == '女') {
+                            $data['gender']        = 2;
+                        }
+                    }
+                    //判断账号是否创建
+                    if($user_id){
+                        $data['user_id']           = $user_id;
+                        //邀请码
+                        $hashids                   = new Hashids(config('site.HashidsKey'),config('site.invite_code_length'));
+                        $data['invite_code']       = $hashids->encode($user_id);
+                    }
+
+                    $UserMemberModel = Model('UserMember');
+                    $rasult          = $UserMemberModel->allowField(true)->save($data);
+                    $arrResult['member_id']  = $UserMemberModel->id;
+                }else{
+                    $arrResult['member_id']  = $result['id'];
+                }
             }
-        }
+        }while(0);
+        return $arrResult;
+
     }
 }
