@@ -16,48 +16,33 @@ class MemberModule extends Controller
         		$arrResult = self::verifyUserIdentityCardNo($identityId);
         		break;
         	case '2':
-        		$a=2;
-        		# code...
+        		$arrResult = self::verifyHKandMacaoPassNo($identityId);
         		break;
         	case '3':
-        		$a=3;
-        		# code...
+        		$arrResult = self::verifyTaiwanPassNo($identityId);
         		break;
         	case '4':
-        		$a=4;
-        		# code...
+        		$arrResult = self::verifyPassportNo($identityId);
         		break;
         	default:
-        		$a=5;
-        		# code...
+        		$arrResult = ['error' => Consts::RESULT_SUCCESS, 'desc' => __('Success')];
         		break;
         }
         return $arrResult;
 
-        /*if ($identityType == \common\components\Consts::ID_TYPE_IDENTITY) {
-            return \common\components\UserModule::verifyUserIdentityCardNo($identityId);
-        }
-        elseif ($identityType == Consts::ID_TYPE_PASSPORT) {
-            return \common\components\UserModule::verifyPassportNo($identityId);
-        }
-        elseif ($identityType == Consts::ID_TYPE_HK_MACAO) {
-            return \common\components\UserModule::verifyHKandMacaoPassNo($identityId);
-        }
-        elseif ($identityType == Consts::ID_TYPE_TAIWAN) {
-            return \common\components\UserModule::verifyTWandMacaoPassNo($identityId);
-        }
-        else {
-            return array(-1, \Yii::t('locale', 'Identity card type invalid'));
-        }
-        return array(0, \Yii::t('locale', 'Success'));*/
     }
 
+    /**
+    *@desc    验证身份证1
+    *@param   $identityCardNo 身份证号码
+    *@return  $arrResult array
+    */
     public static function verifyUserIdentityCardNo($identityCardNo) {
         $arrResult = ['error' => Consts::RESULT_SUCCESS, 'desc' => __('Success')];
         do{
         	if (!preg_match('/^(^\d{18}$|^\d{17}(\d|X|x))$/', $identityCardNo)) {
         	    $arrResult['error'] = Consts::RESULT_ERROR;
-        	    $arrResult['desc']  = '身份证号码错误';
+        	    $arrResult['desc']  = __('Identity Card Num No Pass');
         	    break;
 	        }
 	        $url='http://apicloud.mob.com/idcard/query';
@@ -83,42 +68,59 @@ class MemberModule extends Controller
 
         }while (0);
         return $arrResult;
+    }
 
+    /**
+    *@desc    港澳通行证验证2
+    *@param   $passportNo 港澳通行证号码 规则： H/M + 10位或6位数字
+    *@example H1234567890
+    *@return  $arrResult array
+    */
+    public static function verifyHKandMacaoPassNo($passportNo) {
+        $arrResult = ['error' => Consts::RESULT_SUCCESS, 'desc' => __('Success')];
+        do{
+        	if (!preg_match('/^([A-Z]\d{6,10}(\(\w{1}\))?)$/', $passportNo)) {
+        	    $arrResult['error'] = Consts::RESULT_ERROR;
+        	    $arrResult['desc']  = __('HK And Macao No Pass');
+        	    break;
+	        }
+        }while(0);
+        return $arrResult;
+    }
 
-        // if (isset(\Yii::$app->params['mob.identify.enabled']) && !\Yii::$app->params['mob.identify.enabled']) {
-        //     return array(0, \Yii::t('locale', 'Success'));
-        // }
-        // $url = 'http://apicloud.mob.com/idcard/query';
-        // $appKey = \Yii::$app->params['mob.identity.appkey'];
-
-        // $params = array(
-        //     'key' => $appKey,
-        //     'cardno' => $identityCardNo,
-        // );
-
-        // $result = \common\helpers\Utils::queryUrlGet($url, $params);
-        // if ($result[0] == 200) {
-        //     $response = $result[1];
-        //     $oResult = json_decode($response);
-        //     if (isset($oResult->retCode) && $oResult->retCode == 200) {
-        //         return array(0, \Yii::t('locale', 'Success'));
-        //     }
-        //     else if (isset($oResult->msg)) {
-        //         \Yii::warning("verify user identity card no:{$identityCardNo} failed with http error:{$oResult->retCode} errmsg:{$oResult->msg}.", 'user');
-        //         return array(1, $oResult->msg);
-        //     }
-        //     // test
-        //     else {
-        //         \Yii::error("verify user identity card no:{$identityCardNo} failed with unknown response:[{$response}]", 'user');
-        //         return array(-1, '验证身份证信息无法解析响应内容。');
-        //     }
-        // }
-        // else {
-        //     \Yii::error("verify user identity card no:{$identityCardNo} failed with http error:{$result[0]} errmsg:{$result[1]}.", 'user');
-        //     return array(1, $result[1]);
-        // }
-
-        // return array(-1, \Yii::t('locale', 'Unknown error'));
+    /**
+    *@desc    台湾通行证验证3
+    *@param   $passportNo 台湾通行证号码 规则： 旧版10位数字 + 英文字母
+    *@example 样本： A234567890
+    *@return  $arrResult array
+    */
+    public static function verifyTaiwanPassNo($passportNo) {
+        $arrResult = ['error' => Consts::RESULT_SUCCESS, 'desc' => __('Success')];
+        do{
+        	if (!preg_match('/^[a-zA-Z][0-9]{9}$/', $passportNo)) {
+        	    $arrResult['error'] = Consts::RESULT_ERROR;
+        	    $arrResult['desc']  = __('Tai Wan Num No Pass');
+        	    break;
+	        }
+        }while(0);
+        return $arrResult;
+    }
+    /**
+    *@desc    护照验证4
+    *@param   $passportNo 护照号码 规则： 14/15开头 + 7位数字, G + 8位数字, P + 7位数字, S/D + 7或8位数字,等
+    *@example 样本： 141234567, G12345678, P1234567
+    *@return  $arrResult array
+    */
+    public static function verifyPassportNo($passportNo) {
+        $arrResult = ['error' => Consts::RESULT_SUCCESS, 'desc' => __('Success')];
+        do{
+        	if (!preg_match('/^1[45][0-9]{7}$|([P|p|S|s]\d{7}$)|([S|s|G|g]\d{8}$)|([Gg|Tt|Ss|Ll|Qq|Dd|Aa|Ff]\d{8}$)|([H|h|M|m]\d{8,10})$/', $passportNo)) {
+        	    $arrResult['error'] = Consts::RESULT_ERROR;
+        	    $arrResult['desc']  = __('PassPort Num No Pass');
+        	    break;
+	        }
+        }while(0);
+        return $arrResult;
     }
 
 

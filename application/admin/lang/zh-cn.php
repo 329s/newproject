@@ -167,4 +167,8 @@ return [
     'Group tips'                                            => '角色组可以有多个,角色有上下级层级关系,如果子角色有角色组和管理员的权限则可以派生属于自己组别的下级角色组或管理员',
     'Rule tips'                                             => '规则通常对应一个控制器的方法,同时左侧的菜单栏数据也从规则中体现,通常建议通过命令行进行生成规则节点',
     'Success'                                               => '成功',
+    'HK And Macao No Pass'                                  => '港澳通行证有误',
+    'Tai Wan Num No Pass'                                   => '台湾通行证有误',
+    'PassPort Num No Pass'                                  => '护照号码有误',
+    'Identity Card Num No Pass'                             => '身份证号码有误',
 ];

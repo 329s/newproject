@@ -5,6 +5,7 @@ namespace app\admin\controller\order;
 use app\common\controller\Backend;
 use app\admin\components\test;
 use app\admin\components\OrderServer;
+use app\admin\components\Consts;
 
 /**
  * 订单管理
@@ -19,6 +20,7 @@ class Order extends Backend
      * @var \app\common\model\Order
      */
     protected $model = null;
+    protected $dataLimit = 'auth';
 
     public function _initialize()
     {
@@ -97,27 +99,26 @@ class Order extends Backend
     public function add()
     {
 
-        $params = array(
-            'customer_name' => '文伯龙',
-            'customer_telephone' => '15267314456',
-            'customer_identity_type' => '1',//证件类型:1=身份证,2=港澳通行证,3=护照
-            'customer_identity_id' => '622426199411255213',
-            'soure' => '1',//订单来源:1=门店订单,2=手机订单,3=网站订单,4=小程序订单,5=IOS,6=安卓,7=携程订单,8=悟空订单,9=同行订单
-            'belong_office_id' => '2',
-            'rent_office_id' => '2',
-            'return_office_id' => '2',
-            'vehicle_model_id' => '2',
-            'vehicle_id' => '1',
-            'start_time' => time(),
-            'end_time' => time()+86400*2,
-            'optional_service' => '',//增值服务
-            'remark_content' => '',
+        // $params = array(
+        //     'customer_name' => '文伯龙',
+        //     'customer_telephone' => '15267314456',
+        //     'customer_identity_type' => '3',//证件类型:1=身份证,2=港澳通行证,3=台湾台胞证,4=护照
+        //     'customer_identity_id' => '622426199411255213000',
+        //     'soure' => '1',//订单来源:1=门店订单,2=手机订单,3=网站订单,4=小程序订单,5=IOS,6=安卓,7=携程订单,8=悟空订单,9=同行订单
+        //     'belong_office_id' => '2',
+        //     'rent_office_id' => '2',
+        //     'return_office_id' => '2',
+        //     'vehicle_model_id' => '2',
+        //     'vehicle_id' => '1',
+        //     'start_time' => time(),
+        //     'end_time' => time()+86400*2,
+        //     'optional_service' => '',//增值服务
+        //     'remark_content' => '',
 
-        );
-        echo "<pre>";
-        $p = \app\admin\components\OrderServer::orderAddBefore($params);
-        print_r($p);
-        echo "</pre>";die;
+        // );
+        // echo "<pre>";
+        // // $res = \app\admin\components\OrderServer::orderAddBefore($params);
+        // echo "</pre>";die;
         if ($this->request->isPost()) {
             $params = $this->request->post("row/a");
             if ($params) {
@@ -132,9 +133,13 @@ class Order extends Backend
                         $this->model->validate($validate);
                     }
 
-                    // 添加订单时操作
+                    // 添加订单前对客户的操作操作
                     $res    = \app\admin\components\OrderServer::orderAddBefore($params);
-                    
+                    if($res['error'] == Consts::RESULT_ERROR){
+                        $this->error($res['desc']);
+                    }else{
+                        $params['user_member_id'] = $res['result']['member_id'];
+                    }
                     $result = $this->model->allowField(true)->save($params);
                     if ($result !== false) {
                         $this->success();

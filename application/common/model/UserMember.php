@@ -42,7 +42,7 @@ class UserMember extends Model
 
     public function getIdentityTypeList()
     {
-        return ['1' => __('Identity_type 1'),'2' => __('Identity_type 2'),'3' => __('Identity_type 3')];
+        return ['1' => __('Identity_type 1'),'2' => __('Identity_type 2'),'3' => __('Identity_type 3'),'4' => __('Identity_type 4')];
     }     
 
     public function getUserTypeList()
@@ -237,7 +237,7 @@ class UserMember extends Model
                 $result = self::where('identity_id', $identity_id)->find();
                 if(!$result){
                     $identityResult = \app\common\components\MemberModule::validateIdentity($identity_type,$identity_id);
-                    if($identityResult['error'] == Consts::RESULT_ERROR){//  判断身份证是否合法
+                    if($identityResult['error'] == Consts::RESULT_ERROR){//  判断证件是否合法
                         $arrResult['error'] = Consts::RESULT_ERROR;
                         $arrResult['desc']  = $identityResult['desc'];
                         break;
