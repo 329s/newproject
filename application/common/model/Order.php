@@ -78,7 +78,7 @@ class Order extends Model
 
     public function getPreferentialTypeList()
     {
-        return ['4) unsigne' => __('4) unsigne')];
+        return ['0' => '','1' => __('Rent One For One'),'2' => __('Coupon'),'3' => __('Birth Coupon')];
     }
 
     public function getCustomerIdentityTypeList()
@@ -279,6 +279,6 @@ class Order extends Model
 
     public function admin()
     {
-        return $this->belongsTo('Admin', 'edit_admin_id', 'id', [], 'LEFT')->setEagerlyType(0);
+        return $this->belongsTo('Admin', 'admin_id', 'id', [], 'LEFT')->setEagerlyType(0);
     }
 }

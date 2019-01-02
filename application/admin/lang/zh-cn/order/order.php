@@ -13,7 +13,7 @@ return [
     'Soure 7'  =>  '携程订单',
     'Soure 8'  =>  '悟空订单',
     'Soure 9'  =>  '同行订单',
-    'Vehicle_model_id'  =>  '车型ID',
+    'Vehicle_model_id'  =>  '车型',
     'Vehicle_id'  =>  '车辆',
     'User_member_id'  =>  '姓名',
     'Status'  =>  '订单状态',//订单状态:0=取消订单,1=待确认订单/未排车,2=预定车辆列表3=在租车辆或者历史结算列表,4=待查违章,5=完成订单,400=取消订单
@@ -127,4 +127,7 @@ return [
     'Customer_identity_id'  =>  '证件号码',
     'Customer_name'  =>  '承租人',
     'Customer_telephone'  =>  '联系电话',
+    'Rent One For One'  =>  '租一送一',
+    'Coupon'            =>  '优惠券',
+    'Birth Coupon'      =>  '生日特惠',
 ];

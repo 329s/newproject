@@ -50,7 +50,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                         {field: 'settlemented_time', title: __('Settlemented_time'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
                         {field: 'appointment_time', title: __('Appointment_time'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
                         {field: 'appointment_end_time', title: __('Appointment_end_time'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
-                        {field: 'edit_admin_id', title: __('Edit_admin_id')},
+                        {field: 'admin_id', title: __('Edit_admin_id')},
                         {field: 'vehicle_outbound_mileage', title: __('Vehicle_outbound_mileage')},
                         {field: 'vehicle_inbound_mileage', title: __('Vehicle_inbound_mileage')},
                         {field: 'total_amount', title: __('Total_amount'), operate:'BETWEEN'},

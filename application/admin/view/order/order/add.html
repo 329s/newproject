@@ -30,97 +30,125 @@
                 <input id="c-customer_identity_id" data-rule="required;max"  class="form-control" name="row[customer_identity_id]" type="text" value="">
             </div>
         </div>
-
-    </div>
-
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('Soure')}:</label>
-        <div class="col-xs-12 col-sm-8">
-
-            <select  id="c-soure" data-rule="required" class="form-control selectpicker" name="row[soure]">
-                {foreach name="soureList" item="vo"}
-                    <option value="{$key}" {in name="key" value="1"}selected{/in}>{$vo}</option>
-                {/foreach}
-            </select>
-
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('Vehicle_model_id')}:</label>
-        <div class="col-xs-12 col-sm-8">
-            <input id="c-vehicle_model_id" data-rule="required" data-source="vehicle/model/index" class="form-control selectpage" name="row[vehicle_model_id]" type="text" value="">
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('Vehicle_id')}:</label>
-        <div class="col-xs-12 col-sm-8">
-            <input id="c-vehicle_id" data-rule="required" data-source="vehicle/index" class="form-control selectpage" name="row[vehicle_id]" type="text" value="">
-        </div>
-    </div>
-
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('Status')}:</label>
-        <div class="col-xs-12 col-sm-8">
-
-            <div class="radio">
-            {foreach name="statusList" item="vo"}
-            <label for="row[status]-{$key}"><input id="row[status]-{$key}" name="row[status]" type="radio" value="{$key}" {in name="key" value="1"}checked{/in} /> {$vo}</label> 
-            {/foreach}
+        <div class="form-group col-xs-6">
+            <label class="control-label col-xs-4 col-sm-4">{:__('Start_time')}:</label>
+            <div class="col-xs-6 col-sm-6">
+                <input id="c-start_time" data-rule="required" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[start_time]" type="text" value="{:date('Y-m-d H:i:s')}">
             </div>
+        </div>
+        <div class="form-group col-xs-6">
+            <label class="control-label col-xs-4 col-sm-4">{:__('End_time')}:</label>
+            <div class="col-xs-6 col-sm-6">
+                <input id="c-end_time" data-rule="required" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[end_time]" type="text" value="{:date('Y-m-d H:i:s')}">
+            </div>
+        </div>
+        <div class="form-group col-xs-6">
+            <label class="control-label col-xs-6 col-sm-4">{:__('Rent_days')}:</label>
+            <div class="col-xs-6 col-sm-6">
+                <input id="c-rent_days" data-rule="required" class="form-control" name="row[rent_days]" type="number" value="">
+            </div>
+        </div>
 
+        <div class="form-group col-xs-6">
+            <label class="control-label col-xs-4 col-sm-4">{:__('Soure')}:</label>
+            <div class="col-xs-6 col-sm-6">
+
+                <select  id="c-soure" data-rule="required" class="form-control selectpicker" name="row[soure]">
+                    {foreach name="soureList" item="vo"}
+                        <option value="{$key}" {in name="key" value="1"}selected{/in}>{$vo}</option>
+                    {/foreach}
+                </select>
+
+            </div>
+        </div>
+        <div class="form-group col-xs-6">
+            <label class="control-label col-xs-4 col-sm-4">{:__('Rent_office_id')}:</label>
+            <div class="col-xs-6 col-sm-6">
+                <input id="c-rent_office_id" data-rule="required" data-source="rent/office/index" class="form-control selectpage" name="row[rent_office_id]" type="text" value="">
+            </div>
+        </div>
+        <div class="form-group col-xs-6">
+            <label class="control-label col-xs-4 col-sm-4">{:__('Return_office_id')}:</label>
+            <div class="col-xs-6 col-sm-6">
+                <input id="c-return_office_id" data-rule="required" data-source="return/office/index" class="form-control selectpage" name="row[return_office_id]" type="text" value="">
+            </div>
+        </div>
+        <div class="form-group col-xs-6">
+            <label class="control-label col-xs-4 col-sm-4">{:__('Vehicle_model_id')}:</label>
+            <div class="col-xs-6 col-sm-6">
+                <input id="c-vehicle_model_id" data-rule="required" data-source="vehicle/model/index" class="form-control selectpage" name="row[vehicle_model_id]" type="text" value="">
+            </div>
+        </div>
+        <div class="form-group col-xs-6">
+            <label class="control-label col-xs-4 col-sm-4">{:__('Vehicle_id')}:</label>
+            <div class="col-xs-6 col-sm-6">
+                <input id="c-vehicle_id" data-rule="required" data-source="vehicle/index" class="form-control selectpage" name="row[vehicle_id]" type="text" value="">
+            </div>
+        </div>
+        <div class="form-group col-xs-6">
+            <label class="control-label col-xs-4 col-sm-4">{:__('Usertype')}:</label>
+            <div class="col-xs-6 col-sm-6">
+
+                <select  id="c-usertype" data-rule="required" class="form-control selectpicker" name="row[usertype]">
+                    {foreach name="usertypeList" item="vo"}
+                        <option value="{$key}" {in name="key" value="1"}selected{/in}>{$vo}</option>
+                    {/foreach}
+                </select>
+
+            </div>
+        </div>
+
+
+        <div class="form-group col-xs-6">
+            <label class="control-label col-xs-4 col-sm-4">{:__('Price_type')}:</label>
+            <div class="col-xs-6 col-sm-6">
+
+                <select  id="c-price_type" data-rule="required" class="form-control selectpicker" name="row[price_type]">
+                    {foreach name="priceTypeList" item="vo"}
+                        <option value="{$key}" {in name="key" value="1"}selected{/in}>{$vo}</option>
+                    {/foreach}
+                </select>
+
+            </div>
+        </div>
+        <div class="form-group col-xs-6">
+            <label class="control-label col-xs-4 col-sm-4">{:__('Preferential_type')}:</label>
+            <div class="col-xs-6 col-sm-6">
+                <select  id="c-preferential_type" class="form-control selectpicker" name="row[preferential_type]">
+                    {foreach name="preferentialTypeList" item="vo"}
+                        <option value="{$key}" {in name="key" value="0"}selected{/in}>{$vo}</option>
+                    {/foreach}
+                </select>
+
+            </div>
+        </div>
+        <!-- <div class="form-group">
+            <label class="control-label col-xs-12 col-sm-2">{:__('Preferential_info')}:</label>
+            <div class="col-xs-12 col-sm-8">
+                <input id="c-preferential_info" class="form-control" name="row[preferential_info]" type="text">
+            </div>
+        </div> -->
+        <div class="form-group col-xs-6">
+            <label class="control-label col-xs-4 col-sm-4">{:__('Price_preferential')}:</label>
+            <div class="col-xs-6 col-sm-6">
+                <input id="c-price_preferential" class="form-control" step="0.01" name="row[price_preferential]" type="number" value="0.00">
+            </div>
+        </div>\
+        <div class="form-group col-xs-6">
+            <label class="control-label col-xs-4 col-sm-4">{:__('Optional_service')}:</label>
+            <div class="col-xs-6 col-sm-4">
+                <input id="c-optional_service" class="form-control" name="row[optional_service]" type="number">
+            </div>元/天
         </div>
     </div>
     <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('Usertype')}:</label>
+        <label class="control-label col-xs-12 col-sm-2">{:__('Total_amount')}:</label>
         <div class="col-xs-12 col-sm-8">
-
-            <select  id="c-usertype" data-rule="required" class="form-control selectpicker" name="row[usertype]">
-                {foreach name="usertypeList" item="vo"}
-                    <option value="{$key}" {in name="key" value="1"}selected{/in}>{$vo}</option>
-                {/foreach}
-            </select>
-
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('Start_time')}:</label>
-        <div class="col-xs-12 col-sm-8">
-            <input id="c-start_time" data-rule="required" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[start_time]" type="text" value="{:date('Y-m-d H:i:s')}">
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('End_time')}:</label>
-        <div class="col-xs-12 col-sm-8">
-            <input id="c-end_time" data-rule="required" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[end_time]" type="text" value="{:date('Y-m-d H:i:s')}">
+            <input id="c-total_amount" readonly="true" class="form-control" step="0.01" name="row[total_amount]" type="number" value="0.00">
         </div>
     </div>
 
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('Rent_office_id')}:</label>
-        <div class="col-xs-12 col-sm-8">
-            <input id="c-rent_office_id" data-rule="required" data-source="rent/office/index" class="form-control selectpage" name="row[rent_office_id]" type="text" value="">
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('Return_office_id')}:</label>
-        <div class="col-xs-12 col-sm-8">
-            <input id="c-return_office_id" data-rule="required" data-source="return/office/index" class="form-control selectpage" name="row[return_office_id]" type="text" value="">
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('Price_type')}:</label>
-        <div class="col-xs-12 col-sm-8">
-
-            <select  id="c-price_type" data-rule="required" class="form-control selectpicker" name="row[price_type]">
-                {foreach name="priceTypeList" item="vo"}
-                    <option value="{$key}" {in name="key" value="1"}selected{/in}>{$vo}</option>
-                {/foreach}
-            </select>
-
-        </div>
-    </div>
-
-    <div class="form-group">
+    <!-- <div class="form-group">
         <label class="control-label col-xs-12 col-sm-2">{:__('Vehicle_outbound_mileage')}:</label>
         <div class="col-xs-12 col-sm-8">
             <input id="c-vehicle_outbound_mileage" class="form-control" name="row[vehicle_outbound_mileage]" type="number" value="0">
@@ -131,17 +159,11 @@
         <div class="col-xs-12 col-sm-8">
             <input id="c-vehicle_inbound_mileage" class="form-control" name="row[vehicle_inbound_mileage]" type="number" value="0">
         </div>
-    </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('Total_amount')}:</label>
-        <div class="col-xs-12 col-sm-8">
-            <input id="c-total_amount" class="form-control" step="0.01" name="row[total_amount]" type="number" value="0.00">
-        </div>
-    </div>
-    <div class="form-group">
+    </div> -->
+   <!--  <div class="form-group">
         <label class="control-label col-xs-12 col-sm-2">{:__('Paid_amount')}:</label>
         <div class="col-xs-12 col-sm-8">
-            <input id="c-paid_amount" class="form-control" step="0.01" name="row[paid_amount]" type="number" value="0.00">
+            <input id="c-paid_amount" readonly="true" class="form-control" step="0.01" name="row[paid_amount]" type="number" value="0.00">
         </div>
     </div>
     <div class="form-group">
@@ -179,8 +201,8 @@
         <div class="col-xs-12 col-sm-8">
             <input id="c-price_basic_insurance" class="form-control" step="0.01" name="row[price_basic_insurance]" type="number" value="0.00">
         </div>
-    </div>
-    <div class="form-group">
+    </div> -->
+    <!-- <div class="form-group">
         <label class="control-label col-xs-12 col-sm-2">{:__('Price_deposit')}:</label>
         <div class="col-xs-12 col-sm-8">
             <input id="c-price_deposit" class="form-control" step="0.01" name="row[price_deposit]" type="number" value="0.00">
@@ -195,7 +217,7 @@
     <div class="form-group">
         <label class="control-label col-xs-12 col-sm-2">{:__('Deposit_pay_source')}:</label>
         <div class="col-xs-12 col-sm-8">
-                        
+
             <select  id="c-deposit_pay_source" class="form-control selectpicker" name="row[deposit_pay_source]">
                 {foreach name="depositPaySourceList" item="vo"}
                     <option value="{$key}" {in name="key" value="0"}selected{/in}>{$vo}</option>
@@ -213,7 +235,6 @@
     <div class="form-group">
         <label class="control-label col-xs-12 col-sm-2">{:__('Settlement_status')}:</label>
         <div class="col-xs-12 col-sm-8">
-            
             <div class="radio">
             {foreach name="settlementStatusList" item="vo"}
             <label for="row[settlement_status]-{$key}"><input id="row[settlement_status]-{$key}" name="row[settlement_status]" type="radio" value="{$key}" {in name="key" value="0"}checked{/in} /> {$vo}</label> 
@@ -223,53 +244,24 @@
         </div>
     </div>
     <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('Preferential_type')}:</label>
-        <div class="col-xs-12 col-sm-8">
-                        
-            <select  id="c-preferential_type" class="form-control selectpicker" name="row[preferential_type]">
-                {foreach name="preferentialTypeList" item="vo"}
-                    <option value="{$key}" {in name="key" value="0"}selected{/in}>{$vo}</option>
-                {/foreach}
-            </select>
-
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('Preferential_info')}:</label>
-        <div class="col-xs-12 col-sm-8">
-            <input id="c-preferential_info" class="form-control" name="row[preferential_info]" type="text">
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('Price_preferential')}:</label>
-        <div class="col-xs-12 col-sm-8">
-            <input id="c-price_preferential" class="form-control" step="0.01" name="row[price_preferential]" type="number" value="0.00">
-        </div>
-    </div>
-    <div class="form-group">
         <label class="control-label col-xs-12 col-sm-2">{:__('Settlemented_admin_id')}:</label>
         <div class="col-xs-12 col-sm-8">
             <input id="c-settlemented_admin_id" data-rule="required" data-source="settlemented/admin/index" class="form-control selectpage" name="row[settlemented_admin_id]" type="text" value="">
         </div>
-    </div>
+    </div> -->
     <div class="form-group">
         <label class="control-label col-xs-12 col-sm-2">{:__('Remark_content')}:</label>
         <div class="col-xs-12 col-sm-8">
             <textarea id="c-remark_content" class="form-control editor" rows="5" name="row[remark_content]" cols="50"></textarea>
         </div>
     </div>
-    <div class="form-group">
+    <!-- <div class="form-group">
         <label class="control-label col-xs-12 col-sm-2">{:__('Settlement_remark_content')}:</label>
         <div class="col-xs-12 col-sm-8">
             <textarea id="c-settlement_remark_content" class="form-control editor" rows="5" name="row[settlement_remark_content]" cols="50"></textarea>
         </div>
-    </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('Optional_service')}:</label>
-        <div class="col-xs-12 col-sm-8">
-            <input id="c-optional_service" class="form-control" name="row[optional_service]" type="number">
-        </div>
-    </div>
+    </div> -->
+
     <div class="form-group">
         <label class="control-label col-xs-12 col-sm-2">{:__('Optional_service_info')}:</label>
         <div class="col-xs-12 col-sm-8">
