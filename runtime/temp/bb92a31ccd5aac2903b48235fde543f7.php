@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:80:"F:\phpStudy\WWW\newproject\public/../application/admin\view\order\order\add.html";i:1546417121;s:69:"F:\phpStudy\WWW\newproject\application\admin\view\layout\default.html";i:1532420613;s:66:"F:\phpStudy\WWW\newproject\application\admin\view\common\meta.html";i:1529292885;s:68:"F:\phpStudy\WWW\newproject\application\admin\view\common\script.html";i:1529292885;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:80:"F:\phpStudy\WWW\newproject\public/../application/admin\view\order\order\add.html";i:1546567472;s:69:"F:\phpStudy\WWW\newproject\application\admin\view\layout\default.html";i:1532420613;s:66:"F:\phpStudy\WWW\newproject\application\admin\view\common\meta.html";i:1529292885;s:68:"F:\phpStudy\WWW\newproject\application\admin\view\common\script.html";i:1529292885;}*/ ?>
 <!DOCTYPE html>
 <html lang="<?php echo $config['language']; ?>">
     <head>
@@ -116,25 +116,25 @@
         <div class="form-group col-xs-6">
             <label class="control-label col-xs-4 col-sm-4"><?php echo __('Rent_office_id'); ?>:</label>
             <div class="col-xs-6 col-sm-6">
-                <input id="c-rent_office_id" data-rule="required" data-source="rent/office/index" class="form-control selectpage" name="row[rent_office_id]" type="text" value="">
+                <input id="c-rent_office_id" data-rule="required" data-source="office/index"  data-field="fullname"  data-params='{"custom[parentid]":"1","custom[status]":"0"}' class="form-control selectpage" name="row[rent_office_id]" type="text" value="">
             </div>
         </div>
         <div class="form-group col-xs-6">
             <label class="control-label col-xs-4 col-sm-4"><?php echo __('Return_office_id'); ?>:</label>
             <div class="col-xs-6 col-sm-6">
-                <input id="c-return_office_id" data-rule="required" data-source="return/office/index" class="form-control selectpage" name="row[return_office_id]" type="text" value="">
+                <input id="c-return_office_id" data-rule="required" data-source="office/index"  data-field="fullname"  data-params='{"custom[parentid]":"1","custom[status]":"0"}' class="form-control selectpage" name="row[return_office_id]" type="text" value="">
             </div>
         </div>
         <div class="form-group col-xs-6">
             <label class="control-label col-xs-4 col-sm-4"><?php echo __('Vehicle_model_id'); ?>:</label>
             <div class="col-xs-6 col-sm-6">
-                <input id="c-vehicle_model_id" data-rule="required" data-source="vehicle/model/index" class="form-control selectpage" name="row[vehicle_model_id]" type="text" value="">
+                <input id="c-vehicle_model_id" data-rule="required" data-source="vehicle/model/index"  data-field="vehicle_model" data-pagination="true" data-page-size="10"   class="form-control selectpage" name="row[vehicle_model_id]" type="text" value="">
             </div>
         </div>
         <div class="form-group col-xs-6">
             <label class="control-label col-xs-4 col-sm-4"><?php echo __('Vehicle_id'); ?>:</label>
             <div class="col-xs-6 col-sm-6">
-                <input id="c-vehicle_id" data-rule="required" data-source="vehicle/index" class="form-control selectpage" name="row[vehicle_id]" type="text" value="">
+                <input id="c-vehicle_id" data-rule="required" data-source="vehicle/vehicle/index" data-field="plate_number" class="form-control selectpage" name="row[vehicle_id]" type="text" value="">
             </div>
         </div>
         <div class="form-group col-xs-6">
@@ -183,20 +183,20 @@
         <div class="form-group col-xs-6">
             <label class="control-label col-xs-4 col-sm-4"><?php echo __('Price_preferential'); ?>:</label>
             <div class="col-xs-6 col-sm-6">
-                <input id="c-price_preferential" class="form-control" step="0.01" name="row[price_preferential]" type="number" value="0.00">
+                <input id="c-price_preferential" class="form-control" step="0.01" name="row[price_preferential]" type="number" value="">
             </div>
         </div>\
         <div class="form-group col-xs-6">
             <label class="control-label col-xs-4 col-sm-4"><?php echo __('Optional_service'); ?>:</label>
             <div class="col-xs-6 col-sm-4">
-                <input id="c-optional_service" class="form-control" name="row[optional_service]" type="number">
-            </div>元/天
+                <label for=""><input id="row[is_select_optional_service]" name="row[is_select_optional_service]" type="checkbox" value="1"></label>
+            </div>40元/天
         </div>
     </div>
     <div class="form-group">
         <label class="control-label col-xs-12 col-sm-2"><?php echo __('Total_amount'); ?>:</label>
         <div class="col-xs-12 col-sm-8">
-            <input id="c-total_amount" readonly="true" class="form-control" step="0.01" name="row[total_amount]" type="number" value="0.00">
+            <input id="c-total_amount" readonly="true" class="form-control" step="0.01" name="row[total_amount]" type="number" value="">
         </div>
     </div>
 
@@ -314,7 +314,7 @@
         </div>
     </div> -->
 
-    <div class="form-group">
+    <!-- <div class="form-group">
         <label class="control-label col-xs-12 col-sm-2"><?php echo __('Optional_service_info'); ?>:</label>
         <div class="col-xs-12 col-sm-8">
             <input id="c-optional_service_info" class="form-control" name="row[optional_service_info]" type="text" value="">
@@ -403,7 +403,7 @@
         <div class="col-xs-12 col-sm-8">
             <input id="c-address_return_car" class="form-control" name="row[address_return_car]" type="text">
         </div>
-    </div>
+    </div> -->
     <div class="form-group layer-footer">
         <label class="control-label col-xs-12 col-sm-2"></label>
         <div class="col-xs-12 col-sm-8">

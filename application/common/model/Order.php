@@ -18,7 +18,7 @@ class Order extends Model
     
     // 追加属性
     protected $append = [
-        'soure_text',
+        'source_text',
         'status_text',
         'usertype_text',
         'start_time_text',
@@ -41,9 +41,9 @@ class Order extends Model
     
 
     
-    public function getSoureList()
+    public function getSourceList()
     {
-        return ['1' => __('Soure 1'),'2' => __('Soure 2'),'3' => __('Soure 3'),'4' => __('Soure 4'),'5' => __('Soure 5'),'6' => __('Soure 6'),'7' => __('Soure 7'),'8' => __('Soure 8'),'9' => __('Soure 9')];
+        return ['1' => __('Source 1'),'2' => __('Source 2'),'3' => __('Source 3'),'4' => __('Source 4'),'5' => __('Source 5'),'6' => __('Source 6'),'7' => __('Source 7'),'8' => __('Source 8'),'9' => __('Source 9')];
     }
 
     public function getStatusList()
@@ -94,10 +94,10 @@ class Order extends Model
     }
 
 
-    public function getSoureTextAttr($value, $data)
+    public function getSourceTextAttr($value, $data)
     {        
-        $value = $value ? $value : $data['soure'];
-        $list = $this->getSoureList();
+        $value = $value ? $value : $data['source'];
+        $list = $this->getSourceList();
         return isset($list[$value]) ? $list[$value] : '';
     }
 
@@ -281,4 +281,57 @@ class Order extends Model
     {
         return $this->belongsTo('Admin', 'admin_id', 'id', [], 'LEFT')->setEagerlyType(0);
     }
+
+    /**
+    *@desc 设置订单号
+    *@example usertype1/2  source date20181231153000 id
+    *@param
+    *@return  string 1010 0004 000002
+    */
+    public static function setSerialNo($usertype='1',$source='1'){
+        $id     = self::getAutoIncreamentId();
+        $theday = 1000+date('z');
+        $id     = $id + 1000000;
+        return $usertype * 10000000000000 + $source * 100000000000 - 1000000000 + $theday * 1000000 + $id - 1000000;
+    }
+
+
+    /**
+    *@desc 查询表中id自动递增最大值后加一（即下一条数据的id）*/
+    public static function getAutoIncreamentId($field = 'id') {
+        $id = 0;
+        $cdb = Model('order')->find(true);
+        $c = 0;
+        do
+        {
+            $cdb->select("MAX(`{$field}`) as `id`");
+            $r = $cdb->find();
+            if ($r) {
+                $id = $r['id'] + 1;
+                break;
+            }
+            $c++;
+        }while($c < 2);
+
+        return $id;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

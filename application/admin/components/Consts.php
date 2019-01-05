@@ -28,6 +28,16 @@ class Consts
 	const MEMBER_SOURCE_TYPE_BACK_AUTO  = 2;  //后台下单自动生成
 	const MEMBER_SOURCE_TYPE_MOBILE_ADD = 3;  //移动端信息完善
 	const MEMBER_SOURCE_TYPE_OTHER      = 4;  //其他
+	// 订单来源:1=门店订单,2=手机订单,3=网站订单,4=小程序订单,5=IOS,6=安卓,7=携程订单,8=悟空订单,9=同行订单
+	const ORDER_SOURCE_OFFICE           = 1; //门店订单
+	const ORDER_SOURCE_MOBILE           = 2; //手机订单
+	const ORDER_SOURCE_PC               = 3; //网站订单
+	const ORDER_SOURCE_MINI_PROGRAM     = 4; //小程序订单
+	const ORDER_SOURCE_IOS              = 5; //IOS
+	const ORDER_SOURCE_ANDROID          = 6; //安卓
+	const ORDER_SOURCE_XIECHEN          = 7; //携程
+	const ORDER_SOURCE_WUKONG           = 8; //悟空
+	const ORDER_SOURCE_COLLEAGUE        = 9; //同行订单
 
 
 

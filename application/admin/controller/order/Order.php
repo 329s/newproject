@@ -26,7 +26,7 @@ class Order extends Backend
     {
         parent::_initialize();
         $this->model = model('Order');
-        $this->view->assign("soureList", $this->model->getSoureList());
+        $this->view->assign("sourceList", $this->model->getSourceList());
         $this->view->assign("statusList", $this->model->getStatusList());
         $this->view->assign("usertypeList", $this->model->getUsertypeList());
         $this->view->assign("priceTypeList", $this->model->getPriceTypeList());
@@ -99,28 +99,35 @@ class Order extends Backend
     public function add()
     {
 
-        // $params = array(
-        //     'customer_name' => '文伯龙',
-        //     'customer_telephone' => '15267314456',
-        //     'customer_identity_type' => '3',//证件类型:1=身份证,2=港澳通行证,3=台湾台胞证,4=护照
-        //     'customer_identity_id' => '622426199411255213000',
-        //     'soure' => '1',//订单来源:1=门店订单,2=手机订单,3=网站订单,4=小程序订单,5=IOS,6=安卓,7=携程订单,8=悟空订单,9=同行订单
-        //     'belong_office_id' => '2',
-        //     'rent_office_id' => '2',
-        //     'return_office_id' => '2',
-        //     'vehicle_model_id' => '2',
-        //     'vehicle_id' => '1',
-        //     'start_time' => time(),
-        //     'end_time' => time()+86400*2,
-        //     'optional_service' => '',//增值服务
-        //     'remark_content' => '',
-
-        // );
-        // echo "<pre>";
-        // // $res = \app\admin\components\OrderServer::orderAddBefore($params);
-        // echo "</pre>";die;
+            $params = Array(
+                            "customer_name" => '施俊健',
+                            "customer_telephone" => 18395947721,
+                            "customer_identity_type" => 1,
+                            "customer_identity_id" => '330781198903294812',
+                            "start_time" => '2019-01-04 09:56:42',
+                            "end_time" => '2019-01-06 09:56:42',
+                            "rent_days" => 2,
+                            "source" => 1,
+                            "rent_office_id" => 3,
+                            "return_office_id" => 3,
+                            "vehicle_model_id" => 2,
+                            "vehicle_id" => 2,
+                            "usertype" => 1,
+                            "price_type" => 1,
+                            "preferential_type" => 0,
+                            "price_preferential" => 0,
+                            "is_select_optional_service" => 1,
+                            "total_amount" => 0,
+                            "remark_content" => '哈哈'
+                        );
+        echo "<pre>";
+        $res    = \app\admin\components\OrderServer::returnAllParams($params);
+        print_r($res);
+        echo "</pre>";die;
         if ($this->request->isPost()) {
             $params = $this->request->post("row/a");
+            // echo "<pre>";
+
             if ($params) {
                 if ($this->dataLimit && $this->dataLimitFieldAutoFill) {
                     $params[$this->dataLimitField] = $this->auth->id;
@@ -134,12 +141,16 @@ class Order extends Backend
                     }
 
                     // 添加订单前对客户的操作操作
-                    $res    = \app\admin\components\OrderServer::orderAddBefore($params);
-                    if($res['error'] == Consts::RESULT_ERROR){
-                        $this->error($res['desc']);
-                    }else{
-                        $params['user_member_id'] = $res['result']['member_id'];
-                    }
+                    $res    = \app\admin\components\OrderServer::returnAllParams($params);
+                    // if($res['error'] == Consts::RESULT_ERROR){
+                    //     $this->error($res['desc']);
+                    // }else{
+                    //     $params['user_member_id'] = $res['result']['member_id'];
+                    // }
+
+                    // $params = \app\common\model\Order::OrderParamsAdd($params);
+                    print_r($res);
+                    die;
                     $result = $this->model->allowField(true)->save($params);
                     if ($result !== false) {
                         $this->success();
