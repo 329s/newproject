@@ -24,9 +24,9 @@ class Common extends Controller
 	}
 
 	/**
-	*@desc客户证件号码验证
-	*@param $identity_type
-	*@param $identity_id
+	*@desc时间日期计算
+	*@param $start_time
+	*@param $end_time
 	*/
 	public static function FunctionName($value='')
 	{
